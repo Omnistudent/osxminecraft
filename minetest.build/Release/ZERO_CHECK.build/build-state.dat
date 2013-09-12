@@ -1,0 +1,174 @@
+TZERO_CHECK
+v7
+r0
+t400705465.786774
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-1F17CAE5452A46C3BD3E4B39.sh
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-1F17CAE5452A46C3BD3E4B39.sh
+c00000000523210390000000000000093
+t1379012665
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-28A5B7BB41E24C73A5EDBB28.sh
+c00000000523205E20000000000000093
+t1379010018
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-31CB6B22CC934B3E802D45C1.sh
+c0000000052320EE00000000000000093
+t1379012320
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-477A4181A3C84970A79873AA.sh
+c0000000052320B050000000000000093
+t1379011333
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-A30E140D62E84B74B46A1C16.sh
+c00000000523204090000000000000093
+t1379009545
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-ACA7C5E8D1AD438189DE1FD0.sh
+c0000000052320C3F0000000000000093
+t1379011647
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
+c000000005231F3990000000000000093
+t1379005337
+s147
+
+N/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-E68DD3A963E54CAE8CBCC0FB.sh
+c0000000052320E7A0000000000000093
+t1379012218
+s147
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies400705465#400705465#0(0"0(0#1#0"8600009792#0"0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-1F17CAE5452A46C3BD3E4B39.sh
+s400705465.699052
+e400705465.786568
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-1F17CAE5452A46C3BD3E4B39.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400705465#400705465#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400705465#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400705465#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400705465#75#55#0(1@0"0(0#0#0"8598646048#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-1F17CAE5452A46C3BD3E4B39.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-28A5B7BB41E24C73A5EDBB28.sh
+s400703011.536271
+e400703011.742992
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-28A5B7BB41E24C73A5EDBB28.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400703011#400703011#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400703011#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400703011#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400703011#75#55#0(1@0"0(0#0#0"8599680960#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-28A5B7BB41E24C73A5EDBB28.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-31CB6B22CC934B3E802D45C1.sh
+s400705120.250299
+e400705120.529674
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-31CB6B22CC934B3E802D45C1.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400705120#400705120#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400705120#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400705120#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400705120#75#55#0(1@0"0(0#0#0"8611820864#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-31CB6B22CC934B3E802D45C1.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-477A4181A3C84970A79873AA.sh
+s400704133.498232
+e400704133.601407
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-477A4181A3C84970A79873AA.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400704133#400704133#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400704133#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400704133#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400704133#75#55#0(1@0"0(0#0#0"8626953984#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-477A4181A3C84970A79873AA.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-A30E140D62E84B74B46A1C16.sh
+s400702707.462040
+e400702711.342360
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-A30E140D62E84B74B46A1C16.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+o/opt/local/bin/cmake -H/Users/security/osxminecraft -B/Users/security/osxminecraft
+o-- *** Will build version 0.4.7 ***
+o-- IRRLICHT_SOURCE_DIR = 
+o-- IRRLICHT_INCLUDE_DIR = /usr/local/include/irrlicht
+o-- IRRLICHT_LIBRARY = /usr/local/lib/libIrrlicht.a
+o-- CURL_INCLUDE_DIR = /usr/include/curl
+o-- CURL_LIBRARY = /usr/lib/libcurl.dylib
+o-- cURL support enabled
+o-- GetText disabled
+o-- Sound enabled
+o-- Using project jthread library
+o-- Found system sqlite3 header file in /usr/include
+o-- Found system sqlite3 library /usr/lib/libsqlite3.dylib
+o-- Using project jsoncpp library
+o-- LuaJIT library: LUA_LIBRARY-NOTFOUND
+o-- LuaJIT headers: LUA_INCLUDE_DIR-NOTFOUND
+o-- LuaJIT not found, using bundled Lua.
+o-- Configuring done
+o-- Generating done
+o-- Build files have been written to: /Users/security/osxminecraft
+lSLF07#2@37"Run custom shell script 'CMake Rules'400702707#400702711#0(872"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make/opt/local/bin/cmake -H/Users/security/osxminecraft -B/Users/security/osxminecraft-- *** Will build version 0.4.7 ***-- IRRLICHT_SOURCE_DIR = -- IRRLICHT_INCLUDE_DIR = /usr/local/include/irrlicht-- IRRLICHT_LIBRARY = /usr/local/lib/libIrrlicht.a-- CURL_INCLUDE_DIR = /usr/include/curl-- CURL_LIBRARY = /usr/lib/libcurl.dylib-- cURL support enabled-- GetText disabled-- Sound enabled-- Using project jthread library-- Found system sqlite3 header file in /usr/include-- Found system sqlite3 library /usr/lib/libsqlite3.dylib-- Using project jsoncpp library-- LuaJIT library: LUA_LIBRARY-NOTFOUND-- LuaJIT headers: LUA_INCLUDE_DIR-NOTFOUND-- LuaJIT not found, using bundled Lua.-- Configuring done-- Generating done-- Build files have been written to: /Users/security/osxminecraft22(13@8"echo ""400702707#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400702707#9#66#0(1@0"0(13@83"/opt/local/bin/cmake -H/Users/security/osxminecraft -B/Users/security/osxminecraft400702707#75#83#0(1@0"0(13@36"-- *** Will build version 0.4.7 ***400702707#158#36#0(1@0"0(13@26"-- IRRLICHT_SOURCE_DIR = 400702707#194#26#0(1@0"0(13@54"-- IRRLICHT_INCLUDE_DIR = /usr/local/include/irrlicht400702707#220#54#0(1@0"0(13@51"-- IRRLICHT_LIBRARY = /usr/local/lib/libIrrlicht.a400702707#274#51#0(1@0"0(13@40"-- CURL_INCLUDE_DIR = /usr/include/curl400702707#325#40#0(1@0"0(13@41"-- CURL_LIBRARY = /usr/lib/libcurl.dylib400702707#365#41#0(1@0"0(13@24"-- cURL support enabled400702707#406#24#0(1@0"0(13@20"-- GetText disabled400702707#430#20#0(1@0"0(13@17"-- Sound enabled400702707#450#17#0(1@0"0(13@33"-- Using project jthread library400702710#467#33#0(1@0"0(13@52"-- Found system sqlite3 header file in /usr/include400702710#500#52#0(1@0"0(13@58"-- Found system sqlite3 library /usr/lib/libsqlite3.dylib400702710#552#58#0(1@0"0(13@33"-- Using project jsoncpp library400702710#610#33#0(1@0"0(13@40"-- LuaJIT library: LUA_LIBRARY-NOTFOUND400702710#643#40#0(1@0"0(13@44"-- LuaJIT headers: LUA_INCLUDE_DIR-NOTFOUND400702710#683#44#0(1@0"0(13@40"-- LuaJIT not found, using bundled Lua.400702710#727#40#0(1@0"0(13@20"-- Configuring done400702711#767#20#0(1@0"0(13@19"-- Generating done400702711#787#19#0(1@0"0(13@66"-- Build files have been written to: /Users/security/osxminecraft400702711#806#66#0(1@0"0(0#0#0"8616130304#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-A30E140D62E84B74B46A1C16.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-ACA7C5E8D1AD438189DE1FD0.sh
+s400704447.286726
+e400704447.684927
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-ACA7C5E8D1AD438189DE1FD0.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400704447#400704447#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400704447#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400704447#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400704447#75#55#0(1@0"0(0#0#0"8629091200#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-ACA7C5E8D1AD438189DE1FD0.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
+s400700013.438650
+e400700013.505444
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400700013#400700013#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400700013#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400700013#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400700013#75#55#0(1@0"0(0#0#0"8615029824#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-E68DD3A963E54CAE8CBCC0FB.sh
+s400705018.689182
+e400705018.756736
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-E68DD3A963E54CAE8CBCC0FB.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400705018#400705018#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400705018#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400705018#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400705018#75#55#0(1@0"0(0#0#0"8628789024#155"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ZERO_CHECK.build/Script-E68DD3A963E54CAE8CBCC0FB.sh0#
+

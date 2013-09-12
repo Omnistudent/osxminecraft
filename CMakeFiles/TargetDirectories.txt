@@ -1,0 +1,7 @@
+/Users/security/osxminecraft/CMakeFiles/ALL_BUILD.dir
+/Users/security/osxminecraft/CMakeFiles/ZERO_CHECK.dir
+/Users/security/osxminecraft/src/json/CMakeFiles/jsoncpp.dir
+/Users/security/osxminecraft/src/jthread/CMakeFiles/jthread.dir
+/Users/security/osxminecraft/src/lua/build/CMakeFiles/lua.dir
+/Users/security/osxminecraft/src/CMakeFiles/minetest.dir
+/Users/security/osxminecraft/src/CMakeFiles/minetestserver.dir

@@ -1,0 +1,3535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		36DBEEF396984FE180C903CB /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E3712E0521ED49238E7091B7 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				FA7877DA42804B2BB137AA8C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				65D429F5E1B14445BDC6BE50 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		4C57E5EE58C24CFFA8826999 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 29C68F9956444A65B13D0695 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1F17CAE5452A46C3BD3E4B39 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E88027F31DC44CA3870723A9 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 95B55A6F397646D98F1D49A2 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				0B475460B6754574B09C7F06 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				65D429F5E1B14445BDC6BE50 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		E8CBEC9F5C5B42349ACE3BDD /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 61BFBF10E87945F1B03BA3E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A1C5344691F045A198B67A44 /* CMake Rules */,
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+				128E065B307D4A6FB3DE1721 /* PBXTargetDependency */,
+				A3030BE96A3F4F0CA217D245 /* PBXTargetDependency */,
+				25E2EB0A76CE489FBD98F9E5 /* PBXTargetDependency */,
+				3CC9C2EACB9B4D709B3045FC /* PBXTargetDependency */,
+				459BDBE2CB4948E381F09958 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		000286F43196474D8AA3F902 /* s_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40ACD9F6567343DF8CB9A143 /* s_node.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		003A2CEC375B4CC69A4C6E9F /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 756889B65E10401582772255 /* jsoncpp.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		00812EFD9C3D4E3F9F2D0F9D /* mapnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2DBCFC2B349C9BA5B2164 /* mapnode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		020A926B461549C8A071230E /* l_mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C003BF256F490F9A7D7481 /* l_mapgen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		022F8DD6C9FE4C8FBB3A1D6D /* l_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DC861BE3854C20A2DD0FDC /* l_item.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0267B060E317496CB8B22DCE /* guiDeathScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF18BE25474BC6BBB33013 /* guiDeathScreen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0272A2067E7D421CB38FFE0B /* s_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 583FC501CC67402AA81DB864 /* s_inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		064C5AF13E0E4670AF62C224 /* nameidmapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D647C680F674BE38576DFC4 /* nameidmapping.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		06562FB0D98C491A8EA23D19 /* mapgen_v7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05D2E49325494DFE8D1D967A /* mapgen_v7.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		06632D79F7D34EFC97DAAD12 /* mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD5DE98D3B6943D7B22A8BDD /* mapgen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		07DC33155A2E4EE5B61C06F2 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 467F9E4121E6439F8E38F415 /* base64.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		084999D6F49740269C1FF2AA /* s_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 583FC501CC67402AA81DB864 /* s_inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0A9BAA298A644913B83A1E52 /* connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E602B5062274DF1867C5EF8 /* connection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0BE0D768D938486E9E2FEDEB /* s_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6455E6FEB20F404BBA63DDF4 /* s_player.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0E7FDF1853624AD68585EEA9 /* dungeongen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A71E1E3967C74C9CAD43C458 /* dungeongen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0FFD996F80E7472AB8AA5444 /* scripting_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F785C9484964C3293ECF610 /* scripting_game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		109FB757FAB24A379FF09D3E /* s_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2503AC28764D428BB85E0566 /* s_base.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		13660E30FD964CE285C33CEC /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532F2B515F8F48AAB5EBB6A5 /* light.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		15429E949EEF4887BB6A9CB0 /* guiChatConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 515C76DF1A8D4CCF97670F80 /* guiChatConsole.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		16B36FF5D6894FC3A03A61E6 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 45255481244149B5AD9ED519 /* lmem.c */; settings = {COMPILER_FLAGS = ""; }; };
+		191B985526A24D408D40A679 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD46A5AC7C144FD28282B47E /* collision.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1937C6476AD34371938D4C21 /* timetaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC2B64085AAB482E9BA67B24 /* timetaker.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		19A98E83E2814A48AD42BD83 /* emerge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC87A7CB4C024095A65D5ED3 /* emerge.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		19E1020C14D6499EB84947E0 /* directiontables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47C71F756F2541AFB506B30A /* directiontables.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1A6FB723CB71492BB3C732AF /* s_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD0BEA2FDD49F8903B9AB9 /* s_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1ABE6BDA061549C6A26E941F /* porting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76A89A9517604595A6A8051A /* porting.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1B1C3FCB38B9410BACA63807 /* emerge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC87A7CB4C024095A65D5ED3 /* emerge.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1B8DFAE1721B4C149C9954F2 /* inventorymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE628B1A5FD0464D9467C710 /* inventorymanager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1D15A4727EB547E5A6323479 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = C4ADFC70156641949A8B7090 /* lobject.c */; settings = {COMPILER_FLAGS = ""; }; };
+		1E88E6149D0E4252AF3039C4 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 467F9E4121E6439F8E38F415 /* base64.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1FF131D24ADA412EA2876681 /* mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD5DE98D3B6943D7B22A8BDD /* mapgen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		210EE3D94E614E268ABBA576 /* convert_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FA00E2C08D48C09CFE09B7 /* convert_json.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		226B3B9D4A7B480AA1D3EC71 /* s_env.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3259E5DB3099438A91DC16BD /* s_env.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2583CE31EB0B4874B91037B5 /* content_mapblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C0463602C8475CB389659C /* content_mapblock.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28D5908E46434EE9A7FA9352 /* l_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98639186F05A4FD08AFF7DE7 /* l_base.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28F0DF4AD46A406D9743BE19 /* environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E325D8430464372BEB92434 /* environment.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		29038B1F991A46C9AE944A46 /* l_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97106714CE3742D38E2B2A66 /* l_inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2918176D322242D99A61F3E4 /* s_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB54EEFBD2434EFF9105CC46 /* s_item.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2C2540691F484CF9A8E933DB /* sky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E65F4608B8D14E83AD921CD7 /* sky.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2C2F811AF6754718A08D0A66 /* particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93EC267B76A14B9BB2D09F9F /* particles.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2D09DF2C67E44C4CB3530C80 /* l_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08B00EF7BE924BE38875955F /* l_server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2D266C46B4F645FAA25E0244 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD46A5AC7C144FD28282B47E /* collision.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2EDB1DC5FB5E42569CB5847E /* scripting_mainmenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE477EDFD2D44C21969138DD /* scripting_mainmenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2EF9949C57784D23BA35267E /* mapgen_singlenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDBF7051861A4A23A545349F /* mapgen_singlenode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2F4EDC5A97214CE5B7628819 /* l_rollback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D58D7EC18BF42E4AE4BE2BA /* l_rollback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		31B13D6C10934E8D856A9030 /* voxelalgorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2C0D70FB450FAD981D25 /* voxelalgorithms.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3209CF07930E418BAD48D538 /* c_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA84DA411384491B5D7CF77 /* c_types.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		335CC1D7005244769CA9AF86 /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 397D15651028420D837C74DE /* sha1.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		35EE3C9DBE654763A8C45221 /* mods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B097CCFCCF147D19869CD45 /* mods.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3609EA4BBF9E44E682CC5F05 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE99EBD698D4A6C98BD2B94 /* lauxlib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		3640A59432AC4255BF712B02 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC97065D8A3C43B7B17E4B34 /* mesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		375B32264EBA4CC3ABCF14AB /* rollback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F43F4599A7B43E5964ECA6B /* rollback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		37ADA226932E4E42A31E026D /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 88B9E88FFF6B436BA220B9D0 /* lstate.c */; settings = {COMPILER_FLAGS = ""; }; };
+		386796C484824EC3BF98D7B6 /* localplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B42C989BC8A347FA8E14D3D8 /* localplayer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		388D213503DC4C14A87FC343 /* environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E325D8430464372BEB92434 /* environment.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		38D72FFF4E4149AF9A7BCCCB /* database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF9CB3EC61234CF5A2D7F178 /* database.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3A445656C2F04C35BDB8079D /* object_properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9169F54D77A5470B96F1A393 /* object_properties.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3A718F0D68D442BE8DB89750 /* mods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B097CCFCCF147D19869CD45 /* mods.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3AEC1E2E995D4A38979EB5D5 /* serialization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF60754CB7E44CA2979F65E0 /* serialization.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B52BBE882904864BEEA1C6F /* l_particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BF02E467C42CAA10B7565 /* l_particles.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3BD7E032D9BB437995DBF2F7 /* serverobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F84F3C2386FD4D63A508922A /* serverobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3D550AF107824A9EB6967F68 /* pointedthing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 975A3F5665344D9793C4E0AB /* pointedthing.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3D85169D87C8486581420DB0 /* guiFormSpecMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24E1F38EF3D474580327CA5 /* guiFormSpecMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3DA9D7A985C84ADB839702ED /* staticobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C37A0016A174E2582BF0071 /* staticobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3E0D750BD5724458850927C7 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8998D282A30B466D9625020F /* game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3EBA883321BF405E897E364F /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B2E09BC144A42AF8FA46AE1 /* linit.c */; settings = {COMPILER_FLAGS = ""; }; };
+		3EC6CD02EF444EF78D47307D /* nodedef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D79303BCC844F4F975DF0B6 /* nodedef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3ED7A86C8C82433C9DB417D6 /* c_internal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85F1A621F99A4579B80FC277 /* c_internal.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3F108413A1D94D9A941AF98E /* pointedthing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 975A3F5665344D9793C4E0AB /* pointedthing.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4006F2BF17E8435993371EAB /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = DFE1EE517C2E45A78DC70E43 /* ltm.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4236877B2B82474C8950F47F /* hud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F727DAA795894B91888DFFC4 /* hud.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		427C5133FB0E4885AD05979A /* itemdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04223472E4C242E78F9236D3 /* itemdef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		44353A3E3BAB414BBF3BFBF8 /* filesys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A191A3892F5D4E44913C6509 /* filesys.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		456E5C3214774A5297B4562A /* s_mainmenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7807FD07035408FB5926551 /* s_mainmenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4671D74BF79B485689A48DAF /* nameidmapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D647C680F674BE38576DFC4 /* nameidmapping.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		48DA0B8F76AD4F33AD296BBD /* biome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB60E2A6BC5C43F99EE44B49 /* biome.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		49B7DA1EF1F64430A11682DD /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A967A4FAC6444FE2868A877E /* lapi.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4A0458901BA94C6197430186 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E7B067AC35414DB19682F6 /* inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4B96C8751DEF4655ADA25B01 /* l_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0517C1B1582439FAF973D1D /* l_util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4BD9045705BD455D95A7290B /* guiPasswordChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C31D35570AB4FB0B3850D37 /* guiPasswordChange.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4CF204318D804CE49D981142 /* clouds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4590058D1D5491792BCADED /* clouds.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4D8D63997E394A249276ED03 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E7C39C835D1413B8EB15279 /* ldblib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4DBA283114774529A663D10A /* keycode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28986B585F774A8DBD021448 /* keycode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		51E37B811821450E809E4D74 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = CB085CC919E04DBA8F5767F2 /* ldump.c */; settings = {COMPILER_FLAGS = ""; }; };
+		526725D9F95944128DB0DAA4 /* itemdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04223472E4C242E78F9236D3 /* itemdef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5290FCEC04144D7E8B8EB97D /* c_converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5145F457FF2E428CB5D2A28E /* c_converter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		52DAAE0C5B2942DDA3E1E764 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACEA84DEF4E14BCFB671E303 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5308CB70A20844F5B3315F73 /* l_mainmenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFA2A18FAC664CB495A8BDF5 /* l_mainmenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5364A7B20E784AAE9AED25C2 /* content_abm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B68A3DFEDB947A3A00B8AEA /* content_abm.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		537555D10C6F4908BEE3A271 /* mapgen_v7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05D2E49325494DFE8D1D967A /* mapgen_v7.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5463E26F28074222914C0373 /* l_env.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1779F02613D140A48CD55D4C /* l_env.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		548C394AEB2842B08CEC95F3 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A37630CEE3F4091A3027503 /* shader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		54F3E5CAC73C47279F87AE40 /* content_mapnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70D165D9A86E4392B6B50BBC /* content_mapnode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		554E71831A7F4094A93D0C42 /* mapsector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB76B9A512042DABAAC1273 /* mapsector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5A169DB5DA814549B98E5C54 /* nodedef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D79303BCC844F4F975DF0B6 /* nodedef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5A6754833D604D6989574FAE /* genericobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C88A9178B46D7AFA5DC48 /* genericobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5AD28B45128345D685253818 /* treegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F99BD035684F85980AB7B4 /* treegen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BAD8E97340248AAACC83A28 /* nodetimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98E87C2DE5364E779A560C69 /* nodetimer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5D2ECC6B8A9B4505A66C7561 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = B0CA79FD8B8E446F8E4BD04D /* liolib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		5D4C04FADB2342D490845744 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E351D61072249E2968456A0 /* lfunc.c */; settings = {COMPILER_FLAGS = ""; }; };
+		5D5DC2628383446F95F9EBB4 /* mapnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2DBCFC2B349C9BA5B2164 /* mapnode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5D948AE8723044038C45F9D2 /* numeric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E2F48DAF24272A1E980C2 /* numeric.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5DAAA0780C644353BFD038FA /* tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8894136E54B412B8107DD2C /* tool.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5E3B3536924A45899D2672C5 /* defaultsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F0AA4850044EEBE8B4A24 /* defaultsettings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5F0C37DA1ED24D928C6972DB /* dungeongen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A71E1E3967C74C9CAD43C458 /* dungeongen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6133E722738B43A2B2911F72 /* serverlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86F0BFC4C6BA4C7A8692B555 /* serverlist.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		616F6ACB51804DDD83006FAD /* serverlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86F0BFC4C6BA4C7A8692B555 /* serverlist.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		62AFCFA332E847D3A641FDC5 /* s_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43A87BC079DE493089CA672E /* s_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		637F5695F7C8417AB6FB9615 /* serverobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F84F3C2386FD4D63A508922A /* serverobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		64D41B0612C34D718A30B80C /* serialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88DE7785DC8C421FB87342D4 /* serialize.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		65CF9A6C6D81499AAEA988C3 /* ban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D3ECD0B1864C5CAA7217EF /* ban.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		661E4E02B9DD4E5AB1DD749D /* jmutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C788A20F875C4F2789B04077 /* jmutex.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		68AAE692E7244BABA88B80F2 /* s_env.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3259E5DB3099438A91DC16BD /* s_env.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		695954CC12AE4C69A000C036 /* socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDC6787CE754886922BA70C /* socket.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6AE2C53CF00344D688BB0CCD /* clientobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF56BE0278864370B28A5C86 /* clientobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B70ED37C8364DEE9DF5537C /* socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDC6787CE754886922BA70C /* socket.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6C4FABACA092452285F56F25 /* content_sao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3987FD5AFE4B2491EC35BF /* content_sao.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6C80DA87B6C34400BBA3B419 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAB076AF384E8C8DFDF404 /* log.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6C8A87BE40C643AF92952087 /* mapgen_indev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BD48FD8EDA43369F80C449 /* mapgen_indev.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6D06B0F3E3F34ADFA1583355 /* l_env.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1779F02613D140A48CD55D4C /* l_env.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6DF96926EF384ACAB15A7760 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAB4DF27324A6090B97B5D /* lparser.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6F0B4C36315E4C568877B286 /* noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D339B9FE6F64B21AB645C19 /* noise.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		70C167FF32F3422DA09FE9C4 /* l_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E25B5D9EA0341BE8A398542 /* l_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		71511C2AF4D24DA7A7844C0B /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E866A16A5BB41A7830F57E2 /* lopcodes.c */; settings = {COMPILER_FLAGS = ""; }; };
+		71F0814E84644D8AA7396D4D /* tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8894136E54B412B8107DD2C /* tool.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		721A3428673141E7A60063F9 /* subgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BC9F2E8BDE4668AF0E192B /* subgame.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7386AB4112574E838049DA0B /* content_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC97C6C52F2B4F01A7043249 /* content_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		73F04E2436F4421BAE960786 /* s_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43A87BC079DE493089CA672E /* s_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7540497DA88F4F7AB0E5CD1E /* l_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40DC861BE3854C20A2DD0FDC /* l_item.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7573E3AC8AF54160A9DFD80C /* database-leveldb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF9D52E04C944D34A18E4358 /* database-leveldb.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		75CDE3426BDB4416898C2E70 /* l_craft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9F995D9680947608F1D21B9 /* l_craft.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7671D25FD82D480C8D450608 /* c_content.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41ECECDEB4C942DB968D697F /* c_content.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		782B61E8FD0E4F33B08B179D /* mapgen_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C636E12310D247EE9F9D25C7 /* mapgen_math.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		793BD97FADFB4E49A7FB4649 /* filecache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C337BF77D389447193F2201D /* filecache.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		795F7BDBC63B4FC0ACFE9DA1 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 90BB2EF527CF40D2ACE106A3 /* lcode.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7974EE4A8DB049A9B14B363F /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E7B067AC35414DB19682F6 /* inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7B9F1CE301C44C1899BD5AA7 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A70E67A40108468E98568BF4 /* test.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7BD43BE342F64F8E80EF1A4A /* l_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98639186F05A4FD08AFF7DE7 /* l_base.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7BDC4B4F69CF4647BBCC3EB7 /* sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E21A2DCB3844F68E887D61 /* sound.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7D3A9A842C434EBE9806B238 /* guiFileSelectMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC7EAAE40AE24B629A94B94E /* guiFileSelectMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7EF5533F5E4248C78E32D7B2 /* mapgen_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C636E12310D247EE9F9D25C7 /* mapgen_math.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7F6822351E7A471B843BBF73 /* quicktune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67DC6A5F534416B7063547 /* quicktune.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7F82A72604874981854B886B /* l_craft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9F995D9680947608F1D21B9 /* l_craft.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7FA10AED63B641BCAF530C40 /* serialization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF60754CB7E44CA2979F65E0 /* serialization.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7FA3B9B5DCAF4247AC3DB2D3 /* clientmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10C95832DC6D433586FA698B /* clientmap.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		81EF47397CC347F785C60251 /* content_cao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D065F8520E4EBC88F698FD /* content_cao.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		822FE6125A2340F8BD8907C1 /* c_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA84DA411384491B5D7CF77 /* c_types.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		824B5A6E851B477FA00B9C2D /* connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E602B5062274DF1867C5EF8 /* connection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		847F47A31030461489BE61FC /* treegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F99BD035684F85980AB7B4 /* treegen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		85B61372AC95475295D8B9B7 /* l_nodetimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A13B21222F45DDBA6C1484 /* l_nodetimer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		879214DD392F48E78F8BDA42 /* l_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D291908B4E7B483A9D371FFA /* l_object.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		87F09826D32342D3A89E06C0 /* timetaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC2B64085AAB482E9BA67B24 /* timetaker.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		884F840A9BFC45A4A0D180CE /* rollback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F43F4599A7B43E5964ECA6B /* rollback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		88C75CABC799472FB038F7AD /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CFAB076AF384E8C8DFDF404 /* log.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8D445E339CF64AB391641209 /* cavegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD2D27593A5E4B8C8ADAC26C /* cavegen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		90D2DDFC53C2448FBB07B357 /* content_cso.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06528E10204F413CB6C7AB04 /* content_cso.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9309EA3B2FFA43AC9FB2B564 /* s_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2503AC28764D428BB85E0566 /* s_base.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		941ECD6DFDED4C2983A8D6B7 /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 119DD7F08B12438CBBB11838 /* string.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		948B867C705546AE8D941473 /* mapgen_singlenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDBF7051861A4A23A545349F /* mapgen_singlenode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		94D6775FAB304E43BC5B4773 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC58B13B4CE7BF8F50FA /* server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		957D712CF85649FDB57AA1B5 /* voxelalgorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2C0D70FB450FAD981D25 /* voxelalgorithms.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		96D8B29DF6DA4A15B7019F9F /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 397D15651028420D837C74DE /* sha1.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		98140BF471374E35848B4C88 /* content_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC97C6C52F2B4F01A7043249 /* content_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		982B27E7E9E6423EBA8F33CA /* chat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF1FDB58AAFF4533B6D57717 /* chat.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		98DC628EC4434D23AB1CC53C /* quicktune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A67DC6A5F534416B7063547 /* quicktune.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9A37248269EE46339CDC7B30 /* convert_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31FA00E2C08D48C09CFE09B7 /* convert_json.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9C434FD6D28E4F26946A0A53 /* l_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259CC3511AA04A58B9217EBC /* l_noise.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9CDB45C317FB4D07A2DABEC9 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30A198F1D7094FAEB2FC615C /* debug.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9CDF9FCA03DB4926B28FBB07 /* noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D339B9FE6F64B21AB645C19 /* noise.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9E8E489B6F924532BBCC819E /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF0711CA4CA84AD8B04BBE91 /* client.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9FD38F840B024A3FB82EDCA7 /* l_rollback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D58D7EC18BF42E4AE4BE2BA /* l_rollback.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A075E293986449D29F11D5D4 /* ban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D3ECD0B1864C5CAA7217EF /* ban.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A270F6AE7A5A4815A1ACC807 /* porting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76A89A9517604595A6A8051A /* porting.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A3CC5BC0546C403B814E6123 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = 14961089091C4A5B9538376F /* lvm.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A401901138EB40FB931664D5 /* rollback_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 030AD13189944142B015CD01 /* rollback_interface.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A4759CFE02E34FBDA6CACFA3 /* database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF9CB3EC61234CF5A2D7F178 /* database.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A59DF60664E043A2BCAC4B39 /* scripting_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F785C9484964C3293ECF610 /* scripting_game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A5A5D209D31848FEB12B9178 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = 186362D71DD2489B91F74917 /* lgc.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A6EEAE2F50DB495789B207FE /* guiMessageMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFDB3F52DBDC450EB915D165 /* guiMessageMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AAB3282FC52C47EBB0808712 /* mapsector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB76B9A512042DABAAC1273 /* mapsector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AD1BAC6F3162457DBFB110E7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5EB7D364C6242059449AB40 /* player.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AD99DEEFE13D46F29068C661 /* l_vmanip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E0D6D8176491D8B9F5FD4 /* l_vmanip.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AFBACB141EA6472A98C04D52 /* l_nodemeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E25B5D9EA0341BE8A398542 /* l_nodemeta.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AFF22F4BA7CD4545A42D177A /* l_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7361A530BE143EC914A5B4B /* l_settings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AFF3977EC2F14A5BB88DBF74 /* c_converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5145F457FF2E428CB5D2A28E /* c_converter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B1AFCE02BE7144CF9F19A116 /* l_mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C003BF256F490F9A7D7481 /* l_mapgen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B218266819E54D6089134DB8 /* cavegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD2D27593A5E4B8C8ADAC26C /* cavegen.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B3693190930B4657B05C8516 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = D74A1203203E43D18E3D75FB /* llex.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B42D1B152E8B4CD6B8CAF9E7 /* voxel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FA184A28A445D694F5A468 /* voxel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B45426F3D29C40C0A5E66ED2 /* craftdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96AF23EDD6846068B726E2C /* craftdef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B4AD6C5EBF3C41C8AD790159 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C9B86A0FF81B4453AA659525 /* lmathlib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B4AEEAE2E431477E9FC9F2E6 /* mapgen_indev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BD48FD8EDA43369F80C449 /* mapgen_indev.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B66A72387A204C4FBB3B5638 /* l_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D291908B4E7B483A9D371FFA /* l_object.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B71C06FC196E437380E30D90 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = 0158203C43E8412BB254954D /* ltable.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B7245CCC7420436CB8B59140 /* craftdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96AF23EDD6846068B726E2C /* craftdef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B7642EC3287141E9BFFB4732 /* content_sao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3987FD5AFE4B2491EC35BF /* content_sao.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B825825D4C6441B89A114E9B /* database-sqlite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C633258BC04261A2D25C26 /* database-sqlite3.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B9469C81BA344A5A98638D58 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC58B13B4CE7BF8F50FA /* server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B9772543FD9A4CF98B34F6D4 /* database-leveldb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF9D52E04C944D34A18E4358 /* database-leveldb.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BB76CB3BF6414C37AF43032D /* s_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6455E6FEB20F404BBA63DDF4 /* s_player.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BBDC127E77CC483EADD1F3F6 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F76619C958BE49AD98296AB6 /* camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BC9F1E49339A4EC6AF072257 /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 247987944AEC464EA597275A /* tile.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BE82F18B362145CA9C820D35 /* database-dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C0A4964494105B1A10179 /* database-dummy.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C00D651EBE114B1D93F290AB /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7EC5FED02474B8EDEBE5B /* lundump.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C30D55AE5BE943A3B605F9B5 /* inventorymanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE628B1A5FD0464D9467C710 /* inventorymanager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C51AAF3AE38C49EC91853464 /* jthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC1AA68DAE774FB6925081C5 /* jthread.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C6332E3B39104090BE359538 /* mapblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86F1171C0FF643DE9621590F /* mapblock.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C6BC9DAF1BF546ED938E5565 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = 005B0F0FDE32469383E6CF78 /* ldo.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C6CC036DDF0C40718BCE25A3 /* filesys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A191A3892F5D4E44913C6509 /* filesys.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C99DF231456545CF8089E669 /* object_properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9169F54D77A5470B96F1A393 /* object_properties.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C9B0E4764865460DB8469984 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 070303336BC84D2C898A04AF /* lzio.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C9F1770AE3484E3781D61277 /* directiontables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47C71F756F2541AFB506B30A /* directiontables.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CBE6F1A80AC34E68ACC53616 /* c_internal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85F1A621F99A4579B80FC277 /* c_internal.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CD08C6F686284B7DBDD29C9F /* mapblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86F1171C0FF643DE9621590F /* mapblock.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CE26768500504AFFB4EE5946 /* content_abm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B68A3DFEDB947A3A00B8AEA /* content_abm.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CE3C63A6CE5544489602DD42 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD4E48CCC54D89BDDC6EBE /* loslib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D02CC63EBE544937AB5863B1 /* serialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88DE7785DC8C421FB87342D4 /* serialize.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D066271DD6064A39A69981C1 /* guiKeyChangeMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 950C8F832E754ECE8602F91C /* guiKeyChangeMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D0C4668EDE5B4A31AC3C9D50 /* l_nodetimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A13B21222F45DDBA6C1484 /* l_nodetimer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D0C57DFDEC47407B8CCE9E9A /* guiVolumeChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A241A7D3CECC487AA051880A /* guiVolumeChange.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D1987AC8A7714B458A48567F /* pathfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E39B60E464024879C7B6E /* pathfinder.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D40B308056CB42F2A6E8A2F7 /* mapblock_mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290AA73137BF409B9374AD5E /* mapblock_mesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D61E26FB10EB447488AB9951 /* l_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259CC3511AA04A58B9217EBC /* l_noise.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D645DB966FF84738B358383A /* s_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40ACD9F6567343DF8CB9A143 /* s_node.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D79E2EB9EC5349C68664843F /* c_content.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41ECECDEB4C942DB968D697F /* c_content.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D7AACA0DF73647EABDCC6551 /* s_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB54EEFBD2434EFF9105CC46 /* s_item.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D86CC1218ED14C87BCE2FC39 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5EB7D364C6242059449AB40 /* player.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D99AD972B9ED403A923EF156 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A8E6AF594387AC3B6549 /* map.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DA04F0B352504A35B431BBE5 /* s_entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BD0BEA2FDD49F8903B9AB9 /* s_entity.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DBB69DBFBAFE4358BE9A5C2D /* mapgen_v6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B576F92264B798B853DCA /* mapgen_v6.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DC4E4B45A1AE4AE5BD7FB7E0 /* pathfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E39B60E464024879C7B6E /* pathfinder.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DD5EF7581263405DAF5D4875 /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532F2B515F8F48AAB5EBB6A5 /* light.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DDD7397609F64A8286B729E1 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B4A8E6AF594387AC3B6549 /* map.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DE3F74399DF9481383DF4AF8 /* genericobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C88A9178B46D7AFA5DC48 /* genericobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DED4B1CA97AC41BB89EDC83D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACEA84DEF4E14BCFB671E303 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E05FA4035DAC4B61A8DCC14A /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 701DE1F2356442C584035279 /* loadlib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E1574A55F4B543DD8CDF88E4 /* voxel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FA184A28A445D694F5A468 /* voxel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E1C2521368124EEEB1083CDD /* subgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BC9F2E8BDE4668AF0E192B /* subgame.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E1F21ACF8DF04F42B07D74BC /* mapgen_v6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B576F92264B798B853DCA /* mapgen_v6.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E2792FD9E90A4EF98C86D250 /* nodetimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98E87C2DE5364E779A560C69 /* nodetimer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E39707C8D0AB44E682614F35 /* l_particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0BF02E467C42CAA10B7565 /* l_particles.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E39858BF9BA34254911145A2 /* numeric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E2F48DAF24272A1E980C2 /* numeric.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E3E15D7E37E24A9CBF39A34A /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = C8F9857898F941EE81352A0B /* lstring.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E46D6EDB84CB4FEF8605666E /* guiPauseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FD2FCC0B24CB19D57FA26 /* guiPauseMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E46DE4E6EA654BA9A046253E /* nodemetadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE8532F045E4C588348C85E /* nodemetadata.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E57E205F461C4A5D9FBA94CF /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = E638307AA30F475097321D79 /* ldebug.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E5D02022ECF746B581CC0AA2 /* l_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97106714CE3742D38E2B2A66 /* l_inventory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E6EDA9B3FAC14FD0AC8C8565 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = 58D4B0AE38CC4AFDA4BC9B5C /* lbaselib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E79BA90F4AB843E29EED8784 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A70E67A40108468E98568BF4 /* test.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E7D5ADCD639841E6941796A2 /* content_mapnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70D165D9A86E4392B6B50BBC /* content_mapnode.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E82EBF5B38624EDE9D4111E6 /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 119DD7F08B12438CBBB11838 /* string.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E8ABB8C315174424ADB3B816 /* l_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0517C1B1582439FAF973D1D /* l_util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E8FD264AC4C8428D8BD1B14D /* database-sqlite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C633258BC04261A2D25C26 /* database-sqlite3.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EB4D669589BB443DBB9D87E3 /* l_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7361A530BE143EC914A5B4B /* l_settings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EB85F962440B43F387D0BCE3 /* guiEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3F71AE232FF492FBD00AE1B /* guiEngine.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EBAF90686D3340849B1D1D42 /* database-dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C0A4964494105B1A10179 /* database-dummy.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EBE66B0A5266493689D0D247 /* l_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08B00EF7BE924BE38875955F /* l_server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EEFCC7E92FCD43D9ACAE4F11 /* staticobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C37A0016A174E2582BF0071 /* staticobject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EF51B51CE4474066A02F7F30 /* sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E21A2DCB3844F68E887D61 /* sound.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EF75ACF660BE47F88E1EEFD1 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30A198F1D7094FAEB2FC615C /* debug.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F1EE40EF0388407A804C91F5 /* nodemetadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE8532F045E4C588348C85E /* nodemetadata.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F42C12ED8A254FFD831A9C69 /* rollback_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 030AD13189944142B015CD01 /* rollback_interface.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F48B008BF2E344EC86315EB0 /* s_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205216CB40DD4862BE935E5D /* s_server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F58CEB6FEA334CF29755C15B /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E2D4E4D3CAB4A78904993E7 /* lstrlib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F7E4AB6D736A43C4AED3C786 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = A8F568490D274674B9150162 /* ltablib.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F89CB2CA643742F19E36675A /* guiTextInputMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284EBDB301064E8791377046 /* guiTextInputMenu.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F99DDED61BC84D4FBFEAECB7 /* biome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB60E2A6BC5C43F99EE44B49 /* biome.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FB182BB9FDAE4132B175C74F /* sound_openal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D67010766B2745ACA5891E0B /* sound_openal.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FC10C5DB985842E683FFB186 /* defaultsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F0AA4850044EEBE8B4A24 /* defaultsettings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FD0FC50AD78A43479F22F029 /* s_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205216CB40DD4862BE935E5D /* s_server.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FF83B168A00C4BDDB5F715D1 /* l_vmanip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E0D6D8176491D8B9F5FD4 /* l_vmanip.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AC8E5BA7A4A4BCD8527E52C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C57E5EE58C24CFFA8826999;
+			remoteInfo = ZERO_CHECK;
+		};
+		12C0E7DC984B4EB1BB3A3093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DFAA62CCBAC45879B5D31A5;
+			remoteInfo = lua;
+		};
+		282933151317464C839F7514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CBEC9F5C5B42349ACE3BDD;
+			remoteInfo = ALL_BUILD;
+		};
+		720143F7A4F94EAD85AAE959 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FC9140D2C3F43E5954D0DED;
+			remoteInfo = minetest;
+		};
+		AC7FB8BCEEF64C5BA848F026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93A817284635427F8700AF20;
+			remoteInfo = jsoncpp;
+		};
+		BE88B33BADBD4723A7057EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500F2A47F91740EEBC5C3449;
+			remoteInfo = jthread;
+		};
+		ECA34D4AD89A447C840D6FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29957A90FCBA42C9892C7151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F340278E633440CBC9BC755;
+			remoteInfo = minetestserver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005B0F0FDE32469383E6CF78 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ldo.c; path = src/lua/src/ldo.c; sourceTree = SOURCE_ROOT; };
+		0158203C43E8412BB254954D /* ltable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ltable.c; path = src/lua/src/ltable.c; sourceTree = SOURCE_ROOT; };
+		030AD13189944142B015CD01 /* rollback_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rollback_interface.cpp; path = src/rollback_interface.cpp; sourceTree = SOURCE_ROOT; };
+		04223472E4C242E78F9236D3 /* itemdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = itemdef.cpp; path = src/itemdef.cpp; sourceTree = SOURCE_ROOT; };
+		05D2E49325494DFE8D1D967A /* mapgen_v7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen_v7.cpp; path = src/mapgen_v7.cpp; sourceTree = SOURCE_ROOT; };
+		06528E10204F413CB6C7AB04 /* content_cso.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_cso.cpp; path = src/content_cso.cpp; sourceTree = SOURCE_ROOT; };
+		070303336BC84D2C898A04AF /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzio.c; path = src/lua/src/lzio.c; sourceTree = SOURCE_ROOT; };
+		08B00EF7BE924BE38875955F /* l_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_server.cpp; path = src/script/lua_api/l_server.cpp; sourceTree = SOURCE_ROOT; };
+		0A67DC6A5F534416B7063547 /* quicktune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quicktune.cpp; path = src/quicktune.cpp; sourceTree = SOURCE_ROOT; };
+		0BD915BE28554DFDB0D51801 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/jthread/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0D339B9FE6F64B21AB645C19 /* noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = noise.cpp; path = src/noise.cpp; sourceTree = SOURCE_ROOT; };
+		0DB65A393C084B5CB1BD60A9 /* libjthread.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjthread.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB76B9A512042DABAAC1273 /* mapsector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapsector.cpp; path = src/mapsector.cpp; sourceTree = SOURCE_ROOT; };
+		0E0E2F48DAF24272A1E980C2 /* numeric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = numeric.cpp; path = src/util/numeric.cpp; sourceTree = SOURCE_ROOT; };
+		0EA7EC5FED02474B8EDEBE5B /* lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lundump.c; path = src/lua/src/lundump.c; sourceTree = SOURCE_ROOT; };
+		106A9AFE28C846D992867FF4 /* minetestserver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = minetestserver; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C95832DC6D433586FA698B /* clientmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clientmap.cpp; path = src/clientmap.cpp; sourceTree = SOURCE_ROOT; };
+		119DD7F08B12438CBBB11838 /* string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string.cpp; path = src/util/string.cpp; sourceTree = SOURCE_ROOT; };
+		14961089091C4A5B9538376F /* lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lvm.c; path = src/lua/src/lvm.c; sourceTree = SOURCE_ROOT; };
+		1779F02613D140A48CD55D4C /* l_env.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_env.cpp; path = src/script/lua_api/l_env.cpp; sourceTree = SOURCE_ROOT; };
+		17B3EC58B13B4CE7BF8F50FA /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server.cpp; path = src/server.cpp; sourceTree = SOURCE_ROOT; };
+		186362D71DD2489B91F74917 /* lgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lgc.c; path = src/lua/src/lgc.c; sourceTree = SOURCE_ROOT; };
+		1C31D35570AB4FB0B3850D37 /* guiPasswordChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiPasswordChange.cpp; path = src/guiPasswordChange.cpp; sourceTree = SOURCE_ROOT; };
+		1C37A0016A174E2582BF0071 /* staticobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = staticobject.cpp; path = src/staticobject.cpp; sourceTree = SOURCE_ROOT; };
+		1D7BC0C0044C439FAE069CBE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		205216CB40DD4862BE935E5D /* s_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_server.cpp; path = src/script/cpp_api/s_server.cpp; sourceTree = SOURCE_ROOT; };
+		247987944AEC464EA597275A /* tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tile.cpp; path = src/tile.cpp; sourceTree = SOURCE_ROOT; };
+		2503AC28764D428BB85E0566 /* s_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_base.cpp; path = src/script/cpp_api/s_base.cpp; sourceTree = SOURCE_ROOT; };
+		259CC3511AA04A58B9217EBC /* l_noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_noise.cpp; path = src/script/lua_api/l_noise.cpp; sourceTree = SOURCE_ROOT; };
+		284EBDB301064E8791377046 /* guiTextInputMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiTextInputMenu.cpp; path = src/guiTextInputMenu.cpp; sourceTree = SOURCE_ROOT; };
+		28986B585F774A8DBD021448 /* keycode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keycode.cpp; path = src/keycode.cpp; sourceTree = SOURCE_ROOT; };
+		290AA73137BF409B9374AD5E /* mapblock_mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapblock_mesh.cpp; path = src/mapblock_mesh.cpp; sourceTree = SOURCE_ROOT; };
+		29B4A8E6AF594387AC3B6549 /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = map.cpp; path = src/map.cpp; sourceTree = SOURCE_ROOT; };
+		29BD0BEA2FDD49F8903B9AB9 /* s_entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_entity.cpp; path = src/script/cpp_api/s_entity.cpp; sourceTree = SOURCE_ROOT; };
+		2CFD4E48CCC54D89BDDC6EBE /* loslib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loslib.c; path = src/lua/src/loslib.c; sourceTree = SOURCE_ROOT; };
+		2D58D7EC18BF42E4AE4BE2BA /* l_rollback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_rollback.cpp; path = src/script/lua_api/l_rollback.cpp; sourceTree = SOURCE_ROOT; };
+		2E2D4E4D3CAB4A78904993E7 /* lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lstrlib.c; path = src/lua/src/lstrlib.c; sourceTree = SOURCE_ROOT; };
+		2E2D6D89D3A84588864F9597 /* libjsoncpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjsoncpp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD2DBCFC2B349C9BA5B2164 /* mapnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapnode.cpp; path = src/mapnode.cpp; sourceTree = SOURCE_ROOT; };
+		30A198F1D7094FAEB2FC615C /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debug.cpp; path = src/debug.cpp; sourceTree = SOURCE_ROOT; };
+		31FA00E2C08D48C09CFE09B7 /* convert_json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = convert_json.cpp; path = src/convert_json.cpp; sourceTree = SOURCE_ROOT; };
+		3259E5DB3099438A91DC16BD /* s_env.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_env.cpp; path = src/script/cpp_api/s_env.cpp; sourceTree = SOURCE_ROOT; };
+		34A13B21222F45DDBA6C1484 /* l_nodetimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_nodetimer.cpp; path = src/script/lua_api/l_nodetimer.cpp; sourceTree = SOURCE_ROOT; };
+		397D15651028420D837C74DE /* sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha1.cpp; path = src/sha1.cpp; sourceTree = SOURCE_ROOT; };
+		3A9E0D6D8176491D8B9F5FD4 /* l_vmanip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_vmanip.cpp; path = src/script/lua_api/l_vmanip.cpp; sourceTree = SOURCE_ROOT; };
+		3B9E39B60E464024879C7B6E /* pathfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pathfinder.cpp; path = src/pathfinder.cpp; sourceTree = SOURCE_ROOT; };
+		3C6FD2FCC0B24CB19D57FA26 /* guiPauseMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiPauseMenu.cpp; path = src/guiPauseMenu.cpp; sourceTree = SOURCE_ROOT; };
+		3EACD393E5954A9FA29A6C4E /* minetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = minetest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F785C9484964C3293ECF610 /* scripting_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scripting_game.cpp; path = src/script/scripting_game.cpp; sourceTree = SOURCE_ROOT; };
+		40ACD9F6567343DF8CB9A143 /* s_node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_node.cpp; path = src/script/cpp_api/s_node.cpp; sourceTree = SOURCE_ROOT; };
+		40DC861BE3854C20A2DD0FDC /* l_item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_item.cpp; path = src/script/lua_api/l_item.cpp; sourceTree = SOURCE_ROOT; };
+		41ECECDEB4C942DB968D697F /* c_content.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = c_content.cpp; path = src/script/common/c_content.cpp; sourceTree = SOURCE_ROOT; };
+		43A87BC079DE493089CA672E /* s_nodemeta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_nodemeta.cpp; path = src/script/cpp_api/s_nodemeta.cpp; sourceTree = SOURCE_ROOT; };
+		43D3ECD0B1864C5CAA7217EF /* ban.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ban.cpp; path = src/ban.cpp; sourceTree = SOURCE_ROOT; };
+		45255481244149B5AD9ED519 /* lmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lmem.c; path = src/lua/src/lmem.c; sourceTree = SOURCE_ROOT; };
+		45C0463602C8475CB389659C /* content_mapblock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_mapblock.cpp; path = src/content_mapblock.cpp; sourceTree = SOURCE_ROOT; };
+		467F9E4121E6439F8E38F415 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base64.cpp; path = src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		47C71F756F2541AFB506B30A /* directiontables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = directiontables.cpp; path = src/util/directiontables.cpp; sourceTree = SOURCE_ROOT; };
+		4E602B5062274DF1867C5EF8 /* connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = connection.cpp; path = src/connection.cpp; sourceTree = SOURCE_ROOT; };
+		5145F457FF2E428CB5D2A28E /* c_converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = c_converter.cpp; path = src/script/common/c_converter.cpp; sourceTree = SOURCE_ROOT; };
+		515C76DF1A8D4CCF97670F80 /* guiChatConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiChatConsole.cpp; path = src/guiChatConsole.cpp; sourceTree = SOURCE_ROOT; };
+		532F2B515F8F48AAB5EBB6A5 /* light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light.cpp; path = src/light.cpp; sourceTree = SOURCE_ROOT; };
+		56C003BF256F490F9A7D7481 /* l_mapgen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_mapgen.cpp; path = src/script/lua_api/l_mapgen.cpp; sourceTree = SOURCE_ROOT; };
+		583FC501CC67402AA81DB864 /* s_inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_inventory.cpp; path = src/script/cpp_api/s_inventory.cpp; sourceTree = SOURCE_ROOT; };
+		58D4B0AE38CC4AFDA4BC9B5C /* lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lbaselib.c; path = src/lua/src/lbaselib.c; sourceTree = SOURCE_ROOT; };
+		59D065F8520E4EBC88F698FD /* content_cao.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_cao.cpp; path = src/content_cao.cpp; sourceTree = SOURCE_ROOT; };
+		5ABF18BE25474BC6BBB33013 /* guiDeathScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiDeathScreen.cpp; path = src/guiDeathScreen.cpp; sourceTree = SOURCE_ROOT; };
+		5D79303BCC844F4F975DF0B6 /* nodedef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nodedef.cpp; path = src/nodedef.cpp; sourceTree = SOURCE_ROOT; };
+		6455E6FEB20F404BBA63DDF4 /* s_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_player.cpp; path = src/script/cpp_api/s_player.cpp; sourceTree = SOURCE_ROOT; };
+		65456B3B552E4E0E8CC5ABC1 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/json/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		67C633258BC04261A2D25C26 /* database-sqlite3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "database-sqlite3.cpp"; path = "src/database-sqlite3.cpp"; sourceTree = SOURCE_ROOT; };
+		6B097CCFCCF147D19869CD45 /* mods.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mods.cpp; path = src/mods.cpp; sourceTree = SOURCE_ROOT; };
+		6B2E09BC144A42AF8FA46AE1 /* linit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = linit.c; path = src/lua/src/linit.c; sourceTree = SOURCE_ROOT; };
+		6B68A3DFEDB947A3A00B8AEA /* content_abm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_abm.cpp; path = src/content_abm.cpp; sourceTree = SOURCE_ROOT; };
+		6CFAB076AF384E8C8DFDF404 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = log.cpp; path = src/log.cpp; sourceTree = SOURCE_ROOT; };
+		6DE99EBD698D4A6C98BD2B94 /* lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lauxlib.c; path = src/lua/src/lauxlib.c; sourceTree = SOURCE_ROOT; };
+		6E2F0AA4850044EEBE8B4A24 /* defaultsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = defaultsettings.cpp; path = src/defaultsettings.cpp; sourceTree = SOURCE_ROOT; };
+		6F43F4599A7B43E5964ECA6B /* rollback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rollback.cpp; path = src/rollback.cpp; sourceTree = SOURCE_ROOT; };
+		701DE1F2356442C584035279 /* loadlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loadlib.c; path = src/lua/src/loadlib.c; sourceTree = SOURCE_ROOT; };
+		70D165D9A86E4392B6B50BBC /* content_mapnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_mapnode.cpp; path = src/content_mapnode.cpp; sourceTree = SOURCE_ROOT; };
+		74E21A2DCB3844F68E887D61 /* sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sound.cpp; path = src/sound.cpp; sourceTree = SOURCE_ROOT; };
+		756889B65E10401582772255 /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsoncpp.cpp; path = src/json/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
+		75E7B067AC35414DB19682F6 /* inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inventory.cpp; path = src/inventory.cpp; sourceTree = SOURCE_ROOT; };
+		76A89A9517604595A6A8051A /* porting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = porting.cpp; path = src/porting.cpp; sourceTree = SOURCE_ROOT; };
+		7C0C0A4964494105B1A10179 /* database-dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "database-dummy.cpp"; path = "src/database-dummy.cpp"; sourceTree = SOURCE_ROOT; };
+		7E325D8430464372BEB92434 /* environment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = environment.cpp; path = src/environment.cpp; sourceTree = SOURCE_ROOT; };
+		7E7C39C835D1413B8EB15279 /* ldblib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ldblib.c; path = src/lua/src/ldblib.c; sourceTree = SOURCE_ROOT; };
+		85F1A621F99A4579B80FC277 /* c_internal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = c_internal.cpp; path = src/script/common/c_internal.cpp; sourceTree = SOURCE_ROOT; };
+		86F0BFC4C6BA4C7A8692B555 /* serverlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serverlist.cpp; path = src/serverlist.cpp; sourceTree = SOURCE_ROOT; };
+		86F1171C0FF643DE9621590F /* mapblock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapblock.cpp; path = src/mapblock.cpp; sourceTree = SOURCE_ROOT; };
+		88B9E88FFF6B436BA220B9D0 /* lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lstate.c; path = src/lua/src/lstate.c; sourceTree = SOURCE_ROOT; };
+		88DE7785DC8C421FB87342D4 /* serialize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serialize.cpp; path = src/util/serialize.cpp; sourceTree = SOURCE_ROOT; };
+		8998D282A30B466D9625020F /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = src/game.cpp; sourceTree = SOURCE_ROOT; };
+		89FA184A28A445D694F5A468 /* voxel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = voxel.cpp; path = src/voxel.cpp; sourceTree = SOURCE_ROOT; };
+		8A37630CEE3F4091A3027503 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = src/shader.cpp; sourceTree = SOURCE_ROOT; };
+		8C2B576F92264B798B853DCA /* mapgen_v6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen_v6.cpp; path = src/mapgen_v6.cpp; sourceTree = SOURCE_ROOT; };
+		8D647C680F674BE38576DFC4 /* nameidmapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nameidmapping.cpp; path = src/nameidmapping.cpp; sourceTree = SOURCE_ROOT; };
+		8E25B5D9EA0341BE8A398542 /* l_nodemeta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_nodemeta.cpp; path = src/script/lua_api/l_nodemeta.cpp; sourceTree = SOURCE_ROOT; };
+		8E866A16A5BB41A7830F57E2 /* lopcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lopcodes.c; path = src/lua/src/lopcodes.c; sourceTree = SOURCE_ROOT; };
+		8FDAB4DF27324A6090B97B5D /* lparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lparser.c; path = src/lua/src/lparser.c; sourceTree = SOURCE_ROOT; };
+		90BB2EF527CF40D2ACE106A3 /* lcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lcode.c; path = src/lua/src/lcode.c; sourceTree = SOURCE_ROOT; };
+		9169F54D77A5470B96F1A393 /* object_properties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object_properties.cpp; path = src/object_properties.cpp; sourceTree = SOURCE_ROOT; };
+		93EC267B76A14B9BB2D09F9F /* particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particles.cpp; path = src/particles.cpp; sourceTree = SOURCE_ROOT; };
+		950C8F832E754ECE8602F91C /* guiKeyChangeMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiKeyChangeMenu.cpp; path = src/guiKeyChangeMenu.cpp; sourceTree = SOURCE_ROOT; };
+		97106714CE3742D38E2B2A66 /* l_inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_inventory.cpp; path = src/script/lua_api/l_inventory.cpp; sourceTree = SOURCE_ROOT; };
+		975A3F5665344D9793C4E0AB /* pointedthing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pointedthing.cpp; path = src/util/pointedthing.cpp; sourceTree = SOURCE_ROOT; };
+		98639186F05A4FD08AFF7DE7 /* l_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_base.cpp; path = src/script/lua_api/l_base.cpp; sourceTree = SOURCE_ROOT; };
+		98E87C2DE5364E779A560C69 /* nodetimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nodetimer.cpp; path = src/nodetimer.cpp; sourceTree = SOURCE_ROOT; };
+		9A193DC40D874D189ADDB8FC /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/lua/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9B1C88A9178B46D7AFA5DC48 /* genericobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = genericobject.cpp; path = src/genericobject.cpp; sourceTree = SOURCE_ROOT; };
+		9E0BF02E467C42CAA10B7565 /* l_particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_particles.cpp; path = src/script/lua_api/l_particles.cpp; sourceTree = SOURCE_ROOT; };
+		9E351D61072249E2968456A0 /* lfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lfunc.c; path = src/lua/src/lfunc.c; sourceTree = SOURCE_ROOT; };
+		A191A3892F5D4E44913C6509 /* filesys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filesys.cpp; path = src/filesys.cpp; sourceTree = SOURCE_ROOT; };
+		A241A7D3CECC487AA051880A /* guiVolumeChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiVolumeChange.cpp; path = src/guiVolumeChange.cpp; sourceTree = SOURCE_ROOT; };
+		A4A22D4CB4BD48D888EF1D6E /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F99BD035684F85980AB7B4 /* treegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = treegen.cpp; path = src/treegen.cpp; sourceTree = SOURCE_ROOT; };
+		A70E67A40108468E98568BF4 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = src/test.cpp; sourceTree = SOURCE_ROOT; };
+		A71E1E3967C74C9CAD43C458 /* dungeongen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dungeongen.cpp; path = src/dungeongen.cpp; sourceTree = SOURCE_ROOT; };
+		A8F568490D274674B9150162 /* ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ltablib.c; path = src/lua/src/ltablib.c; sourceTree = SOURCE_ROOT; };
+		A967A4FAC6444FE2868A877E /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lapi.c; path = src/lua/src/lapi.c; sourceTree = SOURCE_ROOT; };
+		AAE8532F045E4C588348C85E /* nodemetadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nodemetadata.cpp; path = src/nodemetadata.cpp; sourceTree = SOURCE_ROOT; };
+		AB54EEFBD2434EFF9105CC46 /* s_item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_item.cpp; path = src/script/cpp_api/s_item.cpp; sourceTree = SOURCE_ROOT; };
+		ACEA84DEF4E14BCFB671E303 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		AE628B1A5FD0464D9467C710 /* inventorymanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inventorymanager.cpp; path = src/inventorymanager.cpp; sourceTree = SOURCE_ROOT; };
+		AF1FDB58AAFF4533B6D57717 /* chat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chat.cpp; path = src/chat.cpp; sourceTree = SOURCE_ROOT; };
+		AFA2A18FAC664CB495A8BDF5 /* l_mainmenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_mainmenu.cpp; path = src/script/lua_api/l_mainmenu.cpp; sourceTree = SOURCE_ROOT; };
+		B0517C1B1582439FAF973D1D /* l_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_util.cpp; path = src/script/lua_api/l_util.cpp; sourceTree = SOURCE_ROOT; };
+		B0CA79FD8B8E446F8E4BD04D /* liolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = liolib.c; path = src/lua/src/liolib.c; sourceTree = SOURCE_ROOT; };
+		B24E1F38EF3D474580327CA5 /* guiFormSpecMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiFormSpecMenu.cpp; path = src/guiFormSpecMenu.cpp; sourceTree = SOURCE_ROOT; };
+		B3BD48FD8EDA43369F80C449 /* mapgen_indev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen_indev.cpp; path = src/mapgen_indev.cpp; sourceTree = SOURCE_ROOT; };
+		B42C989BC8A347FA8E14D3D8 /* localplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = localplayer.cpp; path = src/localplayer.cpp; sourceTree = SOURCE_ROOT; };
+		B7807FD07035408FB5926551 /* s_mainmenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = s_mainmenu.cpp; path = src/script/cpp_api/s_mainmenu.cpp; sourceTree = SOURCE_ROOT; };
+		BC6D2C0D70FB450FAD981D25 /* voxelalgorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = voxelalgorithms.cpp; path = src/voxelalgorithms.cpp; sourceTree = SOURCE_ROOT; };
+		BC97C6C52F2B4F01A7043249 /* content_nodemeta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_nodemeta.cpp; path = src/content_nodemeta.cpp; sourceTree = SOURCE_ROOT; };
+		BD46A5AC7C144FD28282B47E /* collision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = collision.cpp; path = src/collision.cpp; sourceTree = SOURCE_ROOT; };
+		BD5DE98D3B6943D7B22A8BDD /* mapgen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen.cpp; path = src/mapgen.cpp; sourceTree = SOURCE_ROOT; };
+		BDBF7051861A4A23A545349F /* mapgen_singlenode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen_singlenode.cpp; path = src/mapgen_singlenode.cpp; sourceTree = SOURCE_ROOT; };
+		C2BC9F2E8BDE4668AF0E192B /* subgame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = subgame.cpp; path = src/subgame.cpp; sourceTree = SOURCE_ROOT; };
+		C337BF77D389447193F2201D /* filecache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filecache.cpp; path = src/filecache.cpp; sourceTree = SOURCE_ROOT; };
+		C442757F0497413F9211DCF7 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C4ADFC70156641949A8B7090 /* lobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lobject.c; path = src/lua/src/lobject.c; sourceTree = SOURCE_ROOT; };
+		C5EB7D364C6242059449AB40 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = src/player.cpp; sourceTree = SOURCE_ROOT; };
+		C636E12310D247EE9F9D25C7 /* mapgen_math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mapgen_math.cpp; path = src/mapgen_math.cpp; sourceTree = SOURCE_ROOT; };
+		C788A20F875C4F2789B04077 /* jmutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jmutex.cpp; path = src/jthread/pthread/jmutex.cpp; sourceTree = SOURCE_ROOT; };
+		C8894136E54B412B8107DD2C /* tool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tool.cpp; path = src/tool.cpp; sourceTree = SOURCE_ROOT; };
+		C8F9857898F941EE81352A0B /* lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lstring.c; path = src/lua/src/lstring.c; sourceTree = SOURCE_ROOT; };
+		C96AF23EDD6846068B726E2C /* craftdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = craftdef.cpp; path = src/craftdef.cpp; sourceTree = SOURCE_ROOT; };
+		C9B86A0FF81B4453AA659525 /* lmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lmathlib.c; path = src/lua/src/lmathlib.c; sourceTree = SOURCE_ROOT; };
+		CB085CC919E04DBA8F5767F2 /* ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ldump.c; path = src/lua/src/ldump.c; sourceTree = SOURCE_ROOT; };
+		CB60E2A6BC5C43F99EE44B49 /* biome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = biome.cpp; path = src/biome.cpp; sourceTree = SOURCE_ROOT; };
+		CC2B64085AAB482E9BA67B24 /* timetaker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timetaker.cpp; path = src/util/timetaker.cpp; sourceTree = SOURCE_ROOT; };
+		CCDC6787CE754886922BA70C /* socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = socket.cpp; path = src/socket.cpp; sourceTree = SOURCE_ROOT; };
+		CD2D27593A5E4B8C8ADAC26C /* cavegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cavegen.cpp; path = src/cavegen.cpp; sourceTree = SOURCE_ROOT; };
+		CD3987FD5AFE4B2491EC35BF /* content_sao.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = content_sao.cpp; path = src/content_sao.cpp; sourceTree = SOURCE_ROOT; };
+		CE477EDFD2D44C21969138DD /* scripting_mainmenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scripting_mainmenu.cpp; path = src/script/scripting_mainmenu.cpp; sourceTree = SOURCE_ROOT; };
+		CF9CB3EC61234CF5A2D7F178 /* database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = database.cpp; path = src/database.cpp; sourceTree = SOURCE_ROOT; };
+		CF9D52E04C944D34A18E4358 /* database-leveldb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "database-leveldb.cpp"; path = "src/database-leveldb.cpp"; sourceTree = SOURCE_ROOT; };
+		D291908B4E7B483A9D371FFA /* l_object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_object.cpp; path = src/script/lua_api/l_object.cpp; sourceTree = SOURCE_ROOT; };
+		D4590058D1D5491792BCADED /* clouds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clouds.cpp; path = src/clouds.cpp; sourceTree = SOURCE_ROOT; };
+		D67010766B2745ACA5891E0B /* sound_openal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sound_openal.cpp; path = src/sound_openal.cpp; sourceTree = SOURCE_ROOT; };
+		D7361A530BE143EC914A5B4B /* l_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_settings.cpp; path = src/script/lua_api/l_settings.cpp; sourceTree = SOURCE_ROOT; };
+		D74A1203203E43D18E3D75FB /* llex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = llex.c; path = src/lua/src/llex.c; sourceTree = SOURCE_ROOT; };
+		D9F995D9680947608F1D21B9 /* l_craft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = l_craft.cpp; path = src/script/lua_api/l_craft.cpp; sourceTree = SOURCE_ROOT; };
+		DC87A7CB4C024095A65D5ED3 /* emerge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emerge.cpp; path = src/emerge.cpp; sourceTree = SOURCE_ROOT; };
+		DF56BE0278864370B28A5C86 /* clientobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clientobject.cpp; path = src/clientobject.cpp; sourceTree = SOURCE_ROOT; };
+		DFDB3F52DBDC450EB915D165 /* guiMessageMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiMessageMenu.cpp; path = src/guiMessageMenu.cpp; sourceTree = SOURCE_ROOT; };
+		DFE1EE517C2E45A78DC70E43 /* ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ltm.c; path = src/lua/src/ltm.c; sourceTree = SOURCE_ROOT; };
+		E638307AA30F475097321D79 /* ldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ldebug.c; path = src/lua/src/ldebug.c; sourceTree = SOURCE_ROOT; };
+		E65F4608B8D14E83AD921CD7 /* sky.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sky.cpp; path = src/sky.cpp; sourceTree = SOURCE_ROOT; };
+		EC1AA68DAE774FB6925081C5 /* jthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jthread.cpp; path = src/jthread/pthread/jthread.cpp; sourceTree = SOURCE_ROOT; };
+		EC7EAAE40AE24B629A94B94E /* guiFileSelectMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiFileSelectMenu.cpp; path = src/guiFileSelectMenu.cpp; sourceTree = SOURCE_ROOT; };
+		EC97065D8A3C43B7B17E4B34 /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mesh.cpp; path = src/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		EEA84DA411384491B5D7CF77 /* c_types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = c_types.cpp; path = src/script/common/c_types.cpp; sourceTree = SOURCE_ROOT; };
+		EF0711CA4CA84AD8B04BBE91 /* client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = client.cpp; path = src/client.cpp; sourceTree = SOURCE_ROOT; };
+		EF60754CB7E44CA2979F65E0 /* serialization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serialization.cpp; path = src/serialization.cpp; sourceTree = SOURCE_ROOT; };
+		F3F71AE232FF492FBD00AE1B /* guiEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guiEngine.cpp; path = src/guiEngine.cpp; sourceTree = SOURCE_ROOT; };
+		F727DAA795894B91888DFFC4 /* hud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hud.cpp; path = src/hud.cpp; sourceTree = SOURCE_ROOT; };
+		F76619C958BE49AD98296AB6 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		F84F3C2386FD4D63A508922A /* serverobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serverobject.cpp; path = src/serverobject.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		072BA6E850704403B21B2123 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				41ECECDEB4C942DB968D697F /* c_content.cpp */,
+				5145F457FF2E428CB5D2A28E /* c_converter.cpp */,
+				85F1A621F99A4579B80FC277 /* c_internal.cpp */,
+				EEA84DA411384491B5D7CF77 /* c_types.cpp */,
+				2503AC28764D428BB85E0566 /* s_base.cpp */,
+				29BD0BEA2FDD49F8903B9AB9 /* s_entity.cpp */,
+				3259E5DB3099438A91DC16BD /* s_env.cpp */,
+				583FC501CC67402AA81DB864 /* s_inventory.cpp */,
+				AB54EEFBD2434EFF9105CC46 /* s_item.cpp */,
+				40ACD9F6567343DF8CB9A143 /* s_node.cpp */,
+				43A87BC079DE493089CA672E /* s_nodemeta.cpp */,
+				6455E6FEB20F404BBA63DDF4 /* s_player.cpp */,
+				205216CB40DD4862BE935E5D /* s_server.cpp */,
+				98639186F05A4FD08AFF7DE7 /* l_base.cpp */,
+				D9F995D9680947608F1D21B9 /* l_craft.cpp */,
+				1779F02613D140A48CD55D4C /* l_env.cpp */,
+				97106714CE3742D38E2B2A66 /* l_inventory.cpp */,
+				40DC861BE3854C20A2DD0FDC /* l_item.cpp */,
+				56C003BF256F490F9A7D7481 /* l_mapgen.cpp */,
+				8E25B5D9EA0341BE8A398542 /* l_nodemeta.cpp */,
+				34A13B21222F45DDBA6C1484 /* l_nodetimer.cpp */,
+				259CC3511AA04A58B9217EBC /* l_noise.cpp */,
+				D291908B4E7B483A9D371FFA /* l_object.cpp */,
+				9E0BF02E467C42CAA10B7565 /* l_particles.cpp */,
+				2D58D7EC18BF42E4AE4BE2BA /* l_rollback.cpp */,
+				08B00EF7BE924BE38875955F /* l_server.cpp */,
+				D7361A530BE143EC914A5B4B /* l_settings.cpp */,
+				B0517C1B1582439FAF973D1D /* l_util.cpp */,
+				3A9E0D6D8176491D8B9F5FD4 /* l_vmanip.cpp */,
+				3F785C9484964C3293ECF610 /* scripting_game.cpp */,
+				47C71F756F2541AFB506B30A /* directiontables.cpp */,
+				0E0E2F48DAF24272A1E980C2 /* numeric.cpp */,
+				975A3F5665344D9793C4E0AB /* pointedthing.cpp */,
+				88DE7785DC8C421FB87342D4 /* serialize.cpp */,
+				119DD7F08B12438CBBB11838 /* string.cpp */,
+				CC2B64085AAB482E9BA67B24 /* timetaker.cpp */,
+				43D3ECD0B1864C5CAA7217EF /* ban.cpp */,
+				467F9E4121E6439F8E38F415 /* base64.cpp */,
+				CB60E2A6BC5C43F99EE44B49 /* biome.cpp */,
+				CD2D27593A5E4B8C8ADAC26C /* cavegen.cpp */,
+				BD46A5AC7C144FD28282B47E /* collision.cpp */,
+				4E602B5062274DF1867C5EF8 /* connection.cpp */,
+				6B68A3DFEDB947A3A00B8AEA /* content_abm.cpp */,
+				70D165D9A86E4392B6B50BBC /* content_mapnode.cpp */,
+				BC97C6C52F2B4F01A7043249 /* content_nodemeta.cpp */,
+				CD3987FD5AFE4B2491EC35BF /* content_sao.cpp */,
+				31FA00E2C08D48C09CFE09B7 /* convert_json.cpp */,
+				C96AF23EDD6846068B726E2C /* craftdef.cpp */,
+				7C0C0A4964494105B1A10179 /* database-dummy.cpp */,
+				CF9D52E04C944D34A18E4358 /* database-leveldb.cpp */,
+				67C633258BC04261A2D25C26 /* database-sqlite3.cpp */,
+				CF9CB3EC61234CF5A2D7F178 /* database.cpp */,
+				30A198F1D7094FAEB2FC615C /* debug.cpp */,
+				6E2F0AA4850044EEBE8B4A24 /* defaultsettings.cpp */,
+				A71E1E3967C74C9CAD43C458 /* dungeongen.cpp */,
+				DC87A7CB4C024095A65D5ED3 /* emerge.cpp */,
+				7E325D8430464372BEB92434 /* environment.cpp */,
+				A191A3892F5D4E44913C6509 /* filesys.cpp */,
+				9B1C88A9178B46D7AFA5DC48 /* genericobject.cpp */,
+				75E7B067AC35414DB19682F6 /* inventory.cpp */,
+				AE628B1A5FD0464D9467C710 /* inventorymanager.cpp */,
+				04223472E4C242E78F9236D3 /* itemdef.cpp */,
+				532F2B515F8F48AAB5EBB6A5 /* light.cpp */,
+				6CFAB076AF384E8C8DFDF404 /* log.cpp */,
+				ACEA84DEF4E14BCFB671E303 /* main.cpp */,
+				29B4A8E6AF594387AC3B6549 /* map.cpp */,
+				86F1171C0FF643DE9621590F /* mapblock.cpp */,
+				BD5DE98D3B6943D7B22A8BDD /* mapgen.cpp */,
+				B3BD48FD8EDA43369F80C449 /* mapgen_indev.cpp */,
+				C636E12310D247EE9F9D25C7 /* mapgen_math.cpp */,
+				BDBF7051861A4A23A545349F /* mapgen_singlenode.cpp */,
+				8C2B576F92264B798B853DCA /* mapgen_v6.cpp */,
+				05D2E49325494DFE8D1D967A /* mapgen_v7.cpp */,
+				2FD2DBCFC2B349C9BA5B2164 /* mapnode.cpp */,
+				0DB76B9A512042DABAAC1273 /* mapsector.cpp */,
+				6B097CCFCCF147D19869CD45 /* mods.cpp */,
+				8D647C680F674BE38576DFC4 /* nameidmapping.cpp */,
+				5D79303BCC844F4F975DF0B6 /* nodedef.cpp */,
+				AAE8532F045E4C588348C85E /* nodemetadata.cpp */,
+				98E87C2DE5364E779A560C69 /* nodetimer.cpp */,
+				0D339B9FE6F64B21AB645C19 /* noise.cpp */,
+				9169F54D77A5470B96F1A393 /* object_properties.cpp */,
+				3B9E39B60E464024879C7B6E /* pathfinder.cpp */,
+				C5EB7D364C6242059449AB40 /* player.cpp */,
+				76A89A9517604595A6A8051A /* porting.cpp */,
+				0A67DC6A5F534416B7063547 /* quicktune.cpp */,
+				6F43F4599A7B43E5964ECA6B /* rollback.cpp */,
+				030AD13189944142B015CD01 /* rollback_interface.cpp */,
+				EF60754CB7E44CA2979F65E0 /* serialization.cpp */,
+				17B3EC58B13B4CE7BF8F50FA /* server.cpp */,
+				86F0BFC4C6BA4C7A8692B555 /* serverlist.cpp */,
+				F84F3C2386FD4D63A508922A /* serverobject.cpp */,
+				397D15651028420D837C74DE /* sha1.cpp */,
+				CCDC6787CE754886922BA70C /* socket.cpp */,
+				74E21A2DCB3844F68E887D61 /* sound.cpp */,
+				1C37A0016A174E2582BF0071 /* staticobject.cpp */,
+				C2BC9F2E8BDE4668AF0E192B /* subgame.cpp */,
+				A70E67A40108468E98568BF4 /* test.cpp */,
+				C8894136E54B412B8107DD2C /* tool.cpp */,
+				A5F99BD035684F85980AB7B4 /* treegen.cpp */,
+				89FA184A28A445D694F5A468 /* voxel.cpp */,
+				BC6D2C0D70FB450FAD981D25 /* voxelalgorithms.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		18FB4F3B319A40E9854D33B0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A967A4FAC6444FE2868A877E /* lapi.c */,
+				6DE99EBD698D4A6C98BD2B94 /* lauxlib.c */,
+				58D4B0AE38CC4AFDA4BC9B5C /* lbaselib.c */,
+				90BB2EF527CF40D2ACE106A3 /* lcode.c */,
+				7E7C39C835D1413B8EB15279 /* ldblib.c */,
+				E638307AA30F475097321D79 /* ldebug.c */,
+				005B0F0FDE32469383E6CF78 /* ldo.c */,
+				CB085CC919E04DBA8F5767F2 /* ldump.c */,
+				9E351D61072249E2968456A0 /* lfunc.c */,
+				186362D71DD2489B91F74917 /* lgc.c */,
+				6B2E09BC144A42AF8FA46AE1 /* linit.c */,
+				B0CA79FD8B8E446F8E4BD04D /* liolib.c */,
+				D74A1203203E43D18E3D75FB /* llex.c */,
+				C9B86A0FF81B4453AA659525 /* lmathlib.c */,
+				45255481244149B5AD9ED519 /* lmem.c */,
+				701DE1F2356442C584035279 /* loadlib.c */,
+				C4ADFC70156641949A8B7090 /* lobject.c */,
+				8E866A16A5BB41A7830F57E2 /* lopcodes.c */,
+				2CFD4E48CCC54D89BDDC6EBE /* loslib.c */,
+				8FDAB4DF27324A6090B97B5D /* lparser.c */,
+				88B9E88FFF6B436BA220B9D0 /* lstate.c */,
+				C8F9857898F941EE81352A0B /* lstring.c */,
+				2E2D4E4D3CAB4A78904993E7 /* lstrlib.c */,
+				0158203C43E8412BB254954D /* ltable.c */,
+				A8F568490D274674B9150162 /* ltablib.c */,
+				DFE1EE517C2E45A78DC70E43 /* ltm.c */,
+				0EA7EC5FED02474B8EDEBE5B /* lundump.c */,
+				14961089091C4A5B9538376F /* lvm.c */,
+				070303336BC84D2C898A04AF /* lzio.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		20523ED7C72F42269879C361 /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				748D0AFF10304BBC9498C9B2 /* Source Files */,
+				65456B3B552E4E0E8CC5ABC1 /* CMakeLists.txt */,
+			);
+			name = jsoncpp;
+			sourceTree = "<group>";
+		};
+		37A281E64E4541D3B163CAC3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C788A20F875C4F2789B04077 /* jmutex.cpp */,
+				EC1AA68DAE774FB6925081C5 /* jthread.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		562D8632C0004549A82B6C2F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FB78B76930DF470FB96175A2 /* ALL_BUILD */,
+				80019FEAAFC84D12BACDC6F6 /* ZERO_CHECK */,
+				6EB53765289A438D98A26B32 /* minetest */,
+				7F23DA6F48E547BE97CC39E1 /* minetestserver */,
+				B7E567C554C7446AA51882D9 /* lua */,
+				B0CCD323CB264BDE9C0F879C /* jthread */,
+				20523ED7C72F42269879C361 /* jsoncpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		6EB53765289A438D98A26B32 /* minetest */ = {
+			isa = PBXGroup;
+			children = (
+				DDB29299B962466CAB5EC244 /* Source Files */,
+				C442757F0497413F9211DCF7 /* CMakeLists.txt */,
+			);
+			name = minetest;
+			sourceTree = "<group>";
+		};
+		748D0AFF10304BBC9498C9B2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				756889B65E10401582772255 /* jsoncpp.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7F23DA6F48E547BE97CC39E1 /* minetestserver */ = {
+			isa = PBXGroup;
+			children = (
+				072BA6E850704403B21B2123 /* Source Files */,
+				C442757F0497413F9211DCF7 /* CMakeLists.txt */,
+			);
+			name = minetestserver;
+			sourceTree = "<group>";
+		};
+		80019FEAAFC84D12BACDC6F6 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				EE96ED0A4AA04B1D80B219F5 /* CMake Rules */,
+				1D7BC0C0044C439FAE069CBE /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		849222D4E2D24A73BFE238A2 = {
+			isa = PBXGroup;
+			children = (
+				562D8632C0004549A82B6C2F /* Sources */,
+				A8F3166B67DA43808BE89827 /* Resources */,
+				E0193D7E37514DC2B1F836F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A05DADC7D5944217BAF486D9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A8F3166B67DA43808BE89827 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B0CCD323CB264BDE9C0F879C /* jthread */ = {
+			isa = PBXGroup;
+			children = (
+				37A281E64E4541D3B163CAC3 /* Source Files */,
+				0BD915BE28554DFDB0D51801 /* CMakeLists.txt */,
+			);
+			name = jthread;
+			sourceTree = "<group>";
+		};
+		B7E567C554C7446AA51882D9 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				18FB4F3B319A40E9854D33B0 /* Source Files */,
+				9A193DC40D874D189ADDB8FC /* CMakeLists.txt */,
+			);
+			name = lua;
+			sourceTree = "<group>";
+		};
+		DDB29299B962466CAB5EC244 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				41ECECDEB4C942DB968D697F /* c_content.cpp */,
+				5145F457FF2E428CB5D2A28E /* c_converter.cpp */,
+				85F1A621F99A4579B80FC277 /* c_internal.cpp */,
+				EEA84DA411384491B5D7CF77 /* c_types.cpp */,
+				2503AC28764D428BB85E0566 /* s_base.cpp */,
+				29BD0BEA2FDD49F8903B9AB9 /* s_entity.cpp */,
+				3259E5DB3099438A91DC16BD /* s_env.cpp */,
+				583FC501CC67402AA81DB864 /* s_inventory.cpp */,
+				AB54EEFBD2434EFF9105CC46 /* s_item.cpp */,
+				B7807FD07035408FB5926551 /* s_mainmenu.cpp */,
+				40ACD9F6567343DF8CB9A143 /* s_node.cpp */,
+				43A87BC079DE493089CA672E /* s_nodemeta.cpp */,
+				6455E6FEB20F404BBA63DDF4 /* s_player.cpp */,
+				205216CB40DD4862BE935E5D /* s_server.cpp */,
+				98639186F05A4FD08AFF7DE7 /* l_base.cpp */,
+				D9F995D9680947608F1D21B9 /* l_craft.cpp */,
+				1779F02613D140A48CD55D4C /* l_env.cpp */,
+				97106714CE3742D38E2B2A66 /* l_inventory.cpp */,
+				40DC861BE3854C20A2DD0FDC /* l_item.cpp */,
+				AFA2A18FAC664CB495A8BDF5 /* l_mainmenu.cpp */,
+				56C003BF256F490F9A7D7481 /* l_mapgen.cpp */,
+				8E25B5D9EA0341BE8A398542 /* l_nodemeta.cpp */,
+				34A13B21222F45DDBA6C1484 /* l_nodetimer.cpp */,
+				259CC3511AA04A58B9217EBC /* l_noise.cpp */,
+				D291908B4E7B483A9D371FFA /* l_object.cpp */,
+				9E0BF02E467C42CAA10B7565 /* l_particles.cpp */,
+				2D58D7EC18BF42E4AE4BE2BA /* l_rollback.cpp */,
+				08B00EF7BE924BE38875955F /* l_server.cpp */,
+				D7361A530BE143EC914A5B4B /* l_settings.cpp */,
+				B0517C1B1582439FAF973D1D /* l_util.cpp */,
+				3A9E0D6D8176491D8B9F5FD4 /* l_vmanip.cpp */,
+				3F785C9484964C3293ECF610 /* scripting_game.cpp */,
+				CE477EDFD2D44C21969138DD /* scripting_mainmenu.cpp */,
+				47C71F756F2541AFB506B30A /* directiontables.cpp */,
+				0E0E2F48DAF24272A1E980C2 /* numeric.cpp */,
+				975A3F5665344D9793C4E0AB /* pointedthing.cpp */,
+				88DE7785DC8C421FB87342D4 /* serialize.cpp */,
+				119DD7F08B12438CBBB11838 /* string.cpp */,
+				CC2B64085AAB482E9BA67B24 /* timetaker.cpp */,
+				43D3ECD0B1864C5CAA7217EF /* ban.cpp */,
+				467F9E4121E6439F8E38F415 /* base64.cpp */,
+				CB60E2A6BC5C43F99EE44B49 /* biome.cpp */,
+				F76619C958BE49AD98296AB6 /* camera.cpp */,
+				CD2D27593A5E4B8C8ADAC26C /* cavegen.cpp */,
+				AF1FDB58AAFF4533B6D57717 /* chat.cpp */,
+				EF0711CA4CA84AD8B04BBE91 /* client.cpp */,
+				10C95832DC6D433586FA698B /* clientmap.cpp */,
+				DF56BE0278864370B28A5C86 /* clientobject.cpp */,
+				D4590058D1D5491792BCADED /* clouds.cpp */,
+				BD46A5AC7C144FD28282B47E /* collision.cpp */,
+				4E602B5062274DF1867C5EF8 /* connection.cpp */,
+				6B68A3DFEDB947A3A00B8AEA /* content_abm.cpp */,
+				59D065F8520E4EBC88F698FD /* content_cao.cpp */,
+				06528E10204F413CB6C7AB04 /* content_cso.cpp */,
+				45C0463602C8475CB389659C /* content_mapblock.cpp */,
+				70D165D9A86E4392B6B50BBC /* content_mapnode.cpp */,
+				BC97C6C52F2B4F01A7043249 /* content_nodemeta.cpp */,
+				CD3987FD5AFE4B2491EC35BF /* content_sao.cpp */,
+				31FA00E2C08D48C09CFE09B7 /* convert_json.cpp */,
+				C96AF23EDD6846068B726E2C /* craftdef.cpp */,
+				7C0C0A4964494105B1A10179 /* database-dummy.cpp */,
+				CF9D52E04C944D34A18E4358 /* database-leveldb.cpp */,
+				67C633258BC04261A2D25C26 /* database-sqlite3.cpp */,
+				CF9CB3EC61234CF5A2D7F178 /* database.cpp */,
+				30A198F1D7094FAEB2FC615C /* debug.cpp */,
+				6E2F0AA4850044EEBE8B4A24 /* defaultsettings.cpp */,
+				A71E1E3967C74C9CAD43C458 /* dungeongen.cpp */,
+				DC87A7CB4C024095A65D5ED3 /* emerge.cpp */,
+				7E325D8430464372BEB92434 /* environment.cpp */,
+				C337BF77D389447193F2201D /* filecache.cpp */,
+				A191A3892F5D4E44913C6509 /* filesys.cpp */,
+				8998D282A30B466D9625020F /* game.cpp */,
+				9B1C88A9178B46D7AFA5DC48 /* genericobject.cpp */,
+				515C76DF1A8D4CCF97670F80 /* guiChatConsole.cpp */,
+				5ABF18BE25474BC6BBB33013 /* guiDeathScreen.cpp */,
+				F3F71AE232FF492FBD00AE1B /* guiEngine.cpp */,
+				EC7EAAE40AE24B629A94B94E /* guiFileSelectMenu.cpp */,
+				B24E1F38EF3D474580327CA5 /* guiFormSpecMenu.cpp */,
+				950C8F832E754ECE8602F91C /* guiKeyChangeMenu.cpp */,
+				DFDB3F52DBDC450EB915D165 /* guiMessageMenu.cpp */,
+				1C31D35570AB4FB0B3850D37 /* guiPasswordChange.cpp */,
+				3C6FD2FCC0B24CB19D57FA26 /* guiPauseMenu.cpp */,
+				284EBDB301064E8791377046 /* guiTextInputMenu.cpp */,
+				A241A7D3CECC487AA051880A /* guiVolumeChange.cpp */,
+				F727DAA795894B91888DFFC4 /* hud.cpp */,
+				75E7B067AC35414DB19682F6 /* inventory.cpp */,
+				AE628B1A5FD0464D9467C710 /* inventorymanager.cpp */,
+				04223472E4C242E78F9236D3 /* itemdef.cpp */,
+				28986B585F774A8DBD021448 /* keycode.cpp */,
+				532F2B515F8F48AAB5EBB6A5 /* light.cpp */,
+				B42C989BC8A347FA8E14D3D8 /* localplayer.cpp */,
+				6CFAB076AF384E8C8DFDF404 /* log.cpp */,
+				ACEA84DEF4E14BCFB671E303 /* main.cpp */,
+				29B4A8E6AF594387AC3B6549 /* map.cpp */,
+				86F1171C0FF643DE9621590F /* mapblock.cpp */,
+				290AA73137BF409B9374AD5E /* mapblock_mesh.cpp */,
+				BD5DE98D3B6943D7B22A8BDD /* mapgen.cpp */,
+				B3BD48FD8EDA43369F80C449 /* mapgen_indev.cpp */,
+				C636E12310D247EE9F9D25C7 /* mapgen_math.cpp */,
+				BDBF7051861A4A23A545349F /* mapgen_singlenode.cpp */,
+				8C2B576F92264B798B853DCA /* mapgen_v6.cpp */,
+				05D2E49325494DFE8D1D967A /* mapgen_v7.cpp */,
+				2FD2DBCFC2B349C9BA5B2164 /* mapnode.cpp */,
+				0DB76B9A512042DABAAC1273 /* mapsector.cpp */,
+				EC97065D8A3C43B7B17E4B34 /* mesh.cpp */,
+				6B097CCFCCF147D19869CD45 /* mods.cpp */,
+				8D647C680F674BE38576DFC4 /* nameidmapping.cpp */,
+				5D79303BCC844F4F975DF0B6 /* nodedef.cpp */,
+				AAE8532F045E4C588348C85E /* nodemetadata.cpp */,
+				98E87C2DE5364E779A560C69 /* nodetimer.cpp */,
+				0D339B9FE6F64B21AB645C19 /* noise.cpp */,
+				9169F54D77A5470B96F1A393 /* object_properties.cpp */,
+				93EC267B76A14B9BB2D09F9F /* particles.cpp */,
+				3B9E39B60E464024879C7B6E /* pathfinder.cpp */,
+				C5EB7D364C6242059449AB40 /* player.cpp */,
+				76A89A9517604595A6A8051A /* porting.cpp */,
+				0A67DC6A5F534416B7063547 /* quicktune.cpp */,
+				6F43F4599A7B43E5964ECA6B /* rollback.cpp */,
+				030AD13189944142B015CD01 /* rollback_interface.cpp */,
+				EF60754CB7E44CA2979F65E0 /* serialization.cpp */,
+				17B3EC58B13B4CE7BF8F50FA /* server.cpp */,
+				86F0BFC4C6BA4C7A8692B555 /* serverlist.cpp */,
+				F84F3C2386FD4D63A508922A /* serverobject.cpp */,
+				397D15651028420D837C74DE /* sha1.cpp */,
+				8A37630CEE3F4091A3027503 /* shader.cpp */,
+				E65F4608B8D14E83AD921CD7 /* sky.cpp */,
+				CCDC6787CE754886922BA70C /* socket.cpp */,
+				74E21A2DCB3844F68E887D61 /* sound.cpp */,
+				D67010766B2745ACA5891E0B /* sound_openal.cpp */,
+				1C37A0016A174E2582BF0071 /* staticobject.cpp */,
+				C2BC9F2E8BDE4668AF0E192B /* subgame.cpp */,
+				A70E67A40108468E98568BF4 /* test.cpp */,
+				247987944AEC464EA597275A /* tile.cpp */,
+				C8894136E54B412B8107DD2C /* tool.cpp */,
+				A5F99BD035684F85980AB7B4 /* treegen.cpp */,
+				89FA184A28A445D694F5A468 /* voxel.cpp */,
+				BC6D2C0D70FB450FAD981D25 /* voxelalgorithms.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E0193D7E37514DC2B1F836F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EACD393E5954A9FA29A6C4E /* minetest */,
+				106A9AFE28C846D992867FF4 /* minetestserver */,
+				A4A22D4CB4BD48D888EF1D6E /* liblua.a */,
+				0DB65A393C084B5CB1BD60A9 /* libjthread.a */,
+				2E2D6D89D3A84588864F9597 /* libjsoncpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE96ED0A4AA04B1D80B219F5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FB78B76930DF470FB96175A2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A05DADC7D5944217BAF486D9 /* CMake Rules */,
+				1D7BC0C0044C439FAE069CBE /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DFAA62CCBAC45879B5D31A5 /* lua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B012D615C849F49AB95BF4 /* Build configuration list for PBXNativeTarget "lua" */;
+			buildPhases = (
+				892133E7A39240F7A5E2A36A /* Sources */,
+				50C049582FB04737A5B6A683 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+			);
+			name = lua;
+			productName = lua;
+			productReference = A4A22D4CB4BD48D888EF1D6E /* liblua.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		500F2A47F91740EEBC5C3449 /* jthread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684691D116224204BEF25783 /* Build configuration list for PBXNativeTarget "jthread" */;
+			buildPhases = (
+				85749FFA264141E3AF3EDF94 /* Sources */,
+				12ABBF9E029145A5880B164B /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+			);
+			name = jthread;
+			productName = jthread;
+			productReference = 0DB65A393C084B5CB1BD60A9 /* libjthread.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5F340278E633440CBC9BC755 /* minetestserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966116896BA349AF969317D3 /* Build configuration list for PBXNativeTarget "minetestserver" */;
+			buildPhases = (
+				FB6ED0C74E3F4B05B80645D6 /* Sources */,
+				3427E4911BBB41ACB06DB115 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+				128E065B307D4A6FB3DE1721 /* PBXTargetDependency */,
+				3CC9C2EACB9B4D709B3045FC /* PBXTargetDependency */,
+				459BDBE2CB4948E381F09958 /* PBXTargetDependency */,
+			);
+			name = minetestserver;
+			productName = minetestserver;
+			productReference = 106A9AFE28C846D992867FF4 /* minetestserver */;
+			productType = "com.apple.product-type.tool";
+		};
+		7FC9140D2C3F43E5954D0DED /* minetest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71DE7F1E3E4469AADCC9162 /* Build configuration list for PBXNativeTarget "minetest" */;
+			buildPhases = (
+				3E6D0F8C4EAB480A9F7E0BB4 /* Sources */,
+				261FC4AE0BA04347BE861C8C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+				128E065B307D4A6FB3DE1721 /* PBXTargetDependency */,
+				3CC9C2EACB9B4D709B3045FC /* PBXTargetDependency */,
+				459BDBE2CB4948E381F09958 /* PBXTargetDependency */,
+			);
+			name = minetest;
+			productName = minetest;
+			productReference = 3EACD393E5954A9FA29A6C4E /* minetest */;
+			productType = "com.apple.product-type.tool";
+		};
+		93A817284635427F8700AF20 /* jsoncpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CF4F1485EF44579F410029 /* Build configuration list for PBXNativeTarget "jsoncpp" */;
+			buildPhases = (
+				0C7F274F1A644F58B85B7CCE /* Sources */,
+				56CF34495F4542E0B065D3C7 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */,
+			);
+			name = jsoncpp;
+			productName = jsoncpp;
+			productReference = 2E2D6D89D3A84588864F9597 /* libjsoncpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29957A90FCBA42C9892C7151 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = B704C43B464A4693AC1CFA2C /* Build configuration list for PBXProject "minetest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 849222D4E2D24A73BFE238A2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8CBEC9F5C5B42349ACE3BDD /* ALL_BUILD */,
+				4C57E5EE58C24CFFA8826999 /* ZERO_CHECK */,
+				36DBEEF396984FE180C903CB /* install */,
+				E88027F31DC44CA3870723A9 /* package */,
+				7FC9140D2C3F43E5954D0DED /* minetest */,
+				5F340278E633440CBC9BC755 /* minetestserver */,
+				0DFAA62CCBAC45879B5D31A5 /* lua */,
+				500F2A47F91740EEBC5C3449 /* jthread */,
+				93A817284635427F8700AF20 /* jsoncpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B475460B6754574B09C7F06 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		12ABBF9E029145A5880B164B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft/src/jthread -f /Users/security/osxminecraft/src/jthread/CMakeScripts/jthread_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1F17CAE5452A46C3BD3E4B39 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		261FC4AE0BA04347BE861C8C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft/src -f /Users/security/osxminecraft/src/CMakeScripts/minetest_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3427E4911BBB41ACB06DB115 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft/src -f /Users/security/osxminecraft/src/CMakeScripts/minetestserver_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		50C049582FB04737A5B6A683 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft/src/lua/build -f /Users/security/osxminecraft/src/lua/build/CMakeScripts/lua_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		56CF34495F4542E0B065D3C7 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft/src/json -f /Users/security/osxminecraft/src/json/CMakeScripts/jsoncpp_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A1C5344691F045A198B67A44 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FA7877DA42804B2BB137AA8C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C7F274F1A644F58B85B7CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003A2CEC375B4CC69A4C6E9F /* jsoncpp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6D0F8C4EAB480A9F7E0BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79E2EB9EC5349C68664843F /* c_content.cpp in Sources */,
+				5290FCEC04144D7E8B8EB97D /* c_converter.cpp in Sources */,
+				CBE6F1A80AC34E68ACC53616 /* c_internal.cpp in Sources */,
+				3209CF07930E418BAD48D538 /* c_types.cpp in Sources */,
+				109FB757FAB24A379FF09D3E /* s_base.cpp in Sources */,
+				1A6FB723CB71492BB3C732AF /* s_entity.cpp in Sources */,
+				68AAE692E7244BABA88B80F2 /* s_env.cpp in Sources */,
+				0272A2067E7D421CB38FFE0B /* s_inventory.cpp in Sources */,
+				2918176D322242D99A61F3E4 /* s_item.cpp in Sources */,
+				456E5C3214774A5297B4562A /* s_mainmenu.cpp in Sources */,
+				000286F43196474D8AA3F902 /* s_node.cpp in Sources */,
+				73F04E2436F4421BAE960786 /* s_nodemeta.cpp in Sources */,
+				BB76CB3BF6414C37AF43032D /* s_player.cpp in Sources */,
+				FD0FC50AD78A43479F22F029 /* s_server.cpp in Sources */,
+				7BD43BE342F64F8E80EF1A4A /* l_base.cpp in Sources */,
+				75CDE3426BDB4416898C2E70 /* l_craft.cpp in Sources */,
+				6D06B0F3E3F34ADFA1583355 /* l_env.cpp in Sources */,
+				E5D02022ECF746B581CC0AA2 /* l_inventory.cpp in Sources */,
+				022F8DD6C9FE4C8FBB3A1D6D /* l_item.cpp in Sources */,
+				5308CB70A20844F5B3315F73 /* l_mainmenu.cpp in Sources */,
+				B1AFCE02BE7144CF9F19A116 /* l_mapgen.cpp in Sources */,
+				70C167FF32F3422DA09FE9C4 /* l_nodemeta.cpp in Sources */,
+				85B61372AC95475295D8B9B7 /* l_nodetimer.cpp in Sources */,
+				9C434FD6D28E4F26946A0A53 /* l_noise.cpp in Sources */,
+				879214DD392F48E78F8BDA42 /* l_object.cpp in Sources */,
+				3B52BBE882904864BEEA1C6F /* l_particles.cpp in Sources */,
+				2F4EDC5A97214CE5B7628819 /* l_rollback.cpp in Sources */,
+				2D09DF2C67E44C4CB3530C80 /* l_server.cpp in Sources */,
+				AFF22F4BA7CD4545A42D177A /* l_settings.cpp in Sources */,
+				4B96C8751DEF4655ADA25B01 /* l_util.cpp in Sources */,
+				AD99DEEFE13D46F29068C661 /* l_vmanip.cpp in Sources */,
+				0FFD996F80E7472AB8AA5444 /* scripting_game.cpp in Sources */,
+				2EDB1DC5FB5E42569CB5847E /* scripting_mainmenu.cpp in Sources */,
+				19E1020C14D6499EB84947E0 /* directiontables.cpp in Sources */,
+				5D948AE8723044038C45F9D2 /* numeric.cpp in Sources */,
+				3F108413A1D94D9A941AF98E /* pointedthing.cpp in Sources */,
+				64D41B0612C34D718A30B80C /* serialize.cpp in Sources */,
+				E82EBF5B38624EDE9D4111E6 /* string.cpp in Sources */,
+				87F09826D32342D3A89E06C0 /* timetaker.cpp in Sources */,
+				A075E293986449D29F11D5D4 /* ban.cpp in Sources */,
+				07DC33155A2E4EE5B61C06F2 /* base64.cpp in Sources */,
+				48DA0B8F76AD4F33AD296BBD /* biome.cpp in Sources */,
+				BBDC127E77CC483EADD1F3F6 /* camera.cpp in Sources */,
+				8D445E339CF64AB391641209 /* cavegen.cpp in Sources */,
+				982B27E7E9E6423EBA8F33CA /* chat.cpp in Sources */,
+				9E8E489B6F924532BBCC819E /* client.cpp in Sources */,
+				7FA3B9B5DCAF4247AC3DB2D3 /* clientmap.cpp in Sources */,
+				6AE2C53CF00344D688BB0CCD /* clientobject.cpp in Sources */,
+				4CF204318D804CE49D981142 /* clouds.cpp in Sources */,
+				2D266C46B4F645FAA25E0244 /* collision.cpp in Sources */,
+				824B5A6E851B477FA00B9C2D /* connection.cpp in Sources */,
+				CE26768500504AFFB4EE5946 /* content_abm.cpp in Sources */,
+				81EF47397CC347F785C60251 /* content_cao.cpp in Sources */,
+				90D2DDFC53C2448FBB07B357 /* content_cso.cpp in Sources */,
+				2583CE31EB0B4874B91037B5 /* content_mapblock.cpp in Sources */,
+				E7D5ADCD639841E6941796A2 /* content_mapnode.cpp in Sources */,
+				98140BF471374E35848B4C88 /* content_nodemeta.cpp in Sources */,
+				6C4FABACA092452285F56F25 /* content_sao.cpp in Sources */,
+				9A37248269EE46339CDC7B30 /* convert_json.cpp in Sources */,
+				B45426F3D29C40C0A5E66ED2 /* craftdef.cpp in Sources */,
+				EBAF90686D3340849B1D1D42 /* database-dummy.cpp in Sources */,
+				B9772543FD9A4CF98B34F6D4 /* database-leveldb.cpp in Sources */,
+				B825825D4C6441B89A114E9B /* database-sqlite3.cpp in Sources */,
+				38D72FFF4E4149AF9A7BCCCB /* database.cpp in Sources */,
+				EF75ACF660BE47F88E1EEFD1 /* debug.cpp in Sources */,
+				FC10C5DB985842E683FFB186 /* defaultsettings.cpp in Sources */,
+				5F0C37DA1ED24D928C6972DB /* dungeongen.cpp in Sources */,
+				19A98E83E2814A48AD42BD83 /* emerge.cpp in Sources */,
+				28F0DF4AD46A406D9743BE19 /* environment.cpp in Sources */,
+				793BD97FADFB4E49A7FB4649 /* filecache.cpp in Sources */,
+				C6CC036DDF0C40718BCE25A3 /* filesys.cpp in Sources */,
+				3E0D750BD5724458850927C7 /* game.cpp in Sources */,
+				5A6754833D604D6989574FAE /* genericobject.cpp in Sources */,
+				15429E949EEF4887BB6A9CB0 /* guiChatConsole.cpp in Sources */,
+				0267B060E317496CB8B22DCE /* guiDeathScreen.cpp in Sources */,
+				EB85F962440B43F387D0BCE3 /* guiEngine.cpp in Sources */,
+				7D3A9A842C434EBE9806B238 /* guiFileSelectMenu.cpp in Sources */,
+				3D85169D87C8486581420DB0 /* guiFormSpecMenu.cpp in Sources */,
+				D066271DD6064A39A69981C1 /* guiKeyChangeMenu.cpp in Sources */,
+				A6EEAE2F50DB495789B207FE /* guiMessageMenu.cpp in Sources */,
+				4BD9045705BD455D95A7290B /* guiPasswordChange.cpp in Sources */,
+				E46D6EDB84CB4FEF8605666E /* guiPauseMenu.cpp in Sources */,
+				F89CB2CA643742F19E36675A /* guiTextInputMenu.cpp in Sources */,
+				D0C57DFDEC47407B8CCE9E9A /* guiVolumeChange.cpp in Sources */,
+				4236877B2B82474C8950F47F /* hud.cpp in Sources */,
+				7974EE4A8DB049A9B14B363F /* inventory.cpp in Sources */,
+				C30D55AE5BE943A3B605F9B5 /* inventorymanager.cpp in Sources */,
+				526725D9F95944128DB0DAA4 /* itemdef.cpp in Sources */,
+				4DBA283114774529A663D10A /* keycode.cpp in Sources */,
+				DD5EF7581263405DAF5D4875 /* light.cpp in Sources */,
+				386796C484824EC3BF98D7B6 /* localplayer.cpp in Sources */,
+				88C75CABC799472FB038F7AD /* log.cpp in Sources */,
+				DED4B1CA97AC41BB89EDC83D /* main.cpp in Sources */,
+				D99AD972B9ED403A923EF156 /* map.cpp in Sources */,
+				C6332E3B39104090BE359538 /* mapblock.cpp in Sources */,
+				D40B308056CB42F2A6E8A2F7 /* mapblock_mesh.cpp in Sources */,
+				06632D79F7D34EFC97DAAD12 /* mapgen.cpp in Sources */,
+				6C8A87BE40C643AF92952087 /* mapgen_indev.cpp in Sources */,
+				782B61E8FD0E4F33B08B179D /* mapgen_math.cpp in Sources */,
+				948B867C705546AE8D941473 /* mapgen_singlenode.cpp in Sources */,
+				DBB69DBFBAFE4358BE9A5C2D /* mapgen_v6.cpp in Sources */,
+				537555D10C6F4908BEE3A271 /* mapgen_v7.cpp in Sources */,
+				00812EFD9C3D4E3F9F2D0F9D /* mapnode.cpp in Sources */,
+				AAB3282FC52C47EBB0808712 /* mapsector.cpp in Sources */,
+				3640A59432AC4255BF712B02 /* mesh.cpp in Sources */,
+				3A718F0D68D442BE8DB89750 /* mods.cpp in Sources */,
+				064C5AF13E0E4670AF62C224 /* nameidmapping.cpp in Sources */,
+				5A169DB5DA814549B98E5C54 /* nodedef.cpp in Sources */,
+				F1EE40EF0388407A804C91F5 /* nodemetadata.cpp in Sources */,
+				E2792FD9E90A4EF98C86D250 /* nodetimer.cpp in Sources */,
+				9CDF9FCA03DB4926B28FBB07 /* noise.cpp in Sources */,
+				C99DF231456545CF8089E669 /* object_properties.cpp in Sources */,
+				2C2F811AF6754718A08D0A66 /* particles.cpp in Sources */,
+				D1987AC8A7714B458A48567F /* pathfinder.cpp in Sources */,
+				AD1BAC6F3162457DBFB110E7 /* player.cpp in Sources */,
+				1ABE6BDA061549C6A26E941F /* porting.cpp in Sources */,
+				7F6822351E7A471B843BBF73 /* quicktune.cpp in Sources */,
+				375B32264EBA4CC3ABCF14AB /* rollback.cpp in Sources */,
+				F42C12ED8A254FFD831A9C69 /* rollback_interface.cpp in Sources */,
+				3AEC1E2E995D4A38979EB5D5 /* serialization.cpp in Sources */,
+				B9469C81BA344A5A98638D58 /* server.cpp in Sources */,
+				6133E722738B43A2B2911F72 /* serverlist.cpp in Sources */,
+				637F5695F7C8417AB6FB9615 /* serverobject.cpp in Sources */,
+				96D8B29DF6DA4A15B7019F9F /* sha1.cpp in Sources */,
+				548C394AEB2842B08CEC95F3 /* shader.cpp in Sources */,
+				2C2540691F484CF9A8E933DB /* sky.cpp in Sources */,
+				6B70ED37C8364DEE9DF5537C /* socket.cpp in Sources */,
+				EF51B51CE4474066A02F7F30 /* sound.cpp in Sources */,
+				FB182BB9FDAE4132B175C74F /* sound_openal.cpp in Sources */,
+				3DA9D7A985C84ADB839702ED /* staticobject.cpp in Sources */,
+				E1C2521368124EEEB1083CDD /* subgame.cpp in Sources */,
+				E79BA90F4AB843E29EED8784 /* test.cpp in Sources */,
+				BC9F1E49339A4EC6AF072257 /* tile.cpp in Sources */,
+				5DAAA0780C644353BFD038FA /* tool.cpp in Sources */,
+				847F47A31030461489BE61FC /* treegen.cpp in Sources */,
+				E1574A55F4B543DD8CDF88E4 /* voxel.cpp in Sources */,
+				31B13D6C10934E8D856A9030 /* voxelalgorithms.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85749FFA264141E3AF3EDF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661E4E02B9DD4E5AB1DD749D /* jmutex.cpp in Sources */,
+				C51AAF3AE38C49EC91853464 /* jthread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892133E7A39240F7A5E2A36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B7DA1EF1F64430A11682DD /* lapi.c in Sources */,
+				3609EA4BBF9E44E682CC5F05 /* lauxlib.c in Sources */,
+				E6EDA9B3FAC14FD0AC8C8565 /* lbaselib.c in Sources */,
+				795F7BDBC63B4FC0ACFE9DA1 /* lcode.c in Sources */,
+				4D8D63997E394A249276ED03 /* ldblib.c in Sources */,
+				E57E205F461C4A5D9FBA94CF /* ldebug.c in Sources */,
+				C6BC9DAF1BF546ED938E5565 /* ldo.c in Sources */,
+				51E37B811821450E809E4D74 /* ldump.c in Sources */,
+				5D4C04FADB2342D490845744 /* lfunc.c in Sources */,
+				A5A5D209D31848FEB12B9178 /* lgc.c in Sources */,
+				3EBA883321BF405E897E364F /* linit.c in Sources */,
+				5D2ECC6B8A9B4505A66C7561 /* liolib.c in Sources */,
+				B3693190930B4657B05C8516 /* llex.c in Sources */,
+				B4AD6C5EBF3C41C8AD790159 /* lmathlib.c in Sources */,
+				16B36FF5D6894FC3A03A61E6 /* lmem.c in Sources */,
+				E05FA4035DAC4B61A8DCC14A /* loadlib.c in Sources */,
+				1D15A4727EB547E5A6323479 /* lobject.c in Sources */,
+				71511C2AF4D24DA7A7844C0B /* lopcodes.c in Sources */,
+				CE3C63A6CE5544489602DD42 /* loslib.c in Sources */,
+				6DF96926EF384ACAB15A7760 /* lparser.c in Sources */,
+				37ADA226932E4E42A31E026D /* lstate.c in Sources */,
+				E3E15D7E37E24A9CBF39A34A /* lstring.c in Sources */,
+				F58CEB6FEA334CF29755C15B /* lstrlib.c in Sources */,
+				B71C06FC196E437380E30D90 /* ltable.c in Sources */,
+				F7E4AB6D736A43C4AED3C786 /* ltablib.c in Sources */,
+				4006F2BF17E8435993371EAB /* ltm.c in Sources */,
+				C00D651EBE114B1D93F290AB /* lundump.c in Sources */,
+				A3CC5BC0546C403B814E6123 /* lvm.c in Sources */,
+				C9B0E4764865460DB8469984 /* lzio.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6ED0C74E3F4B05B80645D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7671D25FD82D480C8D450608 /* c_content.cpp in Sources */,
+				AFF3977EC2F14A5BB88DBF74 /* c_converter.cpp in Sources */,
+				3ED7A86C8C82433C9DB417D6 /* c_internal.cpp in Sources */,
+				822FE6125A2340F8BD8907C1 /* c_types.cpp in Sources */,
+				9309EA3B2FFA43AC9FB2B564 /* s_base.cpp in Sources */,
+				DA04F0B352504A35B431BBE5 /* s_entity.cpp in Sources */,
+				226B3B9D4A7B480AA1D3EC71 /* s_env.cpp in Sources */,
+				084999D6F49740269C1FF2AA /* s_inventory.cpp in Sources */,
+				D7AACA0DF73647EABDCC6551 /* s_item.cpp in Sources */,
+				D645DB966FF84738B358383A /* s_node.cpp in Sources */,
+				62AFCFA332E847D3A641FDC5 /* s_nodemeta.cpp in Sources */,
+				0BE0D768D938486E9E2FEDEB /* s_player.cpp in Sources */,
+				F48B008BF2E344EC86315EB0 /* s_server.cpp in Sources */,
+				28D5908E46434EE9A7FA9352 /* l_base.cpp in Sources */,
+				7F82A72604874981854B886B /* l_craft.cpp in Sources */,
+				5463E26F28074222914C0373 /* l_env.cpp in Sources */,
+				29038B1F991A46C9AE944A46 /* l_inventory.cpp in Sources */,
+				7540497DA88F4F7AB0E5CD1E /* l_item.cpp in Sources */,
+				020A926B461549C8A071230E /* l_mapgen.cpp in Sources */,
+				AFBACB141EA6472A98C04D52 /* l_nodemeta.cpp in Sources */,
+				D0C4668EDE5B4A31AC3C9D50 /* l_nodetimer.cpp in Sources */,
+				D61E26FB10EB447488AB9951 /* l_noise.cpp in Sources */,
+				B66A72387A204C4FBB3B5638 /* l_object.cpp in Sources */,
+				E39707C8D0AB44E682614F35 /* l_particles.cpp in Sources */,
+				9FD38F840B024A3FB82EDCA7 /* l_rollback.cpp in Sources */,
+				EBE66B0A5266493689D0D247 /* l_server.cpp in Sources */,
+				EB4D669589BB443DBB9D87E3 /* l_settings.cpp in Sources */,
+				E8ABB8C315174424ADB3B816 /* l_util.cpp in Sources */,
+				FF83B168A00C4BDDB5F715D1 /* l_vmanip.cpp in Sources */,
+				A59DF60664E043A2BCAC4B39 /* scripting_game.cpp in Sources */,
+				C9F1770AE3484E3781D61277 /* directiontables.cpp in Sources */,
+				E39858BF9BA34254911145A2 /* numeric.cpp in Sources */,
+				3D550AF107824A9EB6967F68 /* pointedthing.cpp in Sources */,
+				D02CC63EBE544937AB5863B1 /* serialize.cpp in Sources */,
+				941ECD6DFDED4C2983A8D6B7 /* string.cpp in Sources */,
+				1937C6476AD34371938D4C21 /* timetaker.cpp in Sources */,
+				65CF9A6C6D81499AAEA988C3 /* ban.cpp in Sources */,
+				1E88E6149D0E4252AF3039C4 /* base64.cpp in Sources */,
+				F99DDED61BC84D4FBFEAECB7 /* biome.cpp in Sources */,
+				B218266819E54D6089134DB8 /* cavegen.cpp in Sources */,
+				191B985526A24D408D40A679 /* collision.cpp in Sources */,
+				0A9BAA298A644913B83A1E52 /* connection.cpp in Sources */,
+				5364A7B20E784AAE9AED25C2 /* content_abm.cpp in Sources */,
+				54F3E5CAC73C47279F87AE40 /* content_mapnode.cpp in Sources */,
+				7386AB4112574E838049DA0B /* content_nodemeta.cpp in Sources */,
+				B7642EC3287141E9BFFB4732 /* content_sao.cpp in Sources */,
+				210EE3D94E614E268ABBA576 /* convert_json.cpp in Sources */,
+				B7245CCC7420436CB8B59140 /* craftdef.cpp in Sources */,
+				BE82F18B362145CA9C820D35 /* database-dummy.cpp in Sources */,
+				7573E3AC8AF54160A9DFD80C /* database-leveldb.cpp in Sources */,
+				E8FD264AC4C8428D8BD1B14D /* database-sqlite3.cpp in Sources */,
+				A4759CFE02E34FBDA6CACFA3 /* database.cpp in Sources */,
+				9CDB45C317FB4D07A2DABEC9 /* debug.cpp in Sources */,
+				5E3B3536924A45899D2672C5 /* defaultsettings.cpp in Sources */,
+				0E7FDF1853624AD68585EEA9 /* dungeongen.cpp in Sources */,
+				1B1C3FCB38B9410BACA63807 /* emerge.cpp in Sources */,
+				388D213503DC4C14A87FC343 /* environment.cpp in Sources */,
+				44353A3E3BAB414BBF3BFBF8 /* filesys.cpp in Sources */,
+				DE3F74399DF9481383DF4AF8 /* genericobject.cpp in Sources */,
+				4A0458901BA94C6197430186 /* inventory.cpp in Sources */,
+				1B8DFAE1721B4C149C9954F2 /* inventorymanager.cpp in Sources */,
+				427C5133FB0E4885AD05979A /* itemdef.cpp in Sources */,
+				13660E30FD964CE285C33CEC /* light.cpp in Sources */,
+				6C80DA87B6C34400BBA3B419 /* log.cpp in Sources */,
+				52DAAE0C5B2942DDA3E1E764 /* main.cpp in Sources */,
+				DDD7397609F64A8286B729E1 /* map.cpp in Sources */,
+				CD08C6F686284B7DBDD29C9F /* mapblock.cpp in Sources */,
+				1FF131D24ADA412EA2876681 /* mapgen.cpp in Sources */,
+				B4AEEAE2E431477E9FC9F2E6 /* mapgen_indev.cpp in Sources */,
+				7EF5533F5E4248C78E32D7B2 /* mapgen_math.cpp in Sources */,
+				2EF9949C57784D23BA35267E /* mapgen_singlenode.cpp in Sources */,
+				E1F21ACF8DF04F42B07D74BC /* mapgen_v6.cpp in Sources */,
+				06562FB0D98C491A8EA23D19 /* mapgen_v7.cpp in Sources */,
+				5D5DC2628383446F95F9EBB4 /* mapnode.cpp in Sources */,
+				554E71831A7F4094A93D0C42 /* mapsector.cpp in Sources */,
+				35EE3C9DBE654763A8C45221 /* mods.cpp in Sources */,
+				4671D74BF79B485689A48DAF /* nameidmapping.cpp in Sources */,
+				3EC6CD02EF444EF78D47307D /* nodedef.cpp in Sources */,
+				E46DE4E6EA654BA9A046253E /* nodemetadata.cpp in Sources */,
+				5BAD8E97340248AAACC83A28 /* nodetimer.cpp in Sources */,
+				6F0B4C36315E4C568877B286 /* noise.cpp in Sources */,
+				3A445656C2F04C35BDB8079D /* object_properties.cpp in Sources */,
+				DC4E4B45A1AE4AE5BD7FB7E0 /* pathfinder.cpp in Sources */,
+				D86CC1218ED14C87BCE2FC39 /* player.cpp in Sources */,
+				A270F6AE7A5A4815A1ACC807 /* porting.cpp in Sources */,
+				98DC628EC4434D23AB1CC53C /* quicktune.cpp in Sources */,
+				884F840A9BFC45A4A0D180CE /* rollback.cpp in Sources */,
+				A401901138EB40FB931664D5 /* rollback_interface.cpp in Sources */,
+				7FA10AED63B641BCAF530C40 /* serialization.cpp in Sources */,
+				94D6775FAB304E43BC5B4773 /* server.cpp in Sources */,
+				616F6ACB51804DDD83006FAD /* serverlist.cpp in Sources */,
+				3BD7E032D9BB437995DBF2F7 /* serverobject.cpp in Sources */,
+				335CC1D7005244769CA9AF86 /* sha1.cpp in Sources */,
+				695954CC12AE4C69A000C036 /* socket.cpp in Sources */,
+				7BDC4B4F69CF4647BBCC3EB7 /* sound.cpp in Sources */,
+				EEFCC7E92FCD43D9ACAE4F11 /* staticobject.cpp in Sources */,
+				721A3428673141E7A60063F9 /* subgame.cpp in Sources */,
+				7B9F1CE301C44C1899BD5AA7 /* test.cpp in Sources */,
+				71F0814E84644D8AA7396D4D /* tool.cpp in Sources */,
+				5AD28B45128345D685253818 /* treegen.cpp in Sources */,
+				B42D1B152E8B4CD6B8CAF9E7 /* voxel.cpp in Sources */,
+				957D712CF85649FDB57AA1B5 /* voxelalgorithms.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		128E065B307D4A6FB3DE1721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DFAA62CCBAC45879B5D31A5 /* lua */;
+			targetProxy = 12C0E7DC984B4EB1BB3A3093 /* PBXContainerItemProxy */;
+		};
+		25E2EB0A76CE489FBD98F9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F340278E633440CBC9BC755 /* minetestserver */;
+			targetProxy = ECA34D4AD89A447C840D6FA3 /* PBXContainerItemProxy */;
+		};
+		3CC9C2EACB9B4D709B3045FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500F2A47F91740EEBC5C3449 /* jthread */;
+			targetProxy = BE88B33BADBD4723A7057EB7 /* PBXContainerItemProxy */;
+		};
+		459BDBE2CB4948E381F09958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93A817284635427F8700AF20 /* jsoncpp */;
+			targetProxy = AC7FB8BCEEF64C5BA848F026 /* PBXContainerItemProxy */;
+		};
+		65D429F5E1B14445BDC6BE50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CBEC9F5C5B42349ACE3BDD /* ALL_BUILD */;
+			targetProxy = 282933151317464C839F7514 /* PBXContainerItemProxy */;
+		};
+		A3030BE96A3F4F0CA217D245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FC9140D2C3F43E5954D0DED /* minetest */;
+			targetProxy = 720143F7A4F94EAD85AAE959 /* PBXContainerItemProxy */;
+		};
+		BF8995860DBD4ADAB9354B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C57E5EE58C24CFFA8826999 /* ZERO_CHECK */;
+			targetProxy = 0AC8E5BA7A4A4BCD8527E52C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1831199D81014420933C18BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = /Users/security/osxminecraft/build;
+			};
+			name = Debug;
+		};
+		183A177AC14B446E9C030649 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jthread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/jthread;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2108E2328E814039940EBBA4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		22FB96F0471B4B26991CB6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ffast-math",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-pipe",
+					"-funroll-loops",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jsoncpp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/json;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		2440D449B21A499FB5F9F0DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jthread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/jthread;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2E412DA7569147A19F9C5628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		3198A9E064F94DD09B329FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		4337538D03F64B0EA2E51A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jsoncpp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/json;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		47E5D9603484401EAABDAA9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		4E0AB6A7AD814C929A8DB56F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/lua/build,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_DLOPEN",
+					"-pipe",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-W",
+					"-pedantic",
+					"-std=gnu99",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = lua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/lua/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		4F042F82EBF94293A63B93CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		554959EE311842C1A3A1F6C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ffast-math",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-pipe",
+					"-funroll-loops",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/Users/security/osxminecraft/src/jthread/Release/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/lua/build/Release/liblua.a,
+					/Users/security/osxminecraft/src/json/Release/libjsoncpp.a,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/usr/lib/libsqlite3.dylib,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		59D748D56C274EB29AF0F4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/Users/security/osxminecraft/src/jthread/Debug/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/lua/build/Debug/liblua.a,
+					/Users/security/osxminecraft/src/json/Debug/libjsoncpp.a,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/usr/lib/libsqlite3.dylib,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		5B9A445501444EE89344356A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5C460DF2277F4AD8A4AA1AEE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/Users/security/osxminecraft/src/jthread/RelWithDebInfo/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/lua/build/RelWithDebInfo/liblua.a,
+					/Users/security/osxminecraft/src/json/RelWithDebInfo/libjsoncpp.a,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/usr/lib/libsqlite3.dylib,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5F5E58D7004A4649B2E7B03B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		83E18F2DE89546A58C96028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		8472FCF698514F38B9FF7E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/lua/build,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_DLOPEN",
+					"-pipe",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-W",
+					"-pedantic",
+					"-std=gnu99",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = lua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/lua/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		91FF94D0EFE64087A0D574C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = /Users/security/osxminecraft/build;
+			};
+			name = Release;
+		};
+		94546A58C3214E9E941BCB8C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jsoncpp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/json;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9CCF7923D8034F78AA26A230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/lua/build,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_DLOPEN",
+					"-pipe",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-W",
+					"-pedantic",
+					"-std=gnu99",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = lua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/lua/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		A202519988344C1CB3F5B388 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/Users/security/osxminecraft/src/jthread/MinSizeRel/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/lua/build/MinSizeRel/liblua.a,
+					/Users/security/osxminecraft/src/json/MinSizeRel/libjsoncpp.a,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+					/usr/local/lib/libIrrlicht.a,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					/opt/local/lib/libjpeg.dylib,
+					/usr/lib/libbz2.dylib,
+					/opt/local/lib/libpng.dylib,
+					/opt/local/lib/libSM.dylib,
+					/opt/local/lib/libICE.dylib,
+					/opt/local/lib/libX11.dylib,
+					/opt/local/lib/libXext.dylib,
+					"-framework",
+					OpenAL,
+					/opt/local/lib/libvorbisfile.dylib,
+					/opt/local/lib/libvorbis.dylib,
+					"-framework",
+					ogg,
+					/usr/lib/libsqlite3.dylib,
+					"-lpthread",
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					/opt/local/lib/libXxf86vm.dylib,
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A2B910519CAE4DCB84CD5136 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		A9A7CFA581D74721BF93EE11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/lua/build,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_DLOPEN",
+					"-pipe",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-W",
+					"-pedantic",
+					"-std=gnu99",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = lua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/lua/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AE22C60A0B0747568F819EA2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B56814EA2E2A4E55A00B9D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		BA438364CBA24C30B360BE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		C233DB6CD53E415993666A7E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = /Users/security/osxminecraft/build;
+			};
+			name = MinSizeRel;
+		};
+		D03DAF95CFF24BFEBB2D7E6A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+					SERVER,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/Users/security/osxminecraft/src/jthread/RelWithDebInfo/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/json/RelWithDebInfo/libjsoncpp.a,
+					/Users/security/osxminecraft/src/lua/build/RelWithDebInfo/liblua.a,
+					"-lpthread",
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetestserver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D18C78F9765F47FFABAE9FC2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				SYMROOT = /Users/security/osxminecraft/build;
+			};
+			name = RelWithDebInfo;
+		};
+		D41A1D7BBDDE4265B8455123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+					SERVER,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/Users/security/osxminecraft/src/jthread/Debug/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/json/Debug/libjsoncpp.a,
+					/Users/security/osxminecraft/src/lua/build/Debug/liblua.a,
+					"-lpthread",
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetestserver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		DDB69395D23E4123A72B6863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E0471242C9C04435B48CB995 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jsoncpp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/json;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E06D2DC716D9427DBDA1A788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jthread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/jthread;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E0EA6F2868554AC7B78C80B6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E170464D7FED456580132F91 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+					SERVER,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/Users/security/osxminecraft/src/jthread/MinSizeRel/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/json/MinSizeRel/libjsoncpp.a,
+					/Users/security/osxminecraft/src/lua/build/MinSizeRel/liblua.a,
+					"-lpthread",
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetestserver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E640178C0F9A447CB58E1A75 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EA618CE6C2254DBD8725EF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				CONFIGURATION_BUILD_DIR = /Users/security/osxminecraft/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+					SERVER,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ffast-math",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-pipe",
+					"-funroll-loops",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/Users/security/osxminecraft/src/jthread/Release/libjthread.a,
+					/usr/lib/libsqlite3.dylib,
+					/Users/security/osxminecraft/src/json/Release/libjsoncpp.a,
+					/Users/security/osxminecraft/src/lua/build/Release/liblua.a,
+					"-lpthread",
+					/usr/lib/libcurl.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = minetestserver;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		EABDC3039A0A408996657396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CMAKE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/security/osxminecraft/src,
+					/usr/local/include/irrlicht,
+					/Users/security/osxminecraft/src/Release,
+					/Library/Frameworks/UnixImageIO.framework/Headers,
+					/Library/Frameworks/OpenAL.framework/Headers,
+					/opt/local/include,
+					/Library/Frameworks/Ogg.framework/Headers/ogg,
+					/Users/security/osxminecraft/src/jthread,
+					/Users/security/osxminecraft/src/lua/src,
+					/Users/security/osxminecraft/src/json,
+					/Users/security/osxminecraft/src/script,
+					/usr/include/curl,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-ffast-math",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-pipe",
+					"-funroll-loops",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = jthread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft/src/jthread;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F9CD3FCDC22E49CC8176E438 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/security/osxminecraft;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CF4F1485EF44579F410029 /* Build configuration list for PBXNativeTarget "jsoncpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4337538D03F64B0EA2E51A45 /* Debug */,
+				22FB96F0471B4B26991CB6A1 /* Release */,
+				E0471242C9C04435B48CB995 /* MinSizeRel */,
+				94546A58C3214E9E941BCB8C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		29C68F9956444A65B13D0695 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F042F82EBF94293A63B93CB /* Debug */,
+				83E18F2DE89546A58C96028F /* Release */,
+				E0EA6F2868554AC7B78C80B6 /* MinSizeRel */,
+				AE22C60A0B0747568F819EA2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61BFBF10E87945F1B03BA3E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E412DA7569147A19F9C5628 /* Debug */,
+				47E5D9603484401EAABDAA9B /* Release */,
+				5B9A445501444EE89344356A /* MinSizeRel */,
+				E640178C0F9A447CB58E1A75 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		684691D116224204BEF25783 /* Build configuration list for PBXNativeTarget "jthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06D2DC716D9427DBDA1A788 /* Debug */,
+				EABDC3039A0A408996657396 /* Release */,
+				2440D449B21A499FB5F9F0DC /* MinSizeRel */,
+				183A177AC14B446E9C030649 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95B55A6F397646D98F1D49A2 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB69395D23E4123A72B6863 /* Debug */,
+				B56814EA2E2A4E55A00B9D60 /* Release */,
+				2108E2328E814039940EBBA4 /* MinSizeRel */,
+				A2B910519CAE4DCB84CD5136 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		966116896BA349AF969317D3 /* Build configuration list for PBXNativeTarget "minetestserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41A1D7BBDDE4265B8455123 /* Debug */,
+				EA618CE6C2254DBD8725EF1F /* Release */,
+				E170464D7FED456580132F91 /* MinSizeRel */,
+				D03DAF95CFF24BFEBB2D7E6A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B704C43B464A4693AC1CFA2C /* Build configuration list for PBXProject "minetest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1831199D81014420933C18BA /* Debug */,
+				91FF94D0EFE64087A0D574C9 /* Release */,
+				C233DB6CD53E415993666A7E /* MinSizeRel */,
+				D18C78F9765F47FFABAE9FC2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C71DE7F1E3E4469AADCC9162 /* Build configuration list for PBXNativeTarget "minetest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D748D56C274EB29AF0F4A7 /* Debug */,
+				554959EE311842C1A3A1F6C7 /* Release */,
+				A202519988344C1CB3F5B388 /* MinSizeRel */,
+				5C460DF2277F4AD8A4AA1AEE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8B012D615C849F49AB95BF4 /* Build configuration list for PBXNativeTarget "lua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCF7923D8034F78AA26A230 /* Debug */,
+				8472FCF698514F38B9FF7E82 /* Release */,
+				A9A7CFA581D74721BF93EE11 /* MinSizeRel */,
+				4E0AB6A7AD814C929A8DB56F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3712E0521ED49238E7091B7 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3198A9E064F94DD09B329FCC /* Debug */,
+				BA438364CBA24C30B360BE13 /* Release */,
+				F9CD3FCDC22E49CC8176E438 /* MinSizeRel */,
+				5F5E58D7004A4649B2E7B03B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29957A90FCBA42C9892C7151 /* Project object */;
+}

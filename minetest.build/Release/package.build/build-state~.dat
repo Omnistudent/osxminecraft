@@ -1,0 +1,31 @@
+Tpackage
+v7
+r0
+t400700039.553510
+cCheck dependencies
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
+
+N/Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
+c000000005231FAED000000000000008A
+t1379007213
+s138
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies400700013#400700013#0(0"0(0#1#0"8600547104#0"0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
+s400700013.826496
+e400700039.553411
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
+ocd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmake
+oCPack: Create package using Bundle
+oCPack: Install projects
+oCPack: - Install project: minetest
+oCPack: Create package
+oCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400700013#400700039#0(293"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmakeCPack: Create package using BundleCPack: Install projectsCPack: - Install project: minetestCPack: Create packageCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.6(13@96"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmake400700013#0#96#0(1@0"0(13@35"CPack: Create package using Bundle400700014#96#35#0(1@0"0(13@24"CPack: Install projects400700014#131#24#0(1@0"0(13@35"CPack: - Install project: minetest400700014#155#35#0(1@0"0(13@22"CPack: Create package400700018#190#22#0(1@0"0(13@81"CPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.400700039#212#81#0(1@0"0(0#0#0"8610495616#152"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh0#
+
