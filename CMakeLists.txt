@@ -67,11 +67,14 @@ if(WIN32)
 	set(EXAMPLE_CONF_DIR ".")
 	set(LOCALEDIR "locale")
 elseif(APPLE)
+	set(SHAREDIR ".")
+	set(BINDIR "./bin")
+	set(DOCDIR "./doc/${PROJECT_NAME}")
 	# Random placeholders; this isn't usually used and may not work
 	# See https://github.com/toabi/minetest-mac/
-	set(SHAREDIR "${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}")
-	set(BINDIR "bin")
-	set(DOCDIR "share/doc/${PROJECT_NAME}")
+	#set(SHAREDIR "${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}")
+	#set(BINDIR "bin")
+	#set(DOCDIR "share/doc/${PROJECT_NAME}")
 	set(EXAMPLE_CONF_DIR ${DOCDIR})
 	set(LOCALEDIR "locale")
 elseif(UNIX) # Linux, BSD etc
