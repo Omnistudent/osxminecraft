@@ -188,6 +188,13 @@ bool threadSetPriority(threadid_t tid, int prio);
 #else // Posix
 	#include <sys/time.h>
 	#include <time.h>
+#include <mach/mach_time.h>
+#include <mach/mach.h> // This one makes policy thread work
+#include <mach/mach_init.h>
+#include <mach/thread_policy.h>
+#define CLOCK_REALTIME 0
+#define CLOCK_MONOTONIC 0
+
 	
 	inline u32 getTimeS()
 	{
@@ -213,8 +220,9 @@ bool threadSetPriority(threadid_t tid, int prio);
 	inline u32 getTimeNs()
 	{
 		struct timespec ts;
-		clock_gettime(CLOCK_REALTIME, &ts);
-		return ts.tv_sec * 1000000000 + ts.tv_nsec;
+                struct timeval tv;
+                gettimeofday(&tv, NULL);
+		return tv.tv_sec * 1000000000 + tv.tv_usec*1000;
 	}
 	
 	/*#include <sys/timeb.h>
