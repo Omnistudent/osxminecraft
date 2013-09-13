@@ -2,10 +2,18 @@ TZERO_CHECK
 v7
 r1
 
+N/Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-6A62E0865E0E4B60A47299C9.sh
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
 c00000000000000000000000000000000
 t2
 s0
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-6A62E0865E0E4B60A47299C9.sh
+r0
 
 CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
 r0

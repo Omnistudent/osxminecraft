@@ -2,10 +2,18 @@ Tpackage
 v7
 r1
 
+N/Users/security/osxminecraft/minetest.build/Debug/package.build/Script-2F82F723EFF44A349E853A4E.sh
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/security/osxminecraft/minetest.build/Debug/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
 c00000000000000000000000000000000
 t2
 s0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/package.build/Script-2F82F723EFF44A349E853A4E.sh
+r0
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
 r0

@@ -227,6 +227,11 @@ c00000000000000000000000000000000
 t2
 s0
 
+N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-E91467DA7AC241B887B4F93B.sh
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/security/osxminecraft/src/lua/src/lapi.c
 c000000005231864300000000000058B4
 t1378977347
@@ -903,5 +908,8 @@ CLibtool /Users/security/osxminecraft/src/lua/build/Debug/liblua.a normal i386
 r0
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-AEE1CB231D89466D9D1EDC92.sh
+r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-E91467DA7AC241B887B4F93B.sh
 r0
 

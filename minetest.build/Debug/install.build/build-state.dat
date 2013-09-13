@@ -7,6 +7,14 @@ c00000000000000000000000000000000
 t2
 s0
 
+N/Users/security/osxminecraft/minetest.build/Debug/install.build/Script-7D6DCA9B4A6A4A7C83C1EF70.sh
+c00000000000000000000000000000000
+t2
+s0
+
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/install.build/Script-3D64FDF631454C31BA83EFFD.sh
+r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/install.build/Script-7D6DCA9B4A6A4A7C83C1EF70.sh
 r0
 

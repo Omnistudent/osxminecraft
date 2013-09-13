@@ -65,6 +65,11 @@ N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Obj
 t2
 s0
 
+N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-5F338EA9222B407BA2CB9B6A.sh
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B34FC3638D774089A4C0EC79.sh
 c00000000000000000000000000000000
 t2
@@ -92,6 +97,9 @@ CCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jth
 r0
 
 CLibtool /Users/security/osxminecraft/src/jthread/Debug/libjthread.a normal i386
+r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-5F338EA9222B407BA2CB9B6A.sh
 r0
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B34FC3638D774089A4C0EC79.sh

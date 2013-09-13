@@ -1,94 +1,18 @@
 // !$*UTF8*$!
 {
-	0DFAA62CCBAC45879B5D31A5 /* lua */ = {
+	444874E09D3F4B53AD22ECB3 /* jsoncpp */ = {
 		activeExec = 0;
 	};
-	29957A90FCBA42C9892C7151 /* Project object */ = {
-		activeBuildConfigurationName = Release;
-		activeExecutable = 95CEA27717E22AFD00B61756 /* minetest */;
-		activeTarget = E8CBEC9F5C5B42349ACE3BDD /* ALL_BUILD */;
-		codeSenseManager = 95CEA28417E22B2C00B61756 /* Code sense */;
-		executables = (
-			95CEA27717E22AFD00B61756 /* minetest */,
-			95CEA27817E22AFD00B61756 /* minetestserver */,
-		);
-		perUserDictionary = {
-			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					341,
-					20,
-					48.16259765625,
-					43,
-					43,
-					20,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-					PBXFileDataSource_Target_ColumnID,
-				);
-			};
-			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					301,
-					60,
-					20,
-					48,
-					43,
-					43,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXTargetDataSource_PrimaryAttribute,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-				);
-			};
-			PBXPerProjectTemplateStateSaveDate = 400705454;
-			PBXWorkspaceStateSaveDate = 400705454;
-		};
-		sourceControlManager = 95CEA28317E22B2C00B61756 /* Source Control */;
-		userBuildSettings = {
-		};
-	};
-	36DBEEF396984FE180C903CB /* install */ = {
-		activeExec = 0;
-	};
-	4C57E5EE58C24CFFA8826999 /* ZERO_CHECK */ = {
-		activeExec = 0;
-	};
-	500F2A47F91740EEBC5C3449 /* jthread */ = {
-		activeExec = 0;
-	};
-	5F340278E633440CBC9BC755 /* minetestserver */ = {
+	85734D5B21144F279D0C9730 /* minetest */ = {
 		activeExec = 0;
 		executables = (
-			95CEA27817E22AFD00B61756 /* minetestserver */,
+			959F008A17E351D400E9C085 /* minetest */,
 		);
 	};
-	7FC9140D2C3F43E5954D0DED /* minetest */ = {
-		activeExec = 0;
-		executables = (
-			95CEA27717E22AFD00B61756 /* minetest */,
-		);
-	};
-	93A817284635427F8700AF20 /* jsoncpp */ = {
+	892F0C4515654671AD2102C3 /* ALL_BUILD */ = {
 		activeExec = 0;
 	};
-	95CEA27717E22AFD00B61756 /* minetest */ = {
+	959F008A17E351D400E9C085 /* minetest */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -115,7 +39,7 @@
 		sourceDirectories = (
 		);
 	};
-	95CEA27817E22AFD00B61756 /* minetestserver */ = {
+	959F008B17E351D400E9C085 /* minetestserver */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -142,7 +66,7 @@
 		sourceDirectories = (
 		);
 	};
-	95CEA28317E22B2C00B61756 /* Source Control */ = {
+	959F009417E351FF00E9C085 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -152,14 +76,68 @@
 			};
 		};
 	};
-	95CEA28417E22B2C00B61756 /* Code sense */ = {
+	959F009517E351FF00E9C085 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	E88027F31DC44CA3870723A9 /* package */ = {
+	96EFB495E1BF44488A5E13B6 /* package */ = {
 		activeExec = 0;
 	};
-	E8CBEC9F5C5B42349ACE3BDD /* ALL_BUILD */ = {
+	AA5884B2337C4E76B53EEA7D /* lua */ = {
+		activeExec = 0;
+	};
+	B52D9D7FEDDC4282ACC55010 /* ZERO_CHECK */ = {
+		activeExec = 0;
+	};
+	B987BF846CD2448A9304CDD2 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 959F008A17E351D400E9C085 /* minetest */;
+		activeTarget = 892F0C4515654671AD2102C3 /* ALL_BUILD */;
+		codeSenseManager = 959F009517E351FF00E9C085 /* Code sense */;
+		executables = (
+			959F008A17E351D400E9C085 /* minetest */,
+			959F008B17E351D400E9C085 /* minetestserver */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 400774704;
+			PBXWorkspaceStateSaveDate = 400774704;
+		};
+		sourceControlManager = 959F009417E351FF00E9C085 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	D515797C2B5B42BAB260A6A0 /* install */ = {
+		activeExec = 0;
+	};
+	DC8DD5FAFDC04C9DBA262BE7 /* minetestserver */ = {
+		activeExec = 0;
+		executables = (
+			959F008B17E351D400E9C085 /* minetestserver */,
+		);
+	};
+	FA7202B104A448EEBB86924D /* jthread */ = {
 		activeExec = 0;
 	};
 }

@@ -1,9 +1,9 @@
 TALL_BUILD
 v7
 r0
-t400705467.384447
+t400774732.493961
 cCheck dependencies
-cPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-A1C5344691F045A198B67A44.sh
+cPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC11E1BC7F2C4F08A6729DB3.sh
 
 N/Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-1123C81F80D145E589781DB1.sh
 c000000005231F50B0000000000000092
@@ -45,9 +45,19 @@ c0000000052320C410000000000000092
 t1379011649
 s146
 
+N/Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC11E1BC7F2C4F08A6729DB3.sh
+c0000000052331EB80000000000000092
+t1379081912
+s146
+
+N/Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC8D64D4C55A4FF4AC3DE729.sh
+c0000000052331A780000000000000092
+t1379080824
+s146
+
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies400705467#400705467#0(0"0(0#1#0"8627887712#0"0#
+lSLF07#2@18"Check dependencies400774732#400774732#0(0"0(0#1#0"8635581152#0"0#
 
 CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-1123C81F80D145E589781DB1.sh
 s400700013.785261
@@ -152,4 +162,30 @@ o
 oecho Build\ all\ projects
 oBuild all projects
 lSLF07#2@37"Run custom shell script 'CMake Rules'400704449#400704449#0(54"echo ""echo Build\ all\ projectsBuild all projects3(13@8"echo ""400704449#0#8#0(1@0"0(13@26"echo Build\ all\ projects400704449#9#26#0(1@0"0(13@19"Build all projects400704449#35#19#0(1@0"0(0#0#0"8613517408#154"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-B44C52E1E217402FA768E7D5.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC11E1BC7F2C4F08A6729DB3.sh
+s400774732.468548
+e400774732.493923
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC11E1BC7F2C4F08A6729DB3.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF07#2@37"Run custom shell script 'CMake Rules'400774732#400774732#0(54"echo ""echo Build\ all\ projectsBuild all projects3(13@8"echo ""400774732#0#8#0(1@0"0(13@26"echo Build\ all\ projects400774732#9#26#0(1@0"0(13@19"Build all projects400774732#35#19#0(1@0"0(0#0#0"8635338464#154"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC11E1BC7F2C4F08A6729DB3.sh0#
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC8D64D4C55A4FF4AC3DE729.sh
+s400774571.494530
+e400774571.514791
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC8D64D4C55A4FF4AC3DE729.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF07#2@37"Run custom shell script 'CMake Rules'400774571#400774571#0(54"echo ""echo Build\ all\ projectsBuild all projects3(13@8"echo ""400774571#0#8#0(1@0"0(13@26"echo Build\ all\ projects400774571#9#26#0(1@0"0(13@19"Build all projects400774571#35#19#0(1@0"0(0#0#0"8601956768#154"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/ALL_BUILD.build/Script-DC8D64D4C55A4FF4AC3DE729.sh0#
 
