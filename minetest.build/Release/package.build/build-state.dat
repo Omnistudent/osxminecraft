@@ -1,9 +1,9 @@
 Tpackage
 v7
 r0
-t400774761.968944
+t400775561.599925
 cCheck dependencies
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-12AE69A86E7D41979E3C9238.sh
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-BD3354689D8C42F6AF63B58F.sh
 
 N/Users/security/osxminecraft/minetest.build/Release/package.build/Script-0B475460B6754574B09C7F06.sh
 c000000005232103B000000000000008A
@@ -45,6 +45,11 @@ c00000000523206A4000000000000008A
 t1379010212
 s138
 
+N/Users/security/osxminecraft/minetest.build/Release/package.build/Script-BD3354689D8C42F6AF63B58F.sh
+c00000000523321DA000000000000008A
+t1379082714
+s138
+
 N/Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
 c000000005231FAED000000000000008A
 t1379007213
@@ -57,7 +62,7 @@ s138
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies400774732#400774732#0(0"0(0#1#0"8636472480#0"0#
+lSLF07#2@18"Check dependencies400775513#400775514#0(0"0(0#1#0"8635064256#0"0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-0B475460B6754574B09C7F06.sh
 s400705467.393110
@@ -178,6 +183,21 @@ oCPack: - Install project: minetest
 oCPack: Create package
 oCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.
 lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400703012#400703039#0(293"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmakeCPack: Create package using BundleCPack: Install projectsCPack: - Install project: minetestCPack: Create packageCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.6(13@96"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmake400703012#0#96#0(1@0"0(13@35"CPack: Create package using Bundle400703012#96#35#0(1@0"0(13@24"CPack: Install projects400703012#131#24#0(1@0"0(13@35"CPack: - Install project: minetest400703012#155#35#0(1@0"0(13@22"CPack: Create package400703015#190#22#0(1@0"0(13@81"CPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.400703039#212#81#0(1@0"0(0#0#0"8614147424#152"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/package.build/Script-A06FF593B54E454592A53A6A.sh0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-BD3354689D8C42F6AF63B58F.sh
+s400775514.010609
+e400775561.599823
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/minetest.build/Release/package.build/Script-BD3354689D8C42F6AF63B58F.sh
+ocd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmake
+oCPack: Create package using Bundle
+oCPack: Install projects
+oCPack: - Install project: minetest
+oCPack: Create package
+oCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400775514#400775561#0(293"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmakeCPack: Create package using BundleCPack: Install projectsCPack: - Install project: minetestCPack: Create packageCPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.6(13@96"cd /Users/security/osxminecraft && /opt/local/bin/cpack -C Release --config ./CPackConfig.cmake400775514#0#96#0(1@0"0(13@35"CPack: Create package using Bundle400775514#96#35#0(1@0"0(13@24"CPack: Install projects400775514#131#24#0(1@0"0(13@35"CPack: - Install project: minetest400775514#155#35#0(1@0"0(13@22"CPack: Create package400775529#190#22#0(1@0"0(13@81"CPack: - package: /Users/security/osxminecraft/minetest-0.4.7-osx.dmg generated.400775561#212#81#0(1@0"0(0#0#0"8629722016#152"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Release/package.build/Script-BD3354689D8C42F6AF63B58F.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Release/package.build/Script-DC28DD4CBD904492AB1E72D4.sh
 s400700013.826496

@@ -1,7 +1,7 @@
 Tlua
 v7
 r0
-t400774732.229532
+t400775509.712054
 cCheck dependencies
 cCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lapi.o /Users/security/osxminecraft/src/lua/src/lapi.c normal i386 c com.apple.compilers.gcc.4_2
 cCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lauxlib.o /Users/security/osxminecraft/src/lua/src/lauxlib.c normal i386 c com.apple.compilers.gcc.4_2
@@ -33,7 +33,7 @@ cCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lun
 cCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lvm.o /Users/security/osxminecraft/src/lua/src/lvm.c normal i386 c com.apple.compilers.gcc.4_2
 cCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lzio.o /Users/security/osxminecraft/src/lua/src/lzio.c normal i386 c com.apple.compilers.gcc.4_2
 cLibtool /Users/security/osxminecraft/src/lua/build/Release/liblua.a normal i386
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-C5BCF705A94B4868B388956D.sh
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E4DE4256F2404F2BB4CFDB1E.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -298,6 +298,11 @@ s162
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-DFF12948C06142DCA0E9BF06.sh
 c0000000052320C3F00000000000000A2
 t1379011647
+s162
+
+N/Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E4DE4256F2404F2BB4CFDB1E.sh
+c00000000523321D500000000000000A2
+t1379082709
 s162
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E91467DA7AC241B887B4F93B.sh
@@ -892,7 +897,7 @@ i"lmem.h"
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies400774732#400774732#0(0"0(0#1#0"8635839616#0"0#
+lSLF07#2@18"Check dependencies400775506#400775509#0(0"0(0#1#0"8623370880#0"0#
 
 CCompileC src/lua/build/minetest.build/Release/lua.build/Objects-normal/i386/lapi.o /Users/security/osxminecraft/src/lua/src/lapi.c normal i386 c com.apple.compilers.gcc.4_2
 s400698137.619048
@@ -1435,6 +1440,23 @@ oDepend check for xcode
 ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release
 omake[1]: Nothing to be done for `PostBuild.lua.Release'.
 lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400704447#400704447#0(572"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Releasemake[1]: Nothing to be done for `PostBuild.lua.Release'.echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Releasemake[1]: Nothing to be done for `PostBuild.lua.Release'.8(13@30"echo "Depend check for xcode"400704447#0#30#0(1@0"0(13@23"Depend check for xcode400704447#30#23#0(1@0"0(13@188"cd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release400704447#53#188#0(1@0"0(13@57"make[1]: Nothing to be done for `PostBuild.lua.Release'.400704447#241#57#0(1@0"0(13@30"echo "Depend check for xcode"400704447#298#30#0(1@0"0(13@23"Depend check for xcode400704447#328#23#0(1@0"0(13@164"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release400704447#351#164#0(1@0"0(13@57"make[1]: Nothing to be done for `PostBuild.lua.Release'.400704447#515#57#0(1@0"0(0#0#0"8618019744#162"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-DFF12948C06142DCA0E9BF06.sh0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E4DE4256F2404F2BB4CFDB1E.sh
+s400775509.346822
+e400775509.711942
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E4DE4256F2404F2BB4CFDB1E.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release
+omake[1]: Nothing to be done for `PostBuild.lua.Release'.
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release
+omake[1]: Nothing to be done for `PostBuild.lua.Release'.
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400775509#400775509#0(572"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Releasemake[1]: Nothing to be done for `PostBuild.lua.Release'.echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Releasemake[1]: Nothing to be done for `PostBuild.lua.Release'.8(13@30"echo "Depend check for xcode"400775509#0#30#0(1@0"0(13@23"Depend check for xcode400775509#30#23#0(1@0"0(13@188"cd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release400775509#53#188#0(1@0"0(13@57"make[1]: Nothing to be done for `PostBuild.lua.Release'.400775509#241#57#0(1@0"0(13@30"echo "Depend check for xcode"400775509#298#30#0(1@0"0(13@23"Depend check for xcode400775509#328#23#0(1@0"0(13@164"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Release400775509#351#164#0(1@0"0(13@57"make[1]: Nothing to be done for `PostBuild.lua.Release'.400775509#515#57#0(1@0"0(0#0#0"8634659328#162"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E4DE4256F2404F2BB4CFDB1E.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Release/lua.build/Script-E91467DA7AC241B887B4F93B.sh
 s400774569.795722

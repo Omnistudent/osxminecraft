@@ -1,12 +1,12 @@
 Tjthread
 v7
 r0
-t400774732.257013
+t400775509.978137
 cCheck dependencies
 cCompileC src/jthread/minetest.build/Release/jthread.build/Objects-normal/i386/jmutex.o /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC src/jthread/minetest.build/Release/jthread.build/Objects-normal/i386/jthread.o /Users/security/osxminecraft/src/jthread/pthread/jthread.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cLibtool /Users/security/osxminecraft/src/jthread/Release/libjthread.a normal i386
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-837F4EEB319A4815B5964277.sh
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DAF46746C3B47ACA7416E5C.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -106,6 +106,11 @@ c0000000052320E7B00000000000000A2
 t1379012219
 s162
 
+N/Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DAF46746C3B47ACA7416E5C.sh
+c00000000523321D500000000000000A2
+t1379082709
+s162
+
 N/Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DB6BF09A3DC45A7AB1FE805.sh
 c0000000052320C3F00000000000000A2
 t1379011647
@@ -138,7 +143,7 @@ i<stdlib.h>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies400774732#400774732#0(0"0(0#1#0"8619973984#0"0#
+lSLF07#2@18"Check dependencies400775509#400775509#0(0"0(0#1#0"8634647072#0"0#
 
 CCompileC src/jthread/minetest.build/Release/jthread.build/Objects-normal/i386/jmutex.o /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 s400698141.202981
@@ -266,6 +271,19 @@ oDepend check for xcode
 ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Release
 omake[1]: Nothing to be done for `PostBuild.jthread.Release'.
 lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400705019#400705019#0(282"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Releasemake[1]: Nothing to be done for `PostBuild.jthread.Release'.4(13@30"echo "Depend check for xcode"400705019#0#30#0(1@0"0(13@23"Depend check for xcode400705019#30#23#0(1@0"0(13@168"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Release400705019#53#168#0(1@0"0(13@61"make[1]: Nothing to be done for `PostBuild.jthread.Release'.400705019#221#61#0(1@0"0(0#0#0"8631741280#164"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-83A14952735A4530B411B2FD.sh0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DAF46746C3B47ACA7416E5C.sh
+s400775509.705926
+e400775509.978107
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DAF46746C3B47ACA7416E5C.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Release
+omake[1]: Nothing to be done for `PostBuild.jthread.Release'.
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400775509#400775509#0(282"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Releasemake[1]: Nothing to be done for `PostBuild.jthread.Release'.4(13@30"echo "Depend check for xcode"400775509#0#30#0(1@0"0(13@23"Depend check for xcode400775509#30#23#0(1@0"0(13@168"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Release400775509#53#168#0(1@0"0(13@61"make[1]: Nothing to be done for `PostBuild.jthread.Release'.400775509#221#61#0(1@0"0(0#0#0"8635692736#164"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DAF46746C3B47ACA7416E5C.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Release/jthread.build/Script-8DB6BF09A3DC45A7AB1FE805.sh
 s400704447.731463

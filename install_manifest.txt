@@ -518,11 +518,11 @@
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/textures/base/pack/unknown_item.png
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/textures/base/pack/unknown_node.png
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/textures/base/pack/unknown_object.png
-/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./fonts/DroidSansFallbackFull.ttf
-/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./fonts/fontdejavusansmono.png
-/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./fonts/fontlucida.png
-/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./fonts/liberationmono.ttf
-/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./fonts/liberationsans.ttf
+/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/fonts/DroidSansFallbackFull.ttf
+/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/fonts/fontdejavusansmono.png
+/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/fonts/fontlucida.png
+/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/fonts/liberationmono.ttf
+/Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./bin/share/fonts/liberationsans.ttf
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./doc/minetest/README.txt
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./doc/minetest/lua_api.txt
 /Users/security/osxminecraft/_CPack_Packages/Darwin/Bundle/minetest-0.4.7-osx/minetest.app/Contents/Resources/./doc/minetest/mapformat.txt

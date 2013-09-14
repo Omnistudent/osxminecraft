@@ -1,7 +1,7 @@
 Tminetestserver
 v7
 r0
-t400774732.462957
+t400775513.779463
 cCheck dependencies
 cCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/c_content.o /Users/security/osxminecraft/src/script/common/c_content.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/c_converter.o /Users/security/osxminecraft/src/script/common/c_converter.cpp normal i386 c++ com.apple.compilers.gcc.4_2
@@ -106,7 +106,7 @@ cCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/tr
 cCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/voxel.o /Users/security/osxminecraft/src/voxel.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/voxelalgorithms.o /Users/security/osxminecraft/src/voxelalgorithms.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cLd /Users/security/osxminecraft/bin/Release/minetestserver normal i386
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-246DC0114C374A48BDE81C44.sh
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-9E95670EA7144BA0A67603EC.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -2128,6 +2128,11 @@ c000000005231F47E0000000000000099
 t1379005566
 s153
 
+N/Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-9E95670EA7144BA0A67603EC.sh
+c00000000523321D90000000000000099
+t1379082713
+s153
+
 N/Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-BE44FB8C56B2409387873041.sh
 c0000000052320EE10000000000000099
 t1379012321
@@ -3856,7 +3861,7 @@ s17163
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies400774732#400774732#0(0"0(0#1#0"8607882496#0"0#
+lSLF07#2@18"Check dependencies400775513#400775513#0(0"0(0#1#0"8627048768#0"0#
 
 CCompileC src/minetest.build/Release/minetestserver.build/Objects-normal/i386/ban.o /Users/security/osxminecraft/src/ban.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 s400698400.031825
@@ -5593,6 +5598,19 @@ oDepend check for xcode
 ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Release
 omake[1]: Nothing to be done for `PostBuild.minetestserver.Release'.
 lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400700013#400700013#0(296"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Releasemake[1]: Nothing to be done for `PostBuild.minetestserver.Release'.4(13@30"echo "Depend check for xcode"400700013#0#30#0(1@0"0(13@23"Depend check for xcode400700013#30#23#0(1@0"0(13@175"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Release400700013#53#175#0(1@0"0(13@68"make[1]: Nothing to be done for `PostBuild.minetestserver.Release'.400700013#228#68#0(1@0"0(0#0#0"8599809888#163"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-90A00000D34F4F1DBF8C13FA.sh0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-9E95670EA7144BA0A67603EC.sh
+s400775513.729668
+e400775513.779425
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-9E95670EA7144BA0A67603EC.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Release
+omake[1]: Nothing to be done for `PostBuild.minetestserver.Release'.
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400775513#400775513#0(296"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Releasemake[1]: Nothing to be done for `PostBuild.minetestserver.Release'.4(13@30"echo "Depend check for xcode"400775513#0#30#0(1@0"0(13@23"Depend check for xcode400775513#30#23#0(1@0"0(13@175"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.minetestserver.Release400775513#53#175#0(1@0"0(13@68"make[1]: Nothing to be done for `PostBuild.minetestserver.Release'.400775513#228#68#0(1@0"0(0#0#0"8602090912#163"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-9E95670EA7144BA0A67603EC.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/minetest.build/Release/minetestserver.build/Script-BE44FB8C56B2409387873041.sh
 s400705121.987208
