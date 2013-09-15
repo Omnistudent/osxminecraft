@@ -1,0 +1,95 @@
+
+
+-------------
+  Separator  
+-------------
+
+10:39:15: ERROR[main]: WARNING: Font file was not found. Using default font.
+10:39:15: ERROR[main]: ========== ERROR FROM LUA ===========
+10:39:15: ERROR[main]: Failed to load and run script from 
+10:39:15: ERROR[main]: /../builtin/mainmenu.lua:
+10:39:15: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+10:39:15: ERROR[main]: =======END OF ERROR FROM LUA ========
+10:39:15: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+
+
+-------------
+  Separator  
+-------------
+
+10:41:14: ERROR[main]: WARNING: Font file was not found. Using default font.
+10:41:14: ERROR[main]: ========== ERROR FROM LUA ===========
+10:41:14: ERROR[main]: Failed to load and run script from 
+10:41:14: ERROR[main]: /../builtin/mainmenu.lua:
+10:41:14: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+10:41:14: ERROR[main]: =======END OF ERROR FROM LUA ========
+10:41:14: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+
+
+-------------
+  Separator  
+-------------
+
+10:41:48: ERROR[main]: WARNING: Font file was not found. Using default font.
+10:41:48: ERROR[main]: ========== ERROR FROM LUA ===========
+10:41:48: ERROR[main]: Failed to load and run script from 
+10:41:48: ERROR[main]: /../builtin/mainmenu.lua:
+10:41:48: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+10:41:48: ERROR[main]: =======END OF ERROR FROM LUA ========
+10:41:48: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+
+
+-------------
+  Separator  
+-------------
+
+10:44:26: ERROR[main]: WARNING: Font file was not found. Using default font.
+10:44:26: ERROR[main]: ========== ERROR FROM LUA ===========
+10:44:26: ERROR[main]: Failed to load and run script from 
+10:44:26: ERROR[main]: /../builtin/mainmenu.lua:
+10:44:26: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+10:44:26: ERROR[main]: =======END OF ERROR FROM LUA ========
+10:44:26: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+
+
+-------------
+  Separator  
+-------------
+
+11:50:30: ERROR[main]: WARNING: Font file was not found. Using default font.
+11:50:30: ERROR[main]: ========== ERROR FROM LUA ===========
+11:50:30: ERROR[main]: Failed to load and run script from 
+11:50:30: ERROR[main]: /../builtin/mainmenu.lua:
+11:50:30: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+11:50:30: ERROR[main]: =======END OF ERROR FROM LUA ========
+11:50:30: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)

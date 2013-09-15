@@ -1,0 +1,39 @@
+
+
+-------------
+  Separator  
+-------------
+
+11:50:48: ERROR[main]: WARNING: Font file was not found. Using default font.
+11:50:48: ERROR[main]: ========== ERROR FROM LUA ===========
+11:50:48: ERROR[main]: Failed to load and run script from 
+11:50:48: ERROR[main]: /../builtin/mainmenu.lua:
+11:50:48: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+11:50:48: ERROR[main]: =======END OF ERROR FROM LUA ========
+11:50:48: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+
+
+-------------
+  Separator  
+-------------
+
+11:59:44: ERROR[main]: using dir    /../fonts/fontlucida.png
+11:59:44: ERROR[main]: WARNING: Font file was not found. Using default font.
+11:59:45: ERROR[main]: ========== ERROR FROM LUA ===========
+11:59:45: ERROR[main]: Failed to load and run script from 
+11:59:45: ERROR[main]: /../builtin/mainmenu.lua:
+11:59:45: ERROR[main]: cannot open /../builtin/mainmenu.lua: No such file or directory
+11:59:45: ERROR[main]: =======END OF ERROR FROM LUA ========
+11:59:45: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)

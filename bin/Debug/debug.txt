@@ -1,0 +1,21 @@
+
+
+-------------
+  Separator  
+-------------
+
+11:14:09: ERROR[main]: WARNING: Font file was not found. Using default font.
+11:14:09: ERROR[main]: ========== ERROR FROM LUA ===========
+11:14:09: ERROR[main]: Failed to load and run script from 
+11:14:09: ERROR[main]: /Users/security/osxminecraft/bin/Debug/./../builtin/mainmenu.lua:
+11:14:09: ERROR[main]: cannot open /Users/security/osxminecraft/bin/Debug/./../builtin/mainmenu.lua: No such file or directory
+11:14:09: ERROR[main]: =======END OF ERROR FROM LUA ========
+11:14:09: ERROR[main]: GUIEngine: unable to load builtin menu
+
+In thread a030f540:
+/Users/security/osxminecraft/src/guiEngine.cpp:198: GUIEngine::GUIEngine(irr::IrrlichtDevice*, irr::gui::IGUIElement*, IMenuManager*, irr::scene::ISceneManager*, MainMenuData*, bool&): Assertion '"no future without mainmenu" == 0' failed.
+Debug stacks:
+DEBUG STACK FOR THREAD a030f540:
+#0  int main(int, char**)
+(Leftover data: #1  void run_tests())
+(Leftover data: #2  TestConnection::Run)
