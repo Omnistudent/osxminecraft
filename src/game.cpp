@@ -1770,6 +1770,7 @@ void the_game(
 	*/
 	Camera camera(smgr, draw_control, gamedef);
         errorstream<<"gottit3"<<std::endl;
+        Brain *brain=new Brain(&client);
 	//if (!camera.successfullyCreated(error_message))
         //errorstream<<"iiiiiiiiigottit"<<std::endl;
 	//	return;
@@ -2187,6 +2188,7 @@ void the_game(
 
 		// Input handler step() (used by the random input generator)
 		input->step(dtime);
+                brain->step();
 
 		// Increase timer for doubleclick of "jump"
 		if(g_settings->getBool("doubletap_jump") && jump_timer <= 0.2)
@@ -2562,6 +2564,7 @@ void the_game(
 		*/
 		
 		float turn_amount = 0;
+                random_input=true;
 		if((device->isWindowActive() && noMenuActive()) || random_input)
 		{
 			if(!random_input)
@@ -2576,8 +2579,10 @@ void the_game(
 				first_loop_after_window_activation = false;
 			}
 			else{
-				s32 dx = input->getMousePos().X - displaycenter.X;
-				s32 dy = input->getMousePos().Y - displaycenter.Y;
+				//s32 dx = input->getMousePos().X - displaycenter.X;
+				//s32 dy = input->getMousePos().Y - displaycenter.Y;
+				s32 dx = 0;
+				s32 dy = 0;
 				if(invert_mouse)
 					dy = -dy;
 				//infostream<<"window active, pos difference "<<dx<<","<<dy<<std::endl;
@@ -2630,29 +2635,48 @@ void the_game(
 			float a_pitch,
 			float a_yaw*/
 			PlayerControl control(
-				input->isKeyDown(getKeySetting("keymap_forward")),
-				input->isKeyDown(getKeySetting("keymap_backward")),
-				input->isKeyDown(getKeySetting("keymap_left")),
-				input->isKeyDown(getKeySetting("keymap_right")),
-				input->isKeyDown(getKeySetting("keymap_jump")),
-				input->isKeyDown(getKeySetting("keymap_special1")),
-				input->isKeyDown(getKeySetting("keymap_sneak")),
-				input->getLeftState(),
-				input->getRightState(),
+				//input->isKeyDown(getKeySetting("keymap_forward")),
+				brain->getForwardState(),
+				//input->isKeyDown(getKeySetting("keymap_backward")),
+				brain->getBackState(),
+				//input->isKeyDown(getKeySetting("keymap_left")),
+				brain->getLeftState(),
+				//input->isKeyDown(getKeySetting("keymap_right")),
+				brain->getRightState(),
+				//input->isKeyDown(getKeySetting("keymap_jump")),
+				brain->getJumpState(),
+				//input->isKeyDown(getKeySetting("keymap_special1")),
+				brain->getSpecialState(),
+				//input->isKeyDown(getKeySetting("keymap_sneak")),
+				brain->getSneakState(),
+				//input->getLeftState(),
+                                brain->getDigStatus(),
+				//input->getRightState(),
+				brain->getRightButtonState(),
 				camera_pitch,
-				camera_yaw
+				//camera_yaw
+                                brain->getBotYaw()
 			);
 			client.setPlayerControl(control);
 			u32 keyPressed=
-			1*(int)input->isKeyDown(getKeySetting("keymap_forward"))+
-			2*(int)input->isKeyDown(getKeySetting("keymap_backward"))+
-			4*(int)input->isKeyDown(getKeySetting("keymap_left"))+
-			8*(int)input->isKeyDown(getKeySetting("keymap_right"))+
-			16*(int)input->isKeyDown(getKeySetting("keymap_jump"))+
-			32*(int)input->isKeyDown(getKeySetting("keymap_special1"))+
-			64*(int)input->isKeyDown(getKeySetting("keymap_sneak"))+
-			128*(int)input->getLeftState()+
-			256*(int)input->getRightState();
+			//1*(int)input->isKeyDown(getKeySetting("keymap_forward"))+
+                        1*(int)brain->getForwardState()+
+			//2*(int)input->isKeyDown(getKeySetting("keymap_backward"))+
+                        2*(int)brain->getBackState()+
+			//4*(int)input->isKeyDown(getKeySetting("keymap_left"))+
+                        4*(int)brain->getLeftState()+
+			//8*(int)input->isKeyDown(getKeySetting("keymap_right"))+
+                        8*(int)brain->getRightState()+
+			//16*(int)input->isKeyDown(getKeySetting("keymap_jump"))+
+                        16*(int)brain->getJumpState()+
+			//32*(int)input->isKeyDown(getKeySetting("keymap_special1"))+
+                        32*(int)brain->getSpecialState()+
+			//64*(int)input->isKeyDown(getKeySetting("keymap_sneak"))+
+                        64*(int)brain->getSneakState()+
+			128*brain->getDigStatus()+
+			//128*(int)input->getLeftState()+
+			//256*(int)input->getRightState();
+			256*(int)brain->getRightButtonState();
 			LocalPlayer* player = client.getEnv().getLocalPlayer();
 			player->keyPressed=keyPressed;
 		}
@@ -2984,16 +3008,18 @@ void the_game(
 		core::line3d<f32> shootline(camera_position,
 				camera_position + camera_direction * BS * (d+1));
 
-		ClientActiveObject *selected_object = NULL;
+		//ClientActiveObject *selected_object = NULL;
 
-		PointedThing pointed = getPointedThing(
-				// input
-				&client, player_position, camera_direction,
-				camera_position, shootline, d,
-				playeritem_def.liquids_pointable, !ldown_for_dig,
-				// output
-				hilightboxes,
-				selected_object);
+		//PointedThing pointed = getPointedThing(
+		//		// input
+		//		&client, player_position, camera_direction,
+		//		camera_position, shootline, d,
+		//		playeritem_def.liquids_pointable, !ldown_for_dig,
+		//		// output
+		//		hilightboxes,
+		//		selected_object);
+                PointedThing pointed=brain->getPointed();
+		ClientActiveObject *selected_object = brain->getSelected();
 
 		if(pointed != pointed_old)
 		{
@@ -3037,7 +3063,8 @@ void the_game(
 				dig_time = 0.0;
 			}
 		}
-		if(!digging && ldown_for_dig && !input->getLeftState())
+		//if(!digging && ldown_for_dig && !input->getLeftState())
+		if(!digging && ldown_for_dig && !brain->getDigStatus())
 		{
 			ldown_for_dig = false;
 		}
@@ -3050,7 +3077,8 @@ void the_game(
 		else
 			repeat_rightclick_timer = 0;
 
-		if(playeritem_def.usable && input->getLeftState())
+		//if(playeritem_def.usable && input->getLeftState())
+		if(playeritem_def.usable && brain->getDigStatus())
 		{
 			if(input->getLeftClicked())
 				client.interact(4, pointed);
@@ -3066,6 +3094,8 @@ void the_game(
 			
 			ClientMap &map = client.getEnv().getClientMap();
 			NodeMetadata *meta = map.getNodeMetadata(nodepos);
+			MapNode n2 = map.getNode(nodepos);
+			std::string ggyl= nodedef->get(n2).name;
 			if(meta){
 				infotext = narrow_to_wide(meta->getString("infotext"));
 			} else {
@@ -3080,7 +3110,8 @@ void the_game(
 				Handle digging
 			*/
 			
-			if(nodig_delay_timer <= 0.0 && input->getLeftState()
+			//if(nodig_delay_timer <= 0.0 && input->getLeftState()
+			if(nodig_delay_timer <= 0.0 && brain->getDigStatus()
 					&& client.checkPrivilege("interact"))
 			{
 				if(!digging)
@@ -3288,7 +3319,8 @@ void the_game(
 			}
 
 			//if(input->getLeftClicked())
-			if(input->getLeftState())
+			if(brain->getDigStatus())
+			//if(input->getLeftState())
 			{
 				bool do_punch = false;
 				bool do_punch_damage = false;
@@ -3322,7 +3354,8 @@ void the_game(
 				client.interact(3, pointed);  // place
 			}
 		}
-		else if(input->getLeftState())
+		else if(brain->getDigStatus())
+		//else if(input->getLeftState())
 		{
 			// When button is held down in air, show continuous animation
 			left_punch = true;
@@ -3581,6 +3614,26 @@ void the_game(
 			u32 recent_chat_count = chat_backend.getRecentBuffer().getLineCount();
 			std::wstring recent_chat = chat_backend.getRecentChat();
 			guitext_chat->setText(recent_chat.c_str());
+                        ChatBuffer& buf  = chat_backend.getRecentBuffer();
+                        for (u32 i = 0; i < buf.getLineCount(); ++i)
+{
+                        ChatLine linnne= buf.getLine(i);
+                        brain->addMessline(linnne);
+                        //printf("here it is\n");
+                        //wprintf(linnne.name.c_str());
+                        //printf("\n");
+                        //wprintf(linnne.text.c_str());
+                        //printf("\n");
+                        //printf("age: %f",linnne.age);
+                        //printf("\n");
+                        //printf("time: %f\n",dtime);
+                        //printf("there it was\n");
+}
+
+                        //printf("00000000000000000000000000000000000000000000\n");
+                        //wprintf(recent_chat.c_str());
+                        //printf("00000000000000000000000000000000000000000000\n");
+			//guitext_chat->setText(recent_chat.c_str());
 
 			// Update gui element size and position
 			s32 chat_y = 5+(text_height+5);
