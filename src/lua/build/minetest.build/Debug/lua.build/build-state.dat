@@ -1,6 +1,39 @@
 Tlua
 v7
-r1
+r0
+t400927589.955495
+cCheck dependencies
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o /Users/security/osxminecraft/src/lua/src/lapi.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lauxlib.o /Users/security/osxminecraft/src/lua/src/lauxlib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lbaselib.o /Users/security/osxminecraft/src/lua/src/lbaselib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lcode.o /Users/security/osxminecraft/src/lua/src/lcode.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldblib.o /Users/security/osxminecraft/src/lua/src/ldblib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldebug.o /Users/security/osxminecraft/src/lua/src/ldebug.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldo.o /Users/security/osxminecraft/src/lua/src/ldo.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldump.o /Users/security/osxminecraft/src/lua/src/ldump.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lfunc.o /Users/security/osxminecraft/src/lua/src/lfunc.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lgc.o /Users/security/osxminecraft/src/lua/src/lgc.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/linit.o /Users/security/osxminecraft/src/lua/src/linit.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/liolib.o /Users/security/osxminecraft/src/lua/src/liolib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/llex.o /Users/security/osxminecraft/src/lua/src/llex.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmathlib.o /Users/security/osxminecraft/src/lua/src/lmathlib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmem.o /Users/security/osxminecraft/src/lua/src/lmem.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loadlib.o /Users/security/osxminecraft/src/lua/src/loadlib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lobject.o /Users/security/osxminecraft/src/lua/src/lobject.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lopcodes.o /Users/security/osxminecraft/src/lua/src/lopcodes.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loslib.o /Users/security/osxminecraft/src/lua/src/loslib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lparser.o /Users/security/osxminecraft/src/lua/src/lparser.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstate.o /Users/security/osxminecraft/src/lua/src/lstate.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstring.o /Users/security/osxminecraft/src/lua/src/lstring.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstrlib.o /Users/security/osxminecraft/src/lua/src/lstrlib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltable.o /Users/security/osxminecraft/src/lua/src/ltable.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltablib.o /Users/security/osxminecraft/src/lua/src/ltablib.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltm.o /Users/security/osxminecraft/src/lua/src/ltm.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lundump.o /Users/security/osxminecraft/src/lua/src/lundump.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lvm.o /Users/security/osxminecraft/src/lua/src/lvm.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lzio.o /Users/security/osxminecraft/src/lua/src/lzio.c normal i386 c com.apple.compilers.gcc.4_2
+cLibtool /Users/security/osxminecraft/src/lua/build/Debug/liblua.a normal i386
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-7D6CFA0E2D144A8DB90EF809.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -98,129 +131,134 @@ t1242688292
 s12695
 
 N/Users/security/osxminecraft/src/lua/build/Debug/liblua.a
-t2
-s0
+t1379234789
+s606168
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o
-t2
-s0
+t1379234787
+s40156
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lauxlib.o
-t2
-s0
+t1379234787
+s27152
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lbaselib.o
-t2
-s0
+t1379234787
+s30524
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lcode.o
-t2
-s0
+t1379234787
+s36828
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldblib.o
-t2
-s0
+t1379234787
+s19876
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldebug.o
-t2
-s0
+t1379234787
+s27660
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldo.o
-t2
-s0
+t1379234788
+s23072
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldump.o
-t2
-s0
+t1379234787
+s11752
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lfunc.o
-t2
-s0
+t1379234788
+s11916
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lgc.o
-t2
-s0
+t1379234788
+s24020
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/linit.o
-t2
-s0
+t1379234788
+s3244
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/liolib.o
-t2
-s0
+t1379234788
+s24916
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/llex.o
-t2
-s0
+t1379234788
+s27088
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmathlib.o
-t2
-s0
+t1379234788
+s13548
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmem.o
-t2
-s0
+t1379234788
+s8340
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loadlib.o
-t2
-s0
+t1379234788
+s20284
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lobject.o
-t2
-s0
+t1379234788
+s17464
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lopcodes.o
-t2
-s0
+t1379234788
+s2844
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loslib.o
-t2
-s0
+t1379234788
+s13292
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lparser.o
-t2
-s0
+t1379234789
+s47640
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstate.o
-t2
-s0
+t1379234789
+s12212
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstring.o
-t2
-s0
+t1379234789
+s10228
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstrlib.o
-t2
-s0
+t1379234789
+s37924
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltable.o
-t2
-s0
+t1379234789
+s21924
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltablib.o
-t2
-s0
+t1379234789
+s12048
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltm.o
-t2
-s0
+t1379234789
+s9776
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lua.LinkFileList
-c00000000000000000000000000000000
-t2
-s0
+c00000000523573E30000000000000BA1
+t1379234787
+s2977
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lundump.o
-t2
-s0
+t1379234789
+s15320
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lvm.o
-t2
-s0
+t1379234789
+s37348
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lzio.o
-t2
-s0
+t1379234789
+s9704
+
+N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-7D6CFA0E2D144A8DB90EF809.sh
+c00000000523573E300000000000000A2
+t1379234787
+s162
 
 N/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-AEE1CB231D89466D9D1EDC92.sh
 c00000000000000000000000000000000
@@ -817,95 +855,416 @@ s1556
 i"lua.h"
 i"lmem.h"
 
-CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o /Users/security/osxminecraft/src/lua/src/lapi.c normal i386 c com.apple.compilers.gcc.4_2
+CCheck dependencies
 r0
+lSLF07#2@18"Check dependencies400927586#400927587#0(0"0(0#1#0"8607744992#0"0#
+
+CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o /Users/security/osxminecraft/src/lua/src/lapi.c normal i386 c com.apple.compilers.gcc.4_2
+s400927587.056879
+e400927587.514784
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o
+x/Users/security/osxminecraft/src/lua/src/lapi.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/security/osxminecraft/src/lua/src/lapi.c400927587#400927587#0(0"0(0#0#47"/Users/security/osxminecraft/src/lua/src/lapi.c8617759072#972"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lapi.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lapi.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lauxlib.o /Users/security/osxminecraft/src/lua/src/lauxlib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.058339
+e400927587.359171
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lauxlib.o
+x/Users/security/osxminecraft/src/lua/src/lauxlib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lauxlib.c400927587#400927587#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lauxlib.c8617505440#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lauxlib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lauxlib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lbaselib.o /Users/security/osxminecraft/src/lua/src/lbaselib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.359259
+e400927587.581017
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lbaselib.o
+x/Users/security/osxminecraft/src/lua/src/lbaselib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/security/osxminecraft/src/lua/src/lbaselib.c400927587#400927587#0(0"0(0#0#51"/Users/security/osxminecraft/src/lua/src/lbaselib.c8622206176#980"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lbaselib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lbaselib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lcode.o /Users/security/osxminecraft/src/lua/src/lcode.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.514880
+e400927587.863576
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lcode.o
+x/Users/security/osxminecraft/src/lua/src/lcode.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/security/osxminecraft/src/lua/src/lcode.c400927587#400927587#0(0"0(0#0#48"/Users/security/osxminecraft/src/lua/src/lcode.c8604600736#974"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lcode.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lcode.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldblib.o /Users/security/osxminecraft/src/lua/src/ldblib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.581107
+e400927587.723318
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldblib.o
+x/Users/security/osxminecraft/src/lua/src/ldblib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/ldblib.c400927587#400927587#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/ldblib.c8630923680#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ldblib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldblib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldebug.o /Users/security/osxminecraft/src/lua/src/ldebug.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.723786
+e400927587.910014
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldebug.o
+x/Users/security/osxminecraft/src/lua/src/ldebug.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/ldebug.c400927587#400927587#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/ldebug.c8631789632#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ldebug.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldebug.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldo.o /Users/security/osxminecraft/src/lua/src/ldo.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.863673
+e400927588.184894
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldo.o
+x/Users/security/osxminecraft/src/lua/src/ldo.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/security/osxminecraft/src/lua/src/ldo.c400927587#400927588#0(0"0(0#0#46"/Users/security/osxminecraft/src/lua/src/ldo.c8618103296#970"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ldo.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldo.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldump.o /Users/security/osxminecraft/src/lua/src/ldump.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.910120
+e400927587.995196
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldump.o
+x/Users/security/osxminecraft/src/lua/src/ldump.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/security/osxminecraft/src/lua/src/ldump.c400927587#400927587#0(0"0(0#0#48"/Users/security/osxminecraft/src/lua/src/ldump.c8617359232#974"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ldump.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ldump.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lfunc.o /Users/security/osxminecraft/src/lua/src/lfunc.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927587.995286
+e400927588.081288
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lfunc.o
+x/Users/security/osxminecraft/src/lua/src/lfunc.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/security/osxminecraft/src/lua/src/lfunc.c400927587#400927588#0(0"0(0#0#48"/Users/security/osxminecraft/src/lua/src/lfunc.c8614025504#974"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lfunc.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lfunc.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lgc.o /Users/security/osxminecraft/src/lua/src/lgc.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.081376
+e400927588.299917
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lgc.o
+x/Users/security/osxminecraft/src/lua/src/lgc.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/security/osxminecraft/src/lua/src/lgc.c400927588#400927588#0(0"0(0#0#46"/Users/security/osxminecraft/src/lua/src/lgc.c8613705536#970"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lgc.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lgc.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/linit.o /Users/security/osxminecraft/src/lua/src/linit.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.184986
+e400927588.280189
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/linit.o
+x/Users/security/osxminecraft/src/lua/src/linit.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/security/osxminecraft/src/lua/src/linit.c400927588#400927588#0(0"0(0#0#48"/Users/security/osxminecraft/src/lua/src/linit.c8614308000#974"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/linit.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/linit.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/liolib.o /Users/security/osxminecraft/src/lua/src/liolib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.280279
+e400927588.432967
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/liolib.o
+x/Users/security/osxminecraft/src/lua/src/liolib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/liolib.c400927588#400927588#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/liolib.c8611199648#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/liolib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/liolib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/llex.o /Users/security/osxminecraft/src/lua/src/llex.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.300008
+e400927588.499917
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/llex.o
+x/Users/security/osxminecraft/src/lua/src/llex.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/security/osxminecraft/src/lua/src/llex.c400927588#400927588#0(0"0(0#0#47"/Users/security/osxminecraft/src/lua/src/llex.c8603060000#972"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/llex.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/llex.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmathlib.o /Users/security/osxminecraft/src/lua/src/lmathlib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.433162
+e400927588.636915
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmathlib.o
+x/Users/security/osxminecraft/src/lua/src/lmathlib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/security/osxminecraft/src/lua/src/lmathlib.c400927588#400927588#0(0"0(0#0#51"/Users/security/osxminecraft/src/lua/src/lmathlib.c8603183840#980"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lmathlib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmathlib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmem.o /Users/security/osxminecraft/src/lua/src/lmem.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.500004
+e400927588.577247
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmem.o
+x/Users/security/osxminecraft/src/lua/src/lmem.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/security/osxminecraft/src/lua/src/lmem.c400927588#400927588#0(0"0(0#0#47"/Users/security/osxminecraft/src/lua/src/lmem.c8616574592#972"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lmem.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lmem.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loadlib.o /Users/security/osxminecraft/src/lua/src/loadlib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.577395
+e400927588.824379
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loadlib.o
+x/Users/security/osxminecraft/src/lua/src/loadlib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/security/osxminecraft/src/lua/src/loadlib.c: In function 'll_sym':
+o/Users/security/osxminecraft/src/lua/src/loadlib.c:76: warning: ISO C forbids conversion of object pointer to function pointer type
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/loadlib.c400927588#400927588#0(206"/Users/security/osxminecraft/src/lua/src/loadlib.c: In function 'll_sym':/Users/security/osxminecraft/src/lua/src/loadlib.c:76: warning: ISO C forbids conversion of object pointer to function pointer type1(22@67"ISO C forbids conversion of object pointer to function pointer type400927588#74#132#0(6@50"/Users/security/osxminecraft/src/lua/src/loadlib.c400670147#76#0#76#0#0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/loadlib.c8598637248#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/loadlib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loadlib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lobject.o /Users/security/osxminecraft/src/lua/src/lobject.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.637009
+e400927588.803196
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lobject.o
+x/Users/security/osxminecraft/src/lua/src/lobject.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lobject.c400927588#400927588#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lobject.c8620236832#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lobject.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lobject.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lopcodes.o /Users/security/osxminecraft/src/lua/src/lopcodes.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.803285
+e400927588.904671
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lopcodes.o
+x/Users/security/osxminecraft/src/lua/src/lopcodes.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/security/osxminecraft/src/lua/src/lopcodes.c400927588#400927588#0(0"0(0#0#51"/Users/security/osxminecraft/src/lua/src/lopcodes.c8626603936#980"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lopcodes.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lopcodes.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loslib.o /Users/security/osxminecraft/src/lua/src/loslib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.824465
+e400927588.963202
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loslib.o
+x/Users/security/osxminecraft/src/lua/src/loslib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/loslib.c400927588#400927588#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/loslib.c8610831200#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/loslib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/loslib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lparser.o /Users/security/osxminecraft/src/lua/src/lparser.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.904768
+e400927589.340175
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lparser.o
+x/Users/security/osxminecraft/src/lua/src/lparser.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lparser.c400927588#400927589#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lparser.c8613791968#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lparser.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lparser.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstate.o /Users/security/osxminecraft/src/lua/src/lstate.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927588.963297
+e400927589.062934
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstate.o
+x/Users/security/osxminecraft/src/lua/src/lstate.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/lstate.c400927588#400927589#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/lstate.c8626813504#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lstate.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstate.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstring.o /Users/security/osxminecraft/src/lua/src/lstring.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.063030
+e400927589.156030
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstring.o
+x/Users/security/osxminecraft/src/lua/src/lstring.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lstring.c400927589#400927589#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lstring.c8625764608#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lstring.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstring.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstrlib.o /Users/security/osxminecraft/src/lua/src/lstrlib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.156117
+e400927589.431791
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstrlib.o
+x/Users/security/osxminecraft/src/lua/src/lstrlib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lstrlib.c400927589#400927589#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lstrlib.c8625033920#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lstrlib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lstrlib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltable.o /Users/security/osxminecraft/src/lua/src/ltable.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.340263
+e400927589.486565
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltable.o
+x/Users/security/osxminecraft/src/lua/src/ltable.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/lua/src/ltable.c400927589#400927589#0(0"0(0#0#49"/Users/security/osxminecraft/src/lua/src/ltable.c8625435872#976"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ltable.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltable.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltablib.o /Users/security/osxminecraft/src/lua/src/ltablib.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.431894
+e400927589.519615
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltablib.o
+x/Users/security/osxminecraft/src/lua/src/ltablib.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/ltablib.c400927589#400927589#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/ltablib.c8623636896#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ltablib.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltablib.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltm.o /Users/security/osxminecraft/src/lua/src/ltm.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.486665
+e400927589.567753
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltm.o
+x/Users/security/osxminecraft/src/lua/src/ltm.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/security/osxminecraft/src/lua/src/ltm.c400927589#400927589#0(0"0(0#0#46"/Users/security/osxminecraft/src/lua/src/ltm.c8622430560#970"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/ltm.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/ltm.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lundump.o /Users/security/osxminecraft/src/lua/src/lundump.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.519711
+e400927589.613043
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lundump.o
+x/Users/security/osxminecraft/src/lua/src/lundump.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/security/osxminecraft/src/lua/src/lundump.c400927589#400927589#0(0"0(0#0#50"/Users/security/osxminecraft/src/lua/src/lundump.c8620206272#978"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lundump.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lundump.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lvm.o /Users/security/osxminecraft/src/lua/src/lvm.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.567841
+e400927589.779244
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lvm.o
+x/Users/security/osxminecraft/src/lua/src/lvm.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/security/osxminecraft/src/lua/src/lvm.c400927589#400927589#0(0"0(0#0#46"/Users/security/osxminecraft/src/lua/src/lvm.c8618170016#970"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lvm.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lvm.o0#
 
 CCompileC src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lzio.o /Users/security/osxminecraft/src/lua/src/lzio.c normal i386 c com.apple.compilers.gcc.4_2
-r0
+s400927589.613135
+e400927589.685078
+r1
+xCompileC
+xsrc/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lzio.o
+x/Users/security/osxminecraft/src/lua/src/lzio.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/security/osxminecraft/src/lua/src/lzio.c400927589#400927589#0(0"0(0#0#47"/Users/security/osxminecraft/src/lua/src/lzio.c8618049728#972"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/lua/build/Debug -I/Users/security/osxminecraft/src/lua/build/Debug/include -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/lua/build -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/DerivedSources -DLUA_USE_DLOPEN -pipe -Wall -Wextra -Wshadow -W -pedantic -std=gnu99 -c /Users/security/osxminecraft/src/lua/src/lzio.c -o /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lzio.o0#
 
 CLibtool /Users/security/osxminecraft/src/lua/build/Debug/liblua.a normal i386
-r0
+s400927589.779328
+e400927589.836648
+r1
+xLibtool
+x/Users/security/osxminecraft/src/lua/build/Debug/liblua.a
+xnormal
+xi386
+lSLF07#2@48"Libtool src/lua/build/Debug/liblua.a normal i386400927589#400927589#0(0"0(0#0#0"8616258848#408"    cd /Users/security/osxminecraft    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/security/osxminecraft/src/lua/build/Debug -filelist /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Objects-normal/i386/lua.LinkFileList -o /Users/security/osxminecraft/src/lua/build/Debug/liblua.a0#
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-7D6CFA0E2D144A8DB90EF809.sh
+s400927589.836750
+e400927589.955378
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-7D6CFA0E2D144A8DB90EF809.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debug
+omake[1]: Nothing to be done for `PostBuild.lua.Debug'.
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debug
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400927589#400927589#0(633"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debugmake[1]: Nothing to be done for `PostBuild.lua.Debug'.echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debug/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver9(13@30"echo "Depend check for xcode"400927589#0#30#0(1@0"0(13@23"Depend check for xcode400927589#30#23#0(1@0"0(13@186"cd /Users/security/osxminecraft/src/lua && make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debug400927589#53#186#0(1@0"0(13@55"make[1]: Nothing to be done for `PostBuild.lua.Debug'.400927589#239#55#0(1@0"0(13@30"echo "Depend check for xcode"400927589#294#30#0(1@0"0(13@23"Depend check for xcode400927589#324#23#0(1@0"0(13@162"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.lua.Debug400927589#347#162#0(1@0"0(13@59"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest400927589#509#59#0(1@0"0(13@65"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver400927589#568#65#0(1@0"0(0#0#0"8614551360#160"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-7D6CFA0E2D144A8DB90EF809.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/lua/build/minetest.build/Debug/lua.build/Script-AEE1CB231D89466D9D1EDC92.sh
 r0

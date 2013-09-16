@@ -674,3 +674,300 @@ make[1]: Nothing to be done for `PostBuild.cmTryCompileExec4135448712.Debug'.
 
 
 
+The system is: Darwin - 10.8.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/security/osxminecraft/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/security/osxminecraft/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2860709504/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2860709504.dir/build.make CMakeFiles/cmTryCompileExec2860709504.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2860709504.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2860709504.dir/testCCompiler.c.o   -c /Users/security/osxminecraft/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2860709504
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2860709504.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2860709504.dir/testCCompiler.c.o  -o cmTryCompileExec2860709504  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2361094835/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2361094835.dir/build.make CMakeFiles/cmTryCompileExec2361094835.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2361094835
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2361094835.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2361094835   
+Using built-in specs.
+Target: i686-apple-darwin10
+Configured with: /var/tmp/gcc/gcc-5666.3~6/src/configure --disable-checking --enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin10 --program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 --target=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1
+Thread model: posix
+gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)
+ /usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.6.8 -weak_reference_mismatches non-weak -o cmTryCompileExec2361094835 -lcrt1.10.6.o -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2361094835/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2361094835.dir/build.make CMakeFiles/cmTryCompileExec2361094835.dir/build]
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2361094835]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2361094835.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2361094835   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i686-apple-darwin10]
+  ignore line: [Configured with: /var/tmp/gcc/gcc-5666.3~6/src/configure --disable-checking --enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin10 --program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 --target=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)]
+  link line: [ /usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.6.8 -weak_reference_mismatches non-weak -o cmTryCompileExec2361094835 -lcrt1.10.6.o -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem]
+    arg [/usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.6.8] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2361094835] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+    arg [-L/usr/lib/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2361094835.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+  collapse dir [/usr/lib/i686-apple-darwin10/4.2.1] ==> [/usr/lib/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1] ==> [/usr/lib/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..] ==> [/usr/lib]
+  implicit libs: []
+  implicit dirs: [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64;/usr/lib/i686-apple-darwin10/4.2.1;/usr/lib/gcc/i686-apple-darwin10/4.2.1;/usr/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3044613748/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3044613748.dir/build.make CMakeFiles/cmTryCompileExec3044613748.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3044613748.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3044613748.dir/testCXXCompiler.cxx.o -c /Users/security/osxminecraft/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3044613748
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3044613748.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3044613748.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3044613748  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2430308743/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2430308743.dir/build.make CMakeFiles/cmTryCompileExec2430308743.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2430308743
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2430308743.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2430308743   
+Using built-in specs.
+Target: i686-apple-darwin10
+Configured with: /var/tmp/gcc/gcc-5666.3~6/src/configure --disable-checking --enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin10 --program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 --target=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1
+Thread model: posix
+gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)
+ /usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.6.8 -weak_reference_mismatches non-weak -o cmTryCompileExec2430308743 -lcrt1.10.6.o -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem -lgcc -lSystem
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2430308743/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2430308743.dir/build.make CMakeFiles/cmTryCompileExec2430308743.dir/build]
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2430308743]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2430308743.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2430308743   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i686-apple-darwin10]
+  ignore line: [Configured with: /var/tmp/gcc/gcc-5666.3~6/src/configure --disable-checking --enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin10 --program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 --target=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)]
+  link line: [ /usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.6.8 -weak_reference_mismatches non-weak -o cmTryCompileExec2430308743 -lcrt1.10.6.o -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 -L/usr/lib/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem -lgcc -lSystem]
+    arg [/usr/libexec/gcc/i686-apple-darwin10/4.2.1/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.6.8] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2430308743] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+    arg [-L/usr/lib/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1]
+    arg [-L/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..] ==> dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2430308743.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64]
+  collapse dir [/usr/lib/i686-apple-darwin10/4.2.1] ==> [/usr/lib/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1] ==> [/usr/lib/gcc/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1] ==> [/usr/lib/i686-apple-darwin10/4.2.1]
+  collapse dir [/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++]
+  implicit dirs: [/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64;/usr/lib/i686-apple-darwin10/4.2.1;/usr/lib/gcc/i686-apple-darwin10/4.2.1;/usr/lib]
+
+
+Determining if the function XOpenDisplay exists in the /opt/local/lib/libX11.dylib;/opt/local/lib/libXext.dylib passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1148578798/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1148578798.dir/build.make CMakeFiles/cmTryCompileExec1148578798.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1148578798.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1148578798.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1148578798
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1148578798.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1148578798.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1148578798  -L/opt/local/lib /opt/local/lib/libX11.dylib /opt/local/lib/libXext.dylib 
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3910815828/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3910815828.dir/build.make CMakeFiles/cmTryCompileExec3910815828.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3910815828.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec3910815828.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3910815828
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3910815828.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3910815828.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3910815828  
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec61578860/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec61578860.dir/build.make CMakeFiles/cmTryCompileExec61578860.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec61578860.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec61578860.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec61578860
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec61578860.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=connect -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec61578860.dir/CheckFunctionExists.c.o  -o cmTryCompileExec61578860  
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1141190510/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1141190510.dir/build.make CMakeFiles/cmTryCompileExec1141190510.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1141190510.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec1141190510.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1141190510
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1141190510.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=remove -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1141190510.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1141190510  
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2180081377/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2180081377.dir/build.make CMakeFiles/cmTryCompileExec2180081377.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2180081377.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2180081377.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2180081377
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2180081377.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=shmat -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2180081377.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2180081377  
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3130337132/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3130337132.dir/build.make CMakeFiles/cmTryCompileExec3130337132.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3130337132.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3130337132.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3130337132
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3130337132.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3130337132.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3130337132  -L/opt/local/lib -lICE 
+
+
+Determining if the function BZ2_bzCompressInit exists in the /usr/lib/libbz2.dylib passed with the following output:
+Change Dir: /Users/security/osxminecraft/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1807992076/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1807992076.dir/build.make CMakeFiles/cmTryCompileExec1807992076.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/security/osxminecraft/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1807992076.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit   -o CMakeFiles/cmTryCompileExec1807992076.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1807992076
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1807992076.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1807992076.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1807992076  /usr/lib/libbz2.dylib 
+
+

@@ -1098,7 +1098,7 @@ int main(int argc, char *argv[])
 		Run dedicated server if asked to or no other option
 	*/
 #ifdef SERVER
-	bool run_dedicated_server = true;
+	bool run_dedicated_server = false;
 #else
 	bool run_dedicated_server = cmd_args.getFlag("server");
 #endif
@@ -1215,70 +1215,70 @@ int main(int argc, char *argv[])
 		verbosestream<<_("Using gameid")<<" ["<<gamespec.id<<"]"<<std::endl;
 
 		// Create server
-		Server server(world_path, gamespec, false);
+		//Server server(world_path, gamespec, false);
 
 		// Database migration
-		if (cmd_args.exists("migrate")) {
-			std::string migrate_to = cmd_args.get("migrate");
-			Settings world_mt;
-			bool success = world_mt.readConfigFile((world_path + DIR_DELIM + "world.mt").c_str());
-			if (!success) {
-				errorstream << "Cannot read world.mt" << std::endl;
-				return 1;
-			}
-			if (!world_mt.exists("backend")) {
-				errorstream << "Please specify your current backend in world.mt file:"
-					<< std::endl << "	backend = {sqlite3|leveldb|dummy}" << std::endl;
-				return 1;
-			}
-			std::string backend = world_mt.get("backend");
-			Database *new_db;
-			if (backend == migrate_to) {
-				errorstream << "Cannot migrate: new backend is same as the old one" << std::endl;
-				return 1;
-			}
-			if (migrate_to == "sqlite3")
-				new_db = new Database_SQLite3(&(ServerMap&)server.getMap(), world_path);
-			#if USE_LEVELDB
-			else if (migrate_to == "leveldb")
-				new_db = new Database_LevelDB(&(ServerMap&)server.getMap(), world_path);
-			#endif
-			else {
-				errorstream << "Migration to " << migrate_to << " is not supported" << std::endl;
-				return 1;
-			}
+		//if (cmd_args.exists("migrate")) {
+		//	std::string migrate_to = cmd_args.get("migrate");
+		//	Settings world_mt;
+		//	bool success = world_mt.readConfigFile((world_path + DIR_DELIM + "world.mt").c_str());
+		//	if (!success) {
+		//		errorstream << "Cannot read world.mt" << std::endl;
+		//		return 1;
+		//	}
+		//	if (!world_mt.exists("backend")) {
+		//		errorstream << "Please specify your current backend in world.mt file:"
+		//			<< std::endl << "	backend = {sqlite3|leveldb|dummy}" << std::endl;
+		//		return 1;
+		//	}
+		//	std::string backend = world_mt.get("backend");
+		//	Database *new_db;
+		//	if (backend == migrate_to) {
+		//		errorstream << "Cannot migrate: new backend is same as the old one" << std::endl;
+		//		return 1;
+		//	}
+		//	if (migrate_to == "sqlite3")
+		//		new_db = new Database_SQLite3(&(ServerMap&)server.getMap(), world_path);
+		//	#if USE_LEVELDB
+		//	else if (migrate_to == "leveldb")
+		//		new_db = new Database_LevelDB(&(ServerMap&)server.getMap(), world_path);
+		//	#endif
+		//	else {
+		//		errorstream << "Migration to " << migrate_to << " is not supported" << std::endl;
+		//		return 1;
+		//	}
 
-			std::list<v3s16> blocks;
-			ServerMap &old_map = ((ServerMap&)server.getMap());
-			old_map.listAllLoadableBlocks(blocks);
-			int count = 0;
-			new_db->beginSave();
-			for (std::list<v3s16>::iterator i = blocks.begin(); i != blocks.end(); ++i) {
-				MapBlock *block = old_map.loadBlock(*i);
-				new_db->saveBlock(block);
-				MapSector *sector = old_map.getSectorNoGenerate(v2s16(i->X, i->Z));
-				sector->deleteBlock(block);
-				++count;
-				if (count % 500 == 0)
-					actionstream << "Migrated " << count << " blocks "
-						<< (100.0 * count / blocks.size()) << "\% completed" << std::endl;
-			}
-			new_db->endSave();
+		//	std::list<v3s16> blocks;
+		//	ServerMap &old_map = ((ServerMap&)server.getMap());
+		//	old_map.listAllLoadableBlocks(blocks);
+		//	int count = 0;
+		//	new_db->beginSave();
+		//	for (std::list<v3s16>::iterator i = blocks.begin(); i != blocks.end(); ++i) {
+		//		MapBlock *block = old_map.loadBlock(*i);
+		//		new_db->saveBlock(block);
+		//		MapSector *sector = old_map.getSectorNoGenerate(v2s16(i->X, i->Z));
+		//		sector->deleteBlock(block);
+		//		++count;
+		//		if (count % 500 == 0)
+		//			actionstream << "Migrated " << count << " blocks "
+		//				<< (100.0 * count / blocks.size()) << "\% completed" << std::endl;
+		//	}
+		//	new_db->endSave();
 
-			actionstream << "Successfully migrated " << count << " blocks" << std::endl;
-			world_mt.set("backend", migrate_to);
-			if(!world_mt.updateConfigFile((world_path + DIR_DELIM + "world.mt").c_str()))
-				errorstream<<"Failed to update world.mt!"<<std::endl;
-			else
-				actionstream<<"world.mt updated"<<std::endl;
+		//	actionstream << "Successfully migrated " << count << " blocks" << std::endl;
+		//	world_mt.set("backend", migrate_to);
+		//	if(!world_mt.updateConfigFile((world_path + DIR_DELIM + "world.mt").c_str()))
+		//		errorstream<<"Failed to update world.mt!"<<std::endl;
+		//	else
+		//		actionstream<<"world.mt updated"<<std::endl;
 
-			return 0;
-		}
+		//	return 0;
+		//}
 
-		server.start(port);
+		//server.start(port);
 		
 		// Run server
-		dedicated_server_loop(server, kill);
+		//dedicated_server_loop(server, kill);
 
 		return 0;
 	}
@@ -1354,6 +1354,7 @@ int main(int argc, char *argv[])
 		List video modes if requested
 	*/
 
+	driverType = video::EDT_NULL;
 	MyEventReceiver receiver;
 
 	if(cmd_args.getFlag("videomodes")){
@@ -1473,6 +1474,7 @@ int main(int argc, char *argv[])
 	gui::IGUISkin* skin = guienv->getSkin();
 	std::string font_path = g_settings->get("font_path");
 	gui::IGUIFont *font;
+        errorstream<<"using dir    "<<font_path.c_str()<<std::endl;
 	bool use_freetype = g_settings->getBool("freetype");
 	#if USE_FREETYPE
 	if (use_freetype) {
@@ -1580,8 +1582,8 @@ int main(int argc, char *argv[])
 			// These are set up based on the menu and other things
 			std::string current_playername = "inv£lid";
 			std::string current_password = "";
-			std::string current_address = "does-not-exist";
-			int current_port = 0;
+			std::string current_address = "127.0.0.1";
+			int current_port = 30000;
 
 			/*
 				Out-of-game menu loop.
@@ -1591,11 +1593,14 @@ int main(int argc, char *argv[])
 			while(kill == false)
 			{
 				// If skip_main_menu, only go through here once
+                                errorstream<<"got here"<<std::endl;
+				skip_main_menu = true;
 				if(skip_main_menu && !first_loop){
 					kill = true;
 					break;
 				}
 				first_loop = false;
+                                errorstream<<"got here"<<std::endl;
 				
 				// Cursor can be non-visible when coming from the game
 				device->getCursorControl()->setVisible(true);
@@ -1696,13 +1701,16 @@ int main(int argc, char *argv[])
 				
 				current_playername = playername;
 				current_password = password;
-				current_address = address;
+				current_address = "127.0.0.1";
+				//current_address = address;
 				current_port = port;
 
+                                errorstream<<"got here"<<std::endl;
 				// If using simple singleplayer mode, override
 				if(simple_singleplayer_mode){
 					current_playername = "singleplayer";
 					current_password = "";
+                                errorstream<<"got hereeeeee"<<std::endl;
 					current_address = "";
 					current_port = myrand_range(49152, 65535);
 				}
@@ -1725,7 +1733,8 @@ int main(int argc, char *argv[])
 				}
 				
 				// If local game
-				if(current_address == "")
+				if(false)
+				//if(current_address == "")
 				{
 					if(menudata.selected_world == -1){
 						error_message = wgettext("No world selected and no address "
@@ -1759,8 +1768,11 @@ int main(int argc, char *argv[])
 				}
 
 				// Continue to game
+                                errorstream<<"got here"<<std::endl;
 				break;
 			}
+
+                                errorstream<<"got here222"<<std::endl;
 
 			// Break out of menu-game loop to shut down cleanly
 			if(device->run() == false || kill == true) {
@@ -1774,6 +1786,10 @@ int main(int argc, char *argv[])
 			/*
 				Run game
 			*/
+                                errorstream<<"got here333"<<std::endl;
+                                printf("test");
+                    bool random_input=true;
+			std::string current_address2 = "127.0.0.1";
 			the_game(
 				kill,
 				random_input,
@@ -1783,13 +1799,14 @@ int main(int argc, char *argv[])
 				worldspec.path,
 				current_playername,
 				current_password,
-				current_address,
+				current_address2,
 				current_port,
 				error_message,
 				chat_backend,
 				gamespec,
-				simple_singleplayer_mode
+			        false	
 			);
+                                printf("test");
 			smgr->clear();
 
 		} //try

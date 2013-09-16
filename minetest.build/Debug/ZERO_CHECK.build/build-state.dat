@@ -1,6 +1,9 @@
 TZERO_CHECK
 v7
-r1
+r0
+t400927586.974070
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-D1E239BA06444EE88BE41F2C.sh
 
 N/Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-6A62E0865E0E4B60A47299C9.sh
 c00000000000000000000000000000000
@@ -12,9 +15,31 @@ c00000000000000000000000000000000
 t2
 s0
 
+N/Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-D1E239BA06444EE88BE41F2C.sh
+c00000000523573E20000000000000093
+t1379234786
+s147
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies400927586#400927586#0(0"0(0#1#0"8624700128#0"0#
+
 CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-6A62E0865E0E4B60A47299C9.sh
 r0
 
 CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-C7C307CFF9DE4A3B83B2FDCD.sh
 r0
+
+CPhaseScriptExecution "CMake Rules" /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-D1E239BA06444EE88BE41F2C.sh
+s400927586.883056
+e400927586.974029
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-D1E239BA06444EE88BE41F2C.sh
+oecho ""
+o
+omake -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF07#2@37"Run custom shell script 'CMake Rules'400927586#400927586#0(130"echo ""make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(13@8"echo ""400927586#0#8#0(1@0"0(13@66"make -f /Users/security/osxminecraft/CMakeScripts/ReRunCMake.make400927586#9#66#0(1@0"0(13@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.400927586#75#55#0(1@0"0(0#0#0"8599346560#153"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/minetest.build/Debug/ZERO_CHECK.build/Script-D1E239BA06444EE88BE41F2C.sh0#
 

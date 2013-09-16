@@ -27,7 +27,7 @@ SET(CPACK_BUNDLE_ICON "/Users/security/osxminecraft/misc/mac/minetest-icon.icns"
 SET(CPACK_BUNDLE_NAME "minetest")
 SET(CPACK_BUNDLE_PLIST "/Users/security/osxminecraft/misc/mac/Info.plist")
 SET(CPACK_BUNDLE_STARTUP_COMMAND "/Users/security/osxminecraft/misc/mac/minetest-mac.sh")
-SET(CPACK_CMAKE_GENERATOR "Xcode")
+SET(CPACK_CMAKE_GENERATOR "Unix Makefiles")
 SET(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
 SET(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
 SET(CPACK_GENERATOR "Bundle")

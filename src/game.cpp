@@ -624,6 +624,456 @@ public:
 		}
 	}
 };
+class Brain 
+
+{
+public:
+    Brain(Client *c)                         // constructor; initialize the list to be empty
+    {
+    LeftB = false;
+    rightbutton=false;
+    forwardstate=false;
+    backstate=false;
+    leftstate=false;
+    rightstate=false;
+    jumpstate=false;
+    specialstate=false;
+    sneakstate=false;
+
+    botYaw=0.0;
+    botPitch=0.0;
+
+    utt=c;
+    //menv=c->getEnv();
+
+    }
+    void Test(int k)              // Test
+    {
+    }
+
+    const bool getDigStatus() 
+    {
+    return LeftB;
+    }
+    const bool getRightButtonState(){
+    return rightbutton;
+    }
+    const f32 getBotYaw() 
+    {
+    return botYaw;
+    }
+    const f32 getBotPitch() 
+    {
+    return botPitch;
+    }
+    void setDigStatus(bool dig) 
+    {
+        LeftB=dig;
+    }
+
+    void addMessline(ChatLine linnne)
+    {
+        currentchatlist.push_back(linnne);
+    }
+
+    bool getForwardState()
+    {
+        return forwardstate; 
+    }
+    bool getBackState()
+    {
+        return backstate; 
+    }
+    bool getLeftState()
+    {
+        return leftstate; 
+    }
+    bool getRightState()
+    {
+        return rightstate; 
+    }
+    bool getJumpState()
+    {
+        return jumpstate; 
+    }
+    bool getSpecialState()
+    {
+        return specialstate; 
+    }
+    bool getSneakState()
+    {
+        return sneakstate; 
+    }
+
+std::string getYawToMaster_string(LocalPlayer *player,ClientEnvironment *m_env)
+{
+                //core::array<DistanceSortedActiveObject> objects1;
+                std::vector<DistanceSortedActiveObject> objects1;
+	        m_env->getActiveObjects(player->getPosition(), 200.0, objects1);
+
+	for(u32 i=0; i<objects1.size(); i++)
+	{
+		ClientActiveObject *obj1 = objects1[i].obj;
+		v3f pos1 = obj1->getPosition();
+                bool cl = obj1->isPlayer();
+                std::string cli = obj1->pname();
+                if (cli.compare("uuu") == 0)
+                {
+                    return "FOUND\n";
+                }
+
+	}
+                    return "not\n";
+
+
+}
+
+v3f getYawToMaster_pos(LocalPlayer *player,ClientEnvironment *m_env)
+{
+                //core::array<DistanceSortedActiveObject> objects1;
+                std::vector<DistanceSortedActiveObject> objects1;
+	        m_env->getActiveObjects(player->getPosition(), 200.0, objects1);
+
+	for(u32 i=0; i<objects1.size(); i++)
+	{
+		ClientActiveObject *obj1 = objects1[i].obj;
+		v3f pos1 = obj1->getPosition();
+                bool cl = obj1->isPlayer();
+                std::string cli = obj1->pname();
+                if (cli.compare("uuu") == 0)
+                {
+            //        return v3f(0,0,0);
+                    return pos1;
+                }
+
+	}
+                    //return v3f(1.0,1.0,1.0);
+                    return v3f(0,0,0);
+
+
+}
+
+f32 getYawToMaster_yaw(LocalPlayer *player,v3f masterpos)
+{
+                f32 masterx=masterpos.X;
+                f32 mastery=masterpos.Y;
+                f32 masterz=masterpos.Z;
+
+                    v3f ownpos=player->getPosition();
+                    f32 ownyaw=player->getYaw();
+
+                f32 ownx=ownpos.X;
+                f32 owny=ownpos.Y;
+                f32 ownz=ownpos.Z;
+
+                f32 xdif=masterx-ownx;
+                f32 zdif=masterz-ownz;
+                f32 hyp=sqrt((xdif*xdif)+(zdif*zdif));
+                f32 ang=-90+atan2(zdif,xdif)*180/3.141592;
+                // This sometimes produced a runaway behaviour
+                //f32 ang=atan2(xdif,zdif)*180/3.141592;
+                // turns like crazy
+                //f32 ang=ownyaw-atan2(xdif,zdif)*180/3.141592;
+                return ang;
+
+}
+PointedThing getPointed()
+{
+    return pointed;
+}
+ClientActiveObject* getSelected()
+{
+    return selected_object; 
+
+}
+
+f32 getDistToMaster(LocalPlayer *player,v3f masterpos)
+{
+                f32 masterx=masterpos.X;
+                f32 mastery=masterpos.Y;
+                f32 masterz=masterpos.Z;
+
+                    v3f ownpos=player->getPosition();
+
+                f32 ownx=ownpos.X;
+                f32 owny=ownpos.Y;
+                f32 ownz=ownpos.Z;
+
+                f32 xdif=masterx-ownx;
+                f32 zdif=masterz-ownz;
+                f32 hyp=sqrt((xdif*xdif)+(zdif*zdif));
+                return hyp;
+
+}
+
+
+
+    void step(){
+		LocalPlayer* player = utt->getEnv().getLocalPlayer();
+                ClientEnvironment* env= &utt->getEnv();
+                std::string brain_yaw_string=getYawToMaster_string(player,env);
+                //v3f brain_yaw_pos=getYawToMaster_pos(player,env);
+                std::string btype=player->getBlocktype(player->getPosition(),env->getMap());
+	        v3f move_direction = v3f(0,0,BS);
+	        move_direction.rotateXZBy(player->getYaw());
+
+                // Get front block types to decide for jump
+                std::string fronttype=player->getBlocktype(player->getPosition()+move_direction,env->getMap());
+                std::string frontuptype=player->getBlocktype(player->getPosition()+move_direction+ v3f(0,BS,0),env->getMap());
+                std::string frontupuptype=player->getBlocktype(player->getPosition()+move_direction+ v3f(0,2*BS,0),env->getMap());
+
+
+                // Go through chat 
+                std::list<ChatLine>::iterator it;
+                for (it=currentchatlist.begin(); it!=currentchatlist.end(); ++it)
+                {
+                    f32 message_age=it->age;
+                    f32 max_age_to_care_for=0.05;
+                    if (message_age<max_age_to_care_for)
+                    {
+                    std::wstring chatsender=it->name;
+                    std::wstring textmessage=it->text;
+                    // If sender is owner
+                    if (chatsender==L"uuu")
+                    {
+                    int spacesearch=0; 
+                    // Tokenize chat message
+                    std::list<std::wstring> tokenizedchat;
+                    while (spacesearch!=-1)
+                        {
+                        spacesearch=textmessage.find(L" ");
+                        if (spacesearch!=-1)
+                            {
+                                tokenizedchat.push_back(textmessage.substr(0,spacesearch));
+                                textmessage=textmessage.substr(spacesearch+1,textmessage.size());
+                            }
+                        else
+                            {
+                            tokenizedchat.push_back(textmessage);
+                            }
+                        }
+
+                    // Look for bot command
+                    std::wstring commdword=tokenizedchat.front();
+                    tokenizedchat.pop_front();
+                    if (commdword==L"bot")
+                    {
+                        // if anything left after bot
+                        if (!tokenizedchat.empty())
+                        {
+                            std::wstring nextword=tokenizedchat.front();
+                            tokenizedchat.pop_front();
+                            //printing next command
+                            printf("bot command: ");
+                            printf(wide_to_narrow(nextword).c_str());
+                            printf("\n");
+                            // Should be a case clause
+                            if (nextword==L"digstart"){
+                                botcommand="dig";                        
+                                dig=true;      
+                                follow=false;      
+                                printf("started digging\n");
+                            }
+                            if (nextword==L"digstop"){
+                                botcommand="no";                        
+                                dig=false;      
+                                printf("stopped digging\n");
+                            }
+                            if (nextword==L"followstart"){
+                                botcommand="follow";                        
+                                follow=true;      
+                                dig=false;      
+                                printf("started following\n");
+                            }
+                            if (nextword==L"followend"){
+                                botcommand="no";                        
+                                follow=false;      
+                                printf("stopped following\n");
+                            }
+                            if (nextword==L"get"){
+                                botcommand="get";                        
+                                follow=false;      
+                                dig=false;
+                                printf("started getting\n");
+                            }
+                        }
+                        else
+                        {
+                        printf("no command after bot\n");
+                        }
+                    }
+                    }//end of owner check
+                }// end of message end check
+    } // end of chatcommands loop
+    currentchatlist.clear();
+    if (botcommand=="no")
+    {
+    
+    LeftB=false;      
+    rightbutton=false;
+    forwardstate=false;
+    backstate=false;
+    leftstate=false;
+    rightstate=false;
+    jumpstate=false;
+    specialstate=false;
+    sneakstate=false;
+    }
+    else if (botcommand=="follow")
+    {
+    
+    LeftB=false;      
+    rightbutton=false;
+    forwardstate=false;
+    backstate=false;
+    leftstate=false;
+    rightstate=false;
+    jumpstate=false;
+    specialstate=false;
+    sneakstate=false;
+
+    v3f brain_yaw_pos=getYawToMaster_pos(player,env);
+
+
+                f32 resang;
+                //bool runToMaster=false;
+                //bool jumpToMaster=false;
+                //bool LeftClick=true;
+                if (brain_yaw_pos==v3f(0,0,0))
+                {
+                //printf("got NULL Position\n");
+                resang=0;
+                }
+                else
+                {
+                resang=getYawToMaster_yaw(player,brain_yaw_pos);
+                f32 distToMaster=getDistToMaster(player,brain_yaw_pos);
+		//f32 yaw_to_master = 10;
+
+                if (distToMaster > 10)
+                {
+                forwardstate=true;
+                }
+
+                if ((distToMaster > 10) && fronttype!="air" && frontuptype=="air" && frontupuptype=="air")
+                {
+                   jumpstate=true;
+                }
+
+                }
+    botYaw=resang;
+    }
+
+    else if (botcommand=="dig")
+    {
+        std::string digthing="1front";
+        if (digthing=="1front")
+        {
+        LeftB=true;
+
+	v3f move_direction = v3f(0,0,BS);
+        std::string fronttype=player->getBlocktype(player->getPosition()+move_direction,env->getMap());
+    
+        v3f player_position = player->getPosition();
+        v3f camera_position = player->getPosition()+v3f(0,1*BS,0);
+	move_direction.rotateXZBy(player->getYaw());
+        v3f camera_direction = move_direction;
+        f32 digdist = 1; // max. distance
+        std::vector<aabb3f> hilightboxes;
+        //f32 d = 4; // max. distance
+        core::line3d<f32> shootline(camera_position,
+                        camera_position + camera_direction * BS * (digdist+1));
+
+        selected_object = NULL;
+
+        bool playeritem_liquids_pointable = false;
+        bool ldown_for_dig=false;
+        pointed = getPointedThing(utt, player_position, camera_direction, camera_position, shootline, digdist,
+                        playeritem_liquids_pointable, !ldown_for_dig, hilightboxes, selected_object);
+
+    }// end of 1front
+    }// end of dig
+    else if (botcommand=="get"){
+// look for chest in surroundings
+        int lookrange=2;
+        for (int xdir=-lookrange;xdir<lookrange;xdir++)
+        {
+        for (int ydir=-lookrange;ydir<lookrange;ydir++)
+        {
+        std::string nodetype=player->getBlocktype(player->getPosition()+ v3f(xdir*BS,0,ydir*BS),env->getMap());
+        printf(nodetype.c_str());
+        printf("\n");
+        if (nodetype=="default:chest")
+        {
+        rightbutton=true; 
+        LeftB=false;
+    forwardstate=false;
+    backstate=false;
+    leftstate=false;
+    rightstate=false;
+    jumpstate=false;
+    specialstate=false;
+    sneakstate=false;
+	v3f move_directionget = v3f(BS,0,0);
+        std::string fronttype=player->getBlocktype(player->getPosition()+move_directionget,env->getMap());
+        printf("fronttype is ");
+        printf(fronttype.c_str());
+        printf("\n");
+    
+        v3f player_position = player->getPosition();
+        v3f camera_position = player->getPosition()+v3f(0,1*BS,0);
+	move_direction.rotateXZBy(player->getYaw());
+        v3f camera_direction = move_direction;
+        f32 digdist = 1; // max. distance
+        std::vector<aabb3f> hilightboxes;
+        //f32 d = 4; // max. distance
+        core::line3d<f32> shootline(camera_position,
+                        camera_position + camera_direction * BS * (digdist+1));
+
+        selected_object = NULL;
+
+        bool playeritem_liquids_pointable = false;
+        bool ldown_for_dig=false;
+        pointed = getPointedThing(utt, player_position, camera_direction, camera_position, shootline, digdist,
+                        playeritem_liquids_pointable, !ldown_for_dig, hilightboxes, selected_object);
+                printf(pointed.dump().c_str());
+                printf("\n");
+                printf("pointed %f %f\n",pointed.node_undersurface.X,pointed.node_undersurface.Y);
+                printf("\n");
+                //std::string fronttype2=player->getBlocktype(pointed.node_undersurface+move_direction,client.getEnv().getMap());
+                std::string fronttype2=player->getBlocktype(v3f(pointed.node_undersurface.X,pointed.node_undersurface.X,pointed.node_undersurface.Z),env->getMap());
+    
+                printf("stuff front2: %s\n",fronttype2.c_str());
+//MapNode n = .getEnv().getClientMap().getNode(nodepos);
+        }
+        }
+
+        }
+}
+
+    }//end of step
+
+  private:
+    bool LeftB;      
+    bool rightbutton;
+    bool forwardstate;
+    bool backstate;
+    bool leftstate;
+    bool rightstate;
+    bool jumpstate;
+    bool specialstate;
+    bool sneakstate;
+    ClientActiveObject *selected_object;
+    PointedThing pointed;
+    bool follow;
+    bool dig;
+    f32 botYaw;
+    f32 botPitch;
+    std::string botcommand;                        
+    Client *utt;                        
+    std::list<ChatLine> currentchatlist;
+};
+
 
 class NodeDugEvent: public MtEvent
 {
@@ -920,22 +1370,27 @@ void the_game(
 	bool simple_singleplayer_mode
 )
 {
+        errorstream<<"got here333"<<std::endl;
 	FormspecFormSource* current_formspec = 0;
 	TextDestPlayerInventory* current_textdest = 0;
 	video::IVideoDriver* driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();
+        errorstream<<"got here4"<<std::endl;
 	
 	// Calculate text height using the font
 	u32 text_height = font->getDimension(L"Random test string").Height;
 
 	v2u32 last_screensize(0,0);
 	v2u32 screensize = driver->getScreenSize();
+        printf("did");
+        errorstream<<"got here4"<<std::endl;
 	
 	/*
 		Draw "Loading" screen
 	*/
 
 	{
+                errorstream<<"got here5"<<std::endl;
 		wchar_t* text = wgettext("Loading...");
 		draw_load_screen(text, device, font,0,0);
 		delete[] text;
@@ -950,6 +1405,7 @@ void the_game(
 	// These will be filled by data received from the server
 	// Create item definition manager
 	IWritableItemDefManager *itemdef = createItemDefManager();
+        errorstream<<"got here6"<<std::endl;
 	// Create node definition manager
 	IWritableNodeDefManager *nodedef = createNodeDefManager();
 	
@@ -958,7 +1414,8 @@ void the_game(
 
 	// Sound manager
 	ISoundManager *sound = NULL;
-	bool sound_is_dummy = false;
+	bool sound_is_dummy = true;
+        errorstream<<"got here7"<<std::endl;
 #if USE_SOUND
 	if(g_settings->getBool("enable_sound")){
 		infostream<<"Attempting to use OpenAL audio"<<std::endl;
@@ -975,6 +1432,8 @@ void the_game(
 		sound_is_dummy = true;
 	}
 
+        errorstream<<"got here8"<<std::endl;
+        printf("did");
 	Server *server = NULL;
 
 	try{
@@ -985,6 +1444,7 @@ void the_game(
 	SoundMaker soundmaker(sound, nodedef);
 	soundmaker.registerReceiver(&eventmgr);
 	
+        errorstream<<"got here9"<<std::endl;
 	// Add chat log output for errors to be shown in chat
 	LogOutputBuffer chat_log_error_buf(LMT_ERROR);
 
@@ -997,9 +1457,12 @@ void the_game(
 
 	if(address == ""){
 		wchar_t* text = wgettext("Creating server....");
+        printf("did1");
 		draw_load_screen(text, device, font,0,25);
 		delete[] text;
+        printf("did2");
 		infostream<<"Creating server"<<std::endl;
+        printf("did3");
 		server = new Server(map_dir, gamespec,
 				simple_singleplayer_mode);
 		server->start(port);
@@ -1011,24 +1474,36 @@ void the_game(
 		Create client
 	*/
 
+        printf("did3");
 	{
+        errorstream<<"got here1117"<<std::endl;
 		wchar_t* text = wgettext("Creating client...");
 		draw_load_screen(text, device, font,0,50);
 		delete[] text;
 	}
 	infostream<<"Creating client"<<std::endl;
 	
+        printf("did3");
 	MapDrawControl draw_control;
+        errorstream<<"got here1117888ll"<<std::endl;
 	
 	{
 		wchar_t* text = wgettext("Resolving address...");
 		draw_load_screen(text, device, font,0,75);
 		delete[] text;
 	}
+        errorstream<<"got here1117888ll"<<std::endl;
 	Address connect_address(0,0,0,0, port);
+        errorstream<<"got here1117888ll"<<std::endl;
+
+	Client client(device, playername.c_str(), password, draw_control,
+		tsrc, shsrc, itemdef, nodedef, sound, &eventmgr,
+		connect_address.isIPv6());
+        errorstream<<"got here1117888ll"<<std::endl;
 	try{
 		if(address == "")
 		{
+        errorstream<<"got here1117"<<std::endl;
 			//connect_address.Resolve("localhost");
 			if(g_settings->getBool("enable_ipv6") && g_settings->getBool("ipv6_server"))
 			{
@@ -1042,12 +1517,14 @@ void the_game(
 			}
 		}
 		else
+        errorstream<<"trying to connect"<<std::endl;
 			connect_address.Resolve(address.c_str());
 	}
 	catch(ResolveError &e)
 	{
 		error_message = L"Couldn't resolve address: " + narrow_to_wide(e.what());
 		errorstream<<wide_to_narrow(error_message)<<std::endl;
+        errorstream<<"error"<<std::endl;
 		// Break out of client scope
 		break;
 	}
@@ -1055,9 +1532,9 @@ void the_game(
 	/*
 		Create client
 	*/
-	Client client(device, playername.c_str(), password, draw_control,
-		tsrc, shsrc, itemdef, nodedef, sound, &eventmgr,
-		connect_address.isIPv6());
+	//Client client(device, playername.c_str(), password, draw_control,
+	//	tsrc, shsrc, itemdef, nodedef, sound, &eventmgr,
+	//	connect_address.isIPv6());
 	
 	// Client acts as our GameDef
 	IGameDef *gamedef = &client;
@@ -1067,9 +1544,11 @@ void the_game(
 	*/
 	
 	infostream<<"Connecting to server at ";
+        errorstream<<"trying to connect"<<std::endl;
 	connect_address.print(&infostream);
 	infostream<<std::endl;
 	client.connect(connect_address);
+        errorstream<<"trying to connect"<<std::endl;
 	
 	/*
 		Wait for server to accept connection
@@ -1078,6 +1557,7 @@ void the_game(
 	bool connect_aborted = false;
 	try{
 		float time_counter = 0.0;
+        errorstream<<"......"<<std::endl;
 		input->clear();
 		float fps_max = g_settings->getFloat("fps_max");
 		bool cloud_menu_background = g_settings->getBool("menu_clouds");
@@ -1093,6 +1573,7 @@ void the_game(
 					dtime = 0;
 				lasttime = time;
 			}
+        errorstream<<"......"<<std::endl;
 			// Update client and server
 			client.step(dtime);
 			if(server != NULL)
@@ -1101,6 +1582,7 @@ void the_game(
 			// End condition
 			if(client.connectedAndInitialized()){
 				could_connect = true;
+        errorstream<<"connected--------------"<<std::endl;
 				break;
 			}
 			// Break conditions
@@ -1235,6 +1717,7 @@ void the_game(
 				delete[] text;
 			}
 			
+        errorstream<<"gettingd-----------iiiiii---"<<std::endl;
 			// On some computers framerate doesn't seem to be
 			// automatically limited
 			if (cloud_menu_background) {
@@ -1263,8 +1746,10 @@ void the_game(
 		}
 	}
 
+        errorstream<<"gettssooonnn---------"<<std::endl;
 	if(!got_content){
 		if(error_message == L"" && !content_aborted){
+                        errorstream<<"gnoooooooooooooooo----"<<std::endl;
 			error_message = L"Something failed";
 			errorstream<<wide_to_narrow(error_message)<<std::endl;
 		}
@@ -1276,14 +1761,19 @@ void the_game(
 		After all content has been received:
 		Update cached textures, meshes and materials
 	*/
-	client.afterContentReceived(device,font);
+        errorstream<<"gottit"<<std::endl;
+	//client.afterContentReceived(device,font);
+        errorstream<<"gottit"<<std::endl;
 
 	/*
 		Create the camera node
 	*/
 	Camera camera(smgr, draw_control, gamedef);
-	if (!camera.successfullyCreated(error_message))
-		return;
+        errorstream<<"gottit3"<<std::endl;
+	//if (!camera.successfullyCreated(error_message))
+        //errorstream<<"iiiiiiiiigottit"<<std::endl;
+	//	return;
+        errorstream<<"and camere"<<std::endl;
 
 	f32 camera_yaw = 0; // "right/left"
 	f32 camera_pitch = 0; // "up/down"
@@ -1310,21 +1800,23 @@ void the_game(
 	*/
 	Inventory local_inventory(itemdef);
 
+        errorstream<<"other stufe"<<std::endl;
 	/*
 		Find out size of crack animation
 	*/
 	int crack_animation_length = 5;
-	{
-		video::ITexture *t = tsrc->getTexture("crack_anylength.png");
-		v2u32 size = t->getOriginalSize();
-		crack_animation_length = size.Y / size.X;
-	}
+	//{
+		//video::ITexture *t = tsrc->getTexture("crack_anylength.png");
+		//v2u32 size = t->getOriginalSize();
+		//crack_animation_length = size.Y / size.X;
+//	}
 
 	/*
 		Add some gui stuff
 	*/
 
 	// First line of debug text
+        errorstream<<"other stufe"<<std::endl;
 	gui::IGUIStaticText *guitext = guienv->addStaticText(
 			L"Minetest",
 			core::rect<s32>(5, 5, 795, 5+text_height),
@@ -1351,6 +1843,7 @@ void the_game(
 	std::wstring statustext;
 	float statustext_time = 0;
 	
+        errorstream<<"other stufe"<<std::endl;
 	// Chat text
 	gui::IGUIStaticText *guitext_chat = guienv->addStaticText(
 			L"",
@@ -2108,7 +2601,7 @@ void the_game(
 				
 				turn_amount = v2f(dx, dy).getLength() * d;
 			}
-			input->setMousePos(displaycenter.X, displaycenter.Y);
+			//input->setMousePos(displaycenter.X, displaycenter.Y);
 		}
 		else{
 			// Mac OSX gets upset if this is set every frame

@@ -1,3 +1,3 @@
-ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o
-ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o
-ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/security/osxminecraft/src/jthread/Debug/libjthread.a
+8ca554ce93f786529c61aaaaf9d3b06a 804aa8f55ac49bbaf9348524923cce8a ffffffffffffffffffffffffffffffff 19760 /Users/security/osxminecraft/src/jthread/Debug/libjthread.a
+000000001842501600000000000015cf 8dbc66470d3eb0ba79a0479357afbe2c ffffffffffffffffffffffffffffffff 13004 /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o
+00000000000000000000000000003084 01193289ccfdfb55e5c1ed39ae7c2be3 ffffffffffffffffffffffffffffffff 5840 /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o

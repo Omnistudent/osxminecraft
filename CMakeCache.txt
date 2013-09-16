@@ -45,13 +45,11 @@ CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
 //Build type: Debug or Release
 CMAKE_BUILD_TYPE:STRING=Release
 
-//Semicolon separated list of supported configuration types, only
-// supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
-// else will be ignored.
-CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release;MinSizeRel;RelWithDebInfo
+//Enable/Disable color output during build.
+CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//C++ compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
+//CXX compiler.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -70,7 +68,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the compiler during Release with Debug Info builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g
 
-//C compiler
+//C compiler.
 CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //Flags used by the compiler during all build types.
@@ -105,6 +103,9 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
+
 //Path to a program.
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 
@@ -114,8 +115,8 @@ CMAKE_INSTALL_PREFIX:PATH=/usr/local
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
-//make program
-CMAKE_MAKE_PROGRAM:FILEPATH=/opt/local/bin/cmakexbuild
+//Path to a program.
+CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
 //Flags used by the linker during the creation of modules.
 CMAKE_MODULE_LINKER_FLAGS:STRING=' '
@@ -572,8 +573,6 @@ minetest_SOURCE_DIR:STATIC=/Users/security/osxminecraft/src
 # INTERNAL cache entries
 ########################
 
-//Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=892F0C4515654671AD2102C3
 //ADVANCED property for variable: BZIP2_INCLUDE_DIR
 BZIP2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BZIP2_LIBRARY
@@ -591,7 +590,7 @@ CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
 CMAKE_BUILD_TOOL-ADVANCED:INTERNAL=1
 //What is the target build tool cmake is generating for.
-CMAKE_BUILD_TOOL:INTERNAL=/opt/local/bin/cmakexbuild
+CMAKE_BUILD_TOOL:INTERNAL=/usr/bin/make
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/Users/security/osxminecraft
 //Major version of cmake used to create the current loaded cache
@@ -600,6 +599,8 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=2
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=8
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=9
+//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
+CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/opt/local/bin/cmake
 //Path to cpack program executable.
@@ -650,8 +651,10 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Xcode
+CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 //Have function connect
 CMAKE_HAVE_CONNECT:INTERNAL=1
 //Have function gethostbyname
@@ -789,10 +792,6 @@ OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 PNG_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_PNG_INCLUDE_DIR
 PNG_PNG_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//Stored Xcode object GUID
-PROJECT_lua_GUID_CMAKE:INTERNAL=DECFC88BA1704AA6B525CB07
-//Stored Xcode object GUID
-PROJECT_minetest_GUID_CMAKE:INTERNAL=B987BF846CD2448A9304CDD2
 //ADVANCED property for variable: SQLITE3_INCLUDE_DIR
 SQLITE3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SQLITE3_LIBRARY
@@ -929,24 +928,8 @@ X11_xf86misc_INCLUDE_PATH-ADVANCED:INTERNAL=1
 X11_xf86vmode_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: XXF86VM_LIBRARY
 XXF86VM_LIBRARY-ADVANCED:INTERNAL=1
-//Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=B52D9D7FEDDC4282ACC55010
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY
 ZLIB_LIBRARY-ADVANCED:INTERNAL=1
-//Stored Xcode object GUID
-install_GUID_CMAKE:INTERNAL=D515797C2B5B42BAB260A6A0
-//Stored Xcode object GUID
-jsoncpp_GUID_CMAKE:INTERNAL=444874E09D3F4B53AD22ECB3
-//Stored Xcode object GUID
-jthread_GUID_CMAKE:INTERNAL=FA7202B104A448EEBB86924D
-//Stored Xcode object GUID
-lua_GUID_CMAKE:INTERNAL=AA5884B2337C4E76B53EEA7D
-//Stored Xcode object GUID
-minetest_GUID_CMAKE:INTERNAL=85734D5B21144F279D0C9730
-//Stored Xcode object GUID
-minetestserver_GUID_CMAKE:INTERNAL=DC8DD5FAFDC04C9DBA262BE7
-//Stored Xcode object GUID
-package_GUID_CMAKE:INTERNAL=96EFB495E1BF44488A5E13B6
 

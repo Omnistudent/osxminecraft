@@ -1,6 +1,12 @@
 Tjthread
 v7
-r1
+r0
+t400927590.103225
+cCheck dependencies
+cCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o /Users/security/osxminecraft/src/jthread/pthread/jthread.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLibtool /Users/security/osxminecraft/src/jthread/Debug/libjthread.a normal i386
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B864542004E944FD84485A2D.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -33,8 +39,8 @@ t1247548583
 s6030
 
 N/Users/security/osxminecraft/src/jthread/Debug/libjthread.a
-t2
-s0
+t1379234790
+s19760
 
 N/Users/security/osxminecraft/src/jthread/jmutex.h
 c00000000523186420000000000000B3F
@@ -53,17 +59,17 @@ s2287
 i"jmutex.h"
 
 N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o
-t2
-s0
+t1379234789
+s5840
 
 N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.LinkFileList
-c00000000000000000000000000000000
-t2
-s0
+c00000000523573E500000000000000D3
+t1379234789
+s211
 
 N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o
-t2
-s0
+t1379234790
+s13004
 
 N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-5F338EA9222B407BA2CB9B6A.sh
 c00000000000000000000000000000000
@@ -74,6 +80,11 @@ N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Scr
 c00000000000000000000000000000000
 t2
 s0
+
+N/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B864542004E944FD84485A2D.sh
+c00000000523573E500000000000000A2
+t1379234789
+s162
 
 N/Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp
 c00000000523186430000000000000724
@@ -90,18 +101,63 @@ i<sys/time.h>
 i<time.h>
 i<stdlib.h>
 
-CCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+CCheck dependencies
 r0
+lSLF07#2@18"Check dependencies400927589#400927589#0(0"0(0#1#0"8617258688#0"0#
+
+CCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s400927589.733546
+e400927589.827846
+r1
+xCompileC
+xsrc/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o
+x/Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp400927589#400927589#0(0"0(0#0#59"/Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp8616540608#1422"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O1 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/jthread/Debug -I/Users/security/osxminecraft/src/jthread/Debug/include -I/Users/security/osxminecraft/src -I/usr/local/include/irrlicht -I/Users/security/osxminecraft/src/Release -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/UnixImageIO.framework/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenAL.framework/Headers -I/opt/local/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/Ogg.framework/Headers/ogg -I/Users/security/osxminecraft/src/jthread -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/json -I/Users/security/osxminecraft/src/script -I/Developer/SDKs/MacOSX10.6.sdk/usr/include/curl -I/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/DerivedSources -Wall -c /Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp -o /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jmutex.o0#
 
 CCompileC src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o /Users/security/osxminecraft/src/jthread/pthread/jthread.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s400927589.827964
+e400927590.022103
+r1
+xCompileC
+xsrc/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o
+x/Users/security/osxminecraft/src/jthread/pthread/jthread.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/security/osxminecraft/src/jthread/pthread/jthread.cpp400927589#400927590#0(0"0(0#0#60"/Users/security/osxminecraft/src/jthread/pthread/jthread.cpp8614876928#1424"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O1 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/jthread/Debug -I/Users/security/osxminecraft/src/jthread/Debug/include -I/Users/security/osxminecraft/src -I/usr/local/include/irrlicht -I/Users/security/osxminecraft/src/Release -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/UnixImageIO.framework/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenAL.framework/Headers -I/opt/local/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/Ogg.framework/Headers/ogg -I/Users/security/osxminecraft/src/jthread -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/json -I/Users/security/osxminecraft/src/script -I/Developer/SDKs/MacOSX10.6.sdk/usr/include/curl -I/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/DerivedSources -Wall -c /Users/security/osxminecraft/src/jthread/pthread/jthread.cpp -o /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.o0#
 
 CLibtool /Users/security/osxminecraft/src/jthread/Debug/libjthread.a normal i386
-r0
+s400927590.022173
+e400927590.060579
+r1
+xLibtool
+x/Users/security/osxminecraft/src/jthread/Debug/libjthread.a
+xnormal
+xi386
+lSLF07#2@50"Libtool src/jthread/Debug/libjthread.a normal i386400927590#400927590#0(0"0(0#0#0"8617840416#414"    cd /Users/security/osxminecraft    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/security/osxminecraft/src/jthread/Debug -filelist /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Objects-normal/i386/jthread.LinkFileList -o /Users/security/osxminecraft/src/jthread/Debug/libjthread.a0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-5F338EA9222B407BA2CB9B6A.sh
 r0
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B34FC3638D774089A4C0EC79.sh
 r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B864542004E944FD84485A2D.sh
+s400927590.060678
+e400927590.103183
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B864542004E944FD84485A2D.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Debug
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400927590#400927590#0(343"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Debug/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver5(13@30"echo "Depend check for xcode"400927590#0#30#0(1@0"0(13@23"Depend check for xcode400927590#30#23#0(1@0"0(13@166"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jthread.Debug400927590#53#166#0(1@0"0(13@59"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest400927590#219#59#0(1@0"0(13@65"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver400927590#278#65#0(1@0"0(0#0#0"8617252128#162"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/jthread/minetest.build/Debug/jthread.build/Script-B864542004E944FD84485A2D.sh0#
 

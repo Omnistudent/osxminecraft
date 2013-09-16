@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
               892F0C4515654671AD2102C3 /* ALL_BUILD */ = {
                      isa = PBXAggregateTarget;
-                     buildConfigurationList = 3E97873BE6C74B15BB28F3AD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildConfigurationList = 11BFEB49A1FE47D883332D82 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
                      buildPhases = (
-                            CBD7C13294A6486C965A3132 /* CMake Rules */,
+                            36A19AE4102C43D2A8B54937 /* CMake Rules */,
                      );
                      dependencies = (
-                            65A5B878B73145DBA869E198 /* PBXTargetDependency */,
-                            359024E7E4194C7EAEB72DC3 /* PBXTargetDependency */,
+                            5535354AA1D94308A94187F8 /* PBXTargetDependency */,
+                            29C3C9BA178E49E88236F58F /* PBXTargetDependency */,
                      );
                      name = ALL_BUILD;
                      productName = ALL_BUILD;
               };
               B52D9D7FEDDC4282ACC55010 /* ZERO_CHECK */ = {
                      isa = PBXAggregateTarget;
-                     buildConfigurationList = BF2501B77AD845D4B7924C74 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildConfigurationList = D32D96C69D774C7D8CC6682A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
                      buildPhases = (
-                            75CFAC0BCE6A4E588A285E42 /* CMake Rules */,
+                            D8B8C0607986434AA122CF64 /* CMake Rules */,
                      );
                      dependencies = (
                      );
@@ -33,24 +33,24 @@
               };
               D515797C2B5B42BAB260A6A0 /* install */ = {
                      isa = PBXAggregateTarget;
-                     buildConfigurationList = 62E10CE53B6E42EBB09761B8 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildConfigurationList = 9B298F7171D441ED960F4100 /* Build configuration list for PBXAggregateTarget "install" */;
                      buildPhases = (
-                            380CE7F7C0254B89901F62EA /* CMake PostBuild Rules */,
+                            4A04E76C76A64EC9B82F27FF /* CMake PostBuild Rules */,
                      );
                      dependencies = (
-                            F8EC964870924350B4450572 /* PBXTargetDependency */,
+                            5083A8D10BA849D8867D4C06 /* PBXTargetDependency */,
                      );
                      name = install;
                      productName = install;
               };
               96EFB495E1BF44488A5E13B6 /* package */ = {
                      isa = PBXAggregateTarget;
-                     buildConfigurationList = 3CBC115D196847FC8BF03026 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildConfigurationList = F95B9FDFFE13412BBA9D920A /* Build configuration list for PBXAggregateTarget "package" */;
                      buildPhases = (
-                            B896BF576D0C4720B0F75BFE /* CMake PostBuild Rules */,
+                            FF34810E49214A058355513B /* CMake PostBuild Rules */,
                      );
                      dependencies = (
-                            F8EC964870924350B4450572 /* PBXTargetDependency */,
+                            5083A8D10BA849D8867D4C06 /* PBXTargetDependency */,
                      );
                      name = package;
                      productName = package;
@@ -58,64 +58,64 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-5A6EAAC2D93640689AA7B00D /* /Users/security/osxminecraft/src/lua/src/lapi.c */ = {isa = PBXBuildFile; fileRef = B604591C6CBB424E8B2607B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */; settings = { COMPILER_FLAGS = ""; }; };
-E65701CB8E074F62A107886A /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */ = {isa = PBXBuildFile; fileRef = 69EBF54B00614D27953EE419 /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */; settings = { COMPILER_FLAGS = ""; }; };
-74D766EE5BE9481982A4AB68 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */ = {isa = PBXBuildFile; fileRef = C99B0EC2BD0D4B268BF1F796 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */; settings = { COMPILER_FLAGS = ""; }; };
-E1C4FCDF7F574CB9A8781107 /* /Users/security/osxminecraft/src/lua/src/lcode.c */ = {isa = PBXBuildFile; fileRef = 8D60B6B98FAA493C9D4C977F /* /Users/security/osxminecraft/src/lua/src/lcode.c */; settings = { COMPILER_FLAGS = ""; }; };
-832B1AB9946A45069EE49BC9 /* /Users/security/osxminecraft/src/lua/src/ldblib.c */ = {isa = PBXBuildFile; fileRef = 4E35BACEA3224AF482ACB3D8 /* /Users/security/osxminecraft/src/lua/src/ldblib.c */; settings = { COMPILER_FLAGS = ""; }; };
-61C6B50E60624DA18AAB48E8 /* /Users/security/osxminecraft/src/lua/src/ldebug.c */ = {isa = PBXBuildFile; fileRef = B9EB84CD7861402EBAA34802 /* /Users/security/osxminecraft/src/lua/src/ldebug.c */; settings = { COMPILER_FLAGS = ""; }; };
-53EDC09AB5CF43EFA276BB7F /* /Users/security/osxminecraft/src/lua/src/ldo.c */ = {isa = PBXBuildFile; fileRef = 03947E9D3B544809AA80DF5D /* /Users/security/osxminecraft/src/lua/src/ldo.c */; settings = { COMPILER_FLAGS = ""; }; };
-A38603BE26794DA98EEDC195 /* /Users/security/osxminecraft/src/lua/src/ldump.c */ = {isa = PBXBuildFile; fileRef = C25CBA486CF247E3B3C4B466 /* /Users/security/osxminecraft/src/lua/src/ldump.c */; settings = { COMPILER_FLAGS = ""; }; };
-9C627A4A39494EF98A5038BA /* /Users/security/osxminecraft/src/lua/src/lfunc.c */ = {isa = PBXBuildFile; fileRef = E30BE1068A4948C18F811D67 /* /Users/security/osxminecraft/src/lua/src/lfunc.c */; settings = { COMPILER_FLAGS = ""; }; };
-B3F4C28646DD470282F7C85C /* /Users/security/osxminecraft/src/lua/src/lgc.c */ = {isa = PBXBuildFile; fileRef = 13035AABE687428981C19841 /* /Users/security/osxminecraft/src/lua/src/lgc.c */; settings = { COMPILER_FLAGS = ""; }; };
-D3D25A8056844ACFB29E2F37 /* /Users/security/osxminecraft/src/lua/src/linit.c */ = {isa = PBXBuildFile; fileRef = 2822C9F523E1457FAB7F4F01 /* /Users/security/osxminecraft/src/lua/src/linit.c */; settings = { COMPILER_FLAGS = ""; }; };
-0DF664BB8C0045FCB897CE58 /* /Users/security/osxminecraft/src/lua/src/liolib.c */ = {isa = PBXBuildFile; fileRef = 0F8772DEADA34060AEE5F55B /* /Users/security/osxminecraft/src/lua/src/liolib.c */; settings = { COMPILER_FLAGS = ""; }; };
-6F571D0560AF4BBB8ECCBAC7 /* /Users/security/osxminecraft/src/lua/src/llex.c */ = {isa = PBXBuildFile; fileRef = 1228B6E890294D249715F3A7 /* /Users/security/osxminecraft/src/lua/src/llex.c */; settings = { COMPILER_FLAGS = ""; }; };
-30B75F278A544987A45EDD07 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */ = {isa = PBXBuildFile; fileRef = 75A70F999C674A3FBDF1B31F /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */; settings = { COMPILER_FLAGS = ""; }; };
-C9525AB4F8F44AA4B1BD5760 /* /Users/security/osxminecraft/src/lua/src/lmem.c */ = {isa = PBXBuildFile; fileRef = 51BA7340E9944CA2BA59EF80 /* /Users/security/osxminecraft/src/lua/src/lmem.c */; settings = { COMPILER_FLAGS = ""; }; };
-A956258862CE4367923D8A85 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */ = {isa = PBXBuildFile; fileRef = 15554A958DCA4C3F87354152 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */; settings = { COMPILER_FLAGS = ""; }; };
-52CDBB2851BE476292ADABFC /* /Users/security/osxminecraft/src/lua/src/lobject.c */ = {isa = PBXBuildFile; fileRef = 76858F2AAED942FEADB417CE /* /Users/security/osxminecraft/src/lua/src/lobject.c */; settings = { COMPILER_FLAGS = ""; }; };
-ACBF2CBD4C0B41D685D14D99 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */ = {isa = PBXBuildFile; fileRef = BFD53934E2314C3496C2ECB5 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */; settings = { COMPILER_FLAGS = ""; }; };
-C8B2E90145034A7C872B7F20 /* /Users/security/osxminecraft/src/lua/src/loslib.c */ = {isa = PBXBuildFile; fileRef = 6938B157F1B84FFCBB764393 /* /Users/security/osxminecraft/src/lua/src/loslib.c */; settings = { COMPILER_FLAGS = ""; }; };
-68EAB64006234E6EA47BB32F /* /Users/security/osxminecraft/src/lua/src/lparser.c */ = {isa = PBXBuildFile; fileRef = 7B4DE6E21FEC4704B791FCE4 /* /Users/security/osxminecraft/src/lua/src/lparser.c */; settings = { COMPILER_FLAGS = ""; }; };
-9F219D54C4844DFF8C053828 /* /Users/security/osxminecraft/src/lua/src/lstate.c */ = {isa = PBXBuildFile; fileRef = 8A3043738FFF4689805DEF7E /* /Users/security/osxminecraft/src/lua/src/lstate.c */; settings = { COMPILER_FLAGS = ""; }; };
-6D168DD68062453281E858C7 /* /Users/security/osxminecraft/src/lua/src/lstring.c */ = {isa = PBXBuildFile; fileRef = 2A16ECF9FEAF4EF88097372B /* /Users/security/osxminecraft/src/lua/src/lstring.c */; settings = { COMPILER_FLAGS = ""; }; };
-9E74E8965B674C08907F9A6F /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */ = {isa = PBXBuildFile; fileRef = B9DC8950E503462BBB2C75BB /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */; settings = { COMPILER_FLAGS = ""; }; };
-5393BFF3A80E496EB21FFF2C /* /Users/security/osxminecraft/src/lua/src/ltable.c */ = {isa = PBXBuildFile; fileRef = 1F963260D6FC4EDBA553A2DA /* /Users/security/osxminecraft/src/lua/src/ltable.c */; settings = { COMPILER_FLAGS = ""; }; };
-6FB32B34EB5246D58ADA9F72 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */ = {isa = PBXBuildFile; fileRef = C53FF685D29D4E3BA7634E79 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */; settings = { COMPILER_FLAGS = ""; }; };
-41759474944C4FDABBD12029 /* /Users/security/osxminecraft/src/lua/src/ltm.c */ = {isa = PBXBuildFile; fileRef = DBB2D286BC9A4054817FF0D7 /* /Users/security/osxminecraft/src/lua/src/ltm.c */; settings = { COMPILER_FLAGS = ""; }; };
-465D8A14D4B54D67824788D7 /* /Users/security/osxminecraft/src/lua/src/lundump.c */ = {isa = PBXBuildFile; fileRef = 1BEDB6EBDE4846338256E650 /* /Users/security/osxminecraft/src/lua/src/lundump.c */; settings = { COMPILER_FLAGS = ""; }; };
-C4D13E0D138847978B8A8135 /* /Users/security/osxminecraft/src/lua/src/lvm.c */ = {isa = PBXBuildFile; fileRef = E115CADDE4014E6891DA9CE6 /* /Users/security/osxminecraft/src/lua/src/lvm.c */; settings = { COMPILER_FLAGS = ""; }; };
-F35431F3E5944038A4BD3E8B /* /Users/security/osxminecraft/src/lua/src/lzio.c */ = {isa = PBXBuildFile; fileRef = B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */; settings = { COMPILER_FLAGS = ""; }; };
-0FF280E776634304BEFB857D /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5CFD09C7AEFF45A1B802E92D /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+CDC01489F1DC45C89ECFF4BC /* /Users/security/osxminecraft/src/lua/src/lapi.c */ = {isa = PBXBuildFile; fileRef = 3BBC7556B97F4E7FB11558B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+339E1E2A41614F1B8BD1305E /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */ = {isa = PBXBuildFile; fileRef = 8E90DF9F0C7B4E2ABC498A1C /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */; settings = { COMPILER_FLAGS = ""; }; };
+EFE47DC16C454A5F991C9CC1 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */ = {isa = PBXBuildFile; fileRef = 3A2872FE5F2543EE96B5E773 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */; settings = { COMPILER_FLAGS = ""; }; };
+A8E99C0EA12549C59CF1FA82 /* /Users/security/osxminecraft/src/lua/src/lcode.c */ = {isa = PBXBuildFile; fileRef = 11F6C44370F343DDA1BC4540 /* /Users/security/osxminecraft/src/lua/src/lcode.c */; settings = { COMPILER_FLAGS = ""; }; };
+D75B1D8E5FF445CD94CE03EF /* /Users/security/osxminecraft/src/lua/src/ldblib.c */ = {isa = PBXBuildFile; fileRef = 31A8164516804413862A1C8A /* /Users/security/osxminecraft/src/lua/src/ldblib.c */; settings = { COMPILER_FLAGS = ""; }; };
+EB4CAF3D853C4EA4BB688FFC /* /Users/security/osxminecraft/src/lua/src/ldebug.c */ = {isa = PBXBuildFile; fileRef = 58A888EB4BB74229834E105E /* /Users/security/osxminecraft/src/lua/src/ldebug.c */; settings = { COMPILER_FLAGS = ""; }; };
+43D6EFEEBD4D4C74B43B570E /* /Users/security/osxminecraft/src/lua/src/ldo.c */ = {isa = PBXBuildFile; fileRef = A51D4649B6BA45AE896FB664 /* /Users/security/osxminecraft/src/lua/src/ldo.c */; settings = { COMPILER_FLAGS = ""; }; };
+0830D76A880C49008E1EDDE6 /* /Users/security/osxminecraft/src/lua/src/ldump.c */ = {isa = PBXBuildFile; fileRef = D9D5B11C03B049AB997596A4 /* /Users/security/osxminecraft/src/lua/src/ldump.c */; settings = { COMPILER_FLAGS = ""; }; };
+039CF44DE91842889B7EDD3A /* /Users/security/osxminecraft/src/lua/src/lfunc.c */ = {isa = PBXBuildFile; fileRef = A3567F2957A8472586CF489F /* /Users/security/osxminecraft/src/lua/src/lfunc.c */; settings = { COMPILER_FLAGS = ""; }; };
+2ED9CA9C1CE3457584C4D7C5 /* /Users/security/osxminecraft/src/lua/src/lgc.c */ = {isa = PBXBuildFile; fileRef = 953D89A9338B437B9C8C553A /* /Users/security/osxminecraft/src/lua/src/lgc.c */; settings = { COMPILER_FLAGS = ""; }; };
+FEBD9EFB83D54FE1A50ED941 /* /Users/security/osxminecraft/src/lua/src/linit.c */ = {isa = PBXBuildFile; fileRef = D58A9A3242B646EF9A6F5351 /* /Users/security/osxminecraft/src/lua/src/linit.c */; settings = { COMPILER_FLAGS = ""; }; };
+B8325DEF93FD47B59B6EE76F /* /Users/security/osxminecraft/src/lua/src/liolib.c */ = {isa = PBXBuildFile; fileRef = 03A827B67D724DAC9252D2C0 /* /Users/security/osxminecraft/src/lua/src/liolib.c */; settings = { COMPILER_FLAGS = ""; }; };
+DA40ADB301F544E09336CC60 /* /Users/security/osxminecraft/src/lua/src/llex.c */ = {isa = PBXBuildFile; fileRef = 6FB142133D414AFD99F38CB9 /* /Users/security/osxminecraft/src/lua/src/llex.c */; settings = { COMPILER_FLAGS = ""; }; };
+CCACADF7A451429899E94457 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */ = {isa = PBXBuildFile; fileRef = 7D95A3612B43440AB94376D2 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */; settings = { COMPILER_FLAGS = ""; }; };
+2479F71590A1457FA8F688DB /* /Users/security/osxminecraft/src/lua/src/lmem.c */ = {isa = PBXBuildFile; fileRef = 93CF9492991A4814BA7F52C2 /* /Users/security/osxminecraft/src/lua/src/lmem.c */; settings = { COMPILER_FLAGS = ""; }; };
+35D8042632CE4C87B32FF571 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */ = {isa = PBXBuildFile; fileRef = 7F5EC97FA3A74FE7BFD3910D /* /Users/security/osxminecraft/src/lua/src/loadlib.c */; settings = { COMPILER_FLAGS = ""; }; };
+1C561ED9FAA841CF92AC8285 /* /Users/security/osxminecraft/src/lua/src/lobject.c */ = {isa = PBXBuildFile; fileRef = 525A8214CF1643609B3B1FA2 /* /Users/security/osxminecraft/src/lua/src/lobject.c */; settings = { COMPILER_FLAGS = ""; }; };
+C31C50870C044B5D88AC08A8 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */ = {isa = PBXBuildFile; fileRef = C1A0E1C522CA421BB26841B1 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */; settings = { COMPILER_FLAGS = ""; }; };
+AF76721CB1C54C7FAA30A684 /* /Users/security/osxminecraft/src/lua/src/loslib.c */ = {isa = PBXBuildFile; fileRef = C4304D7C94D640A7ABDE4843 /* /Users/security/osxminecraft/src/lua/src/loslib.c */; settings = { COMPILER_FLAGS = ""; }; };
+5794950C52024FA3BBD4CEF3 /* /Users/security/osxminecraft/src/lua/src/lparser.c */ = {isa = PBXBuildFile; fileRef = 0584BBEE9AD6427B8A744947 /* /Users/security/osxminecraft/src/lua/src/lparser.c */; settings = { COMPILER_FLAGS = ""; }; };
+1608D21A9AC14E1E83516827 /* /Users/security/osxminecraft/src/lua/src/lstate.c */ = {isa = PBXBuildFile; fileRef = 43777A72DB96495E838AB8AD /* /Users/security/osxminecraft/src/lua/src/lstate.c */; settings = { COMPILER_FLAGS = ""; }; };
+915BF77C3A06400FA0335224 /* /Users/security/osxminecraft/src/lua/src/lstring.c */ = {isa = PBXBuildFile; fileRef = CF249E0DCF454C1283F5879D /* /Users/security/osxminecraft/src/lua/src/lstring.c */; settings = { COMPILER_FLAGS = ""; }; };
+77203D0CC1404520BAB2AA9D /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */ = {isa = PBXBuildFile; fileRef = DCE97B0A732E48AFA5A98990 /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */; settings = { COMPILER_FLAGS = ""; }; };
+BFAA23FD1EFF4D8D9F5C1D99 /* /Users/security/osxminecraft/src/lua/src/ltable.c */ = {isa = PBXBuildFile; fileRef = ADB83B33639D4EC7B4731288 /* /Users/security/osxminecraft/src/lua/src/ltable.c */; settings = { COMPILER_FLAGS = ""; }; };
+E33C40C2BEE04E2EB001F7ED /* /Users/security/osxminecraft/src/lua/src/ltablib.c */ = {isa = PBXBuildFile; fileRef = DC617A415B13428788582003 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */; settings = { COMPILER_FLAGS = ""; }; };
+0F0180FAB4234CC5A300D00A /* /Users/security/osxminecraft/src/lua/src/ltm.c */ = {isa = PBXBuildFile; fileRef = D1E1E5478BA046738333BDEF /* /Users/security/osxminecraft/src/lua/src/ltm.c */; settings = { COMPILER_FLAGS = ""; }; };
+22BA02FA187B4FBDBAA35BE8 /* /Users/security/osxminecraft/src/lua/src/lundump.c */ = {isa = PBXBuildFile; fileRef = D9ADE55C62CA45E08101127C /* /Users/security/osxminecraft/src/lua/src/lundump.c */; settings = { COMPILER_FLAGS = ""; }; };
+29155F5C0ECA448CB4126822 /* /Users/security/osxminecraft/src/lua/src/lvm.c */ = {isa = PBXBuildFile; fileRef = BE4C7F4650AA4E8894986415 /* /Users/security/osxminecraft/src/lua/src/lvm.c */; settings = { COMPILER_FLAGS = ""; }; };
+4A80F90A72554D68A6ABA1D7 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ = {isa = PBXBuildFile; fileRef = 08D4CCA84DCA48AF881D476D /* /Users/security/osxminecraft/src/lua/src/lzio.c */; settings = { COMPILER_FLAGS = ""; }; };
+EB8E8751ED0D462D9AC18876 /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D89BA4F5A8894C7BA1289167 /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-              41FFB9624AA44E4E9019FFCB /*  */ = {
+              2F3DDEA7AE524EEE8054D394 /*  */ = {
                      isa = PBXBuildStyle;
               };
-              6002C1D031FE4363A8536E54 /* Debug */ = {
+              F2A4CD28A00640D3BC9C54CC /* Debug */ = {
                      isa = PBXBuildStyle;
                      buildSettings = {
                             COPY_PHASE_STRIP = NO;
                      };
                      name = Debug;
               };
-              BEB8F5BE64D1448496CB3459 /* Release */ = {
+              2B3A7E59B7484190909978CF /* Release */ = {
                      isa = PBXBuildStyle;
                      buildSettings = {
                             COPY_PHASE_STRIP = NO;
                      };
                      name = Release;
               };
-              F6FE29CE376D4989A7178286 /* MinSizeRel */ = {
+              8E4831E5F3CF40139A6E4644 /* MinSizeRel */ = {
                      isa = PBXBuildStyle;
                      buildSettings = {
                             COPY_PHASE_STRIP = NO;
                      };
                      name = MinSizeRel;
               };
-              B90A2DF088034905A2DC849A /* RelWithDebInfo */ = {
+              F08D8DABED964DFC8F019A2B /* RelWithDebInfo */ = {
                      isa = PBXBuildStyle;
                      buildSettings = {
                             COPY_PHASE_STRIP = NO;
@@ -125,21 +125,21 @@ F35431F3E5944038A4BD3E8B /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-              113EF01063C746EA91F4BF9F /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = DECFC88BA1704AA6B525CB07 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = B52D9D7FEDDC4282ACC55010;
-                     remoteInfo = ZERO_CHECK;
-              };
-              6F91382679C14D1BA10095F2 /* PBXContainerItemProxy */ = {
+              525EA10FAF3B48A0B4DFFDD9 /* PBXContainerItemProxy */ = {
                      isa = PBXContainerItemProxy;
                      containerPortal = DECFC88BA1704AA6B525CB07 /* Project object */;
                      proxyType = 1;
                      remoteGlobalIDString = AA5884B2337C4E76B53EEA7D;
                      remoteInfo = lua;
               };
-              2AF30D470D2B45208816B352 /* PBXContainerItemProxy */ = {
+              F76D3EE16B0246D0B9252AEE /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DECFC88BA1704AA6B525CB07 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = B52D9D7FEDDC4282ACC55010;
+                     remoteInfo = ZERO_CHECK;
+              };
+              6D53855CB6C043CF8776DCA0 /* PBXContainerItemProxy */ = {
                      isa = PBXContainerItemProxy;
                      containerPortal = DECFC88BA1704AA6B525CB07 /* Project object */;
                      proxyType = 1;
@@ -149,148 +149,148 @@ F35431F3E5944038A4BD3E8B /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-A4F8408F4A9A49099B1DA530 /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-B604591C6CBB424E8B2607B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lapi.c"; path = "src/lapi.c"; sourceTree = SOURCE_ROOT; };
-69EBF54B00614D27953EE419 /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lauxlib.c"; path = "src/lauxlib.c"; sourceTree = SOURCE_ROOT; };
-C99B0EC2BD0D4B268BF1F796 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lbaselib.c"; path = "src/lbaselib.c"; sourceTree = SOURCE_ROOT; };
-8D60B6B98FAA493C9D4C977F /* /Users/security/osxminecraft/src/lua/src/lcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lcode.c"; path = "src/lcode.c"; sourceTree = SOURCE_ROOT; };
-4E35BACEA3224AF482ACB3D8 /* /Users/security/osxminecraft/src/lua/src/ldblib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldblib.c"; path = "src/ldblib.c"; sourceTree = SOURCE_ROOT; };
-B9EB84CD7861402EBAA34802 /* /Users/security/osxminecraft/src/lua/src/ldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldebug.c"; path = "src/ldebug.c"; sourceTree = SOURCE_ROOT; };
-03947E9D3B544809AA80DF5D /* /Users/security/osxminecraft/src/lua/src/ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldo.c"; path = "src/ldo.c"; sourceTree = SOURCE_ROOT; };
-C25CBA486CF247E3B3C4B466 /* /Users/security/osxminecraft/src/lua/src/ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldump.c"; path = "src/ldump.c"; sourceTree = SOURCE_ROOT; };
-E30BE1068A4948C18F811D67 /* /Users/security/osxminecraft/src/lua/src/lfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lfunc.c"; path = "src/lfunc.c"; sourceTree = SOURCE_ROOT; };
-13035AABE687428981C19841 /* /Users/security/osxminecraft/src/lua/src/lgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lgc.c"; path = "src/lgc.c"; sourceTree = SOURCE_ROOT; };
-2822C9F523E1457FAB7F4F01 /* /Users/security/osxminecraft/src/lua/src/linit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "linit.c"; path = "src/linit.c"; sourceTree = SOURCE_ROOT; };
-0F8772DEADA34060AEE5F55B /* /Users/security/osxminecraft/src/lua/src/liolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "liolib.c"; path = "src/liolib.c"; sourceTree = SOURCE_ROOT; };
-1228B6E890294D249715F3A7 /* /Users/security/osxminecraft/src/lua/src/llex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "llex.c"; path = "src/llex.c"; sourceTree = SOURCE_ROOT; };
-75A70F999C674A3FBDF1B31F /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lmathlib.c"; path = "src/lmathlib.c"; sourceTree = SOURCE_ROOT; };
-51BA7340E9944CA2BA59EF80 /* /Users/security/osxminecraft/src/lua/src/lmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lmem.c"; path = "src/lmem.c"; sourceTree = SOURCE_ROOT; };
-15554A958DCA4C3F87354152 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "loadlib.c"; path = "src/loadlib.c"; sourceTree = SOURCE_ROOT; };
-76858F2AAED942FEADB417CE /* /Users/security/osxminecraft/src/lua/src/lobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lobject.c"; path = "src/lobject.c"; sourceTree = SOURCE_ROOT; };
-BFD53934E2314C3496C2ECB5 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lopcodes.c"; path = "src/lopcodes.c"; sourceTree = SOURCE_ROOT; };
-6938B157F1B84FFCBB764393 /* /Users/security/osxminecraft/src/lua/src/loslib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "loslib.c"; path = "src/loslib.c"; sourceTree = SOURCE_ROOT; };
-7B4DE6E21FEC4704B791FCE4 /* /Users/security/osxminecraft/src/lua/src/lparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lparser.c"; path = "src/lparser.c"; sourceTree = SOURCE_ROOT; };
-8A3043738FFF4689805DEF7E /* /Users/security/osxminecraft/src/lua/src/lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstate.c"; path = "src/lstate.c"; sourceTree = SOURCE_ROOT; };
-2A16ECF9FEAF4EF88097372B /* /Users/security/osxminecraft/src/lua/src/lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstring.c"; path = "src/lstring.c"; sourceTree = SOURCE_ROOT; };
-B9DC8950E503462BBB2C75BB /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstrlib.c"; path = "src/lstrlib.c"; sourceTree = SOURCE_ROOT; };
-1F963260D6FC4EDBA553A2DA /* /Users/security/osxminecraft/src/lua/src/ltable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltable.c"; path = "src/ltable.c"; sourceTree = SOURCE_ROOT; };
-C53FF685D29D4E3BA7634E79 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltablib.c"; path = "src/ltablib.c"; sourceTree = SOURCE_ROOT; };
-DBB2D286BC9A4054817FF0D7 /* /Users/security/osxminecraft/src/lua/src/ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltm.c"; path = "src/ltm.c"; sourceTree = SOURCE_ROOT; };
-1BEDB6EBDE4846338256E650 /* /Users/security/osxminecraft/src/lua/src/lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lundump.c"; path = "src/lundump.c"; sourceTree = SOURCE_ROOT; };
-E115CADDE4014E6891DA9CE6 /* /Users/security/osxminecraft/src/lua/src/lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lvm.c"; path = "src/lvm.c"; sourceTree = SOURCE_ROOT; };
-B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lzio.c"; path = "src/lzio.c"; sourceTree = SOURCE_ROOT; };
-5CFD09C7AEFF45A1B802E92D /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-644657B8A43A46EC8B882412 /* lua */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblua.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+065A20456AA04FA9884E628C /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+3BBC7556B97F4E7FB11558B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lapi.c"; path = "src/lapi.c"; sourceTree = SOURCE_ROOT; };
+8E90DF9F0C7B4E2ABC498A1C /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lauxlib.c"; path = "src/lauxlib.c"; sourceTree = SOURCE_ROOT; };
+3A2872FE5F2543EE96B5E773 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lbaselib.c"; path = "src/lbaselib.c"; sourceTree = SOURCE_ROOT; };
+11F6C44370F343DDA1BC4540 /* /Users/security/osxminecraft/src/lua/src/lcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lcode.c"; path = "src/lcode.c"; sourceTree = SOURCE_ROOT; };
+31A8164516804413862A1C8A /* /Users/security/osxminecraft/src/lua/src/ldblib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldblib.c"; path = "src/ldblib.c"; sourceTree = SOURCE_ROOT; };
+58A888EB4BB74229834E105E /* /Users/security/osxminecraft/src/lua/src/ldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldebug.c"; path = "src/ldebug.c"; sourceTree = SOURCE_ROOT; };
+A51D4649B6BA45AE896FB664 /* /Users/security/osxminecraft/src/lua/src/ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldo.c"; path = "src/ldo.c"; sourceTree = SOURCE_ROOT; };
+D9D5B11C03B049AB997596A4 /* /Users/security/osxminecraft/src/lua/src/ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ldump.c"; path = "src/ldump.c"; sourceTree = SOURCE_ROOT; };
+A3567F2957A8472586CF489F /* /Users/security/osxminecraft/src/lua/src/lfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lfunc.c"; path = "src/lfunc.c"; sourceTree = SOURCE_ROOT; };
+953D89A9338B437B9C8C553A /* /Users/security/osxminecraft/src/lua/src/lgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lgc.c"; path = "src/lgc.c"; sourceTree = SOURCE_ROOT; };
+D58A9A3242B646EF9A6F5351 /* /Users/security/osxminecraft/src/lua/src/linit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "linit.c"; path = "src/linit.c"; sourceTree = SOURCE_ROOT; };
+03A827B67D724DAC9252D2C0 /* /Users/security/osxminecraft/src/lua/src/liolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "liolib.c"; path = "src/liolib.c"; sourceTree = SOURCE_ROOT; };
+6FB142133D414AFD99F38CB9 /* /Users/security/osxminecraft/src/lua/src/llex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "llex.c"; path = "src/llex.c"; sourceTree = SOURCE_ROOT; };
+7D95A3612B43440AB94376D2 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lmathlib.c"; path = "src/lmathlib.c"; sourceTree = SOURCE_ROOT; };
+93CF9492991A4814BA7F52C2 /* /Users/security/osxminecraft/src/lua/src/lmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lmem.c"; path = "src/lmem.c"; sourceTree = SOURCE_ROOT; };
+7F5EC97FA3A74FE7BFD3910D /* /Users/security/osxminecraft/src/lua/src/loadlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "loadlib.c"; path = "src/loadlib.c"; sourceTree = SOURCE_ROOT; };
+525A8214CF1643609B3B1FA2 /* /Users/security/osxminecraft/src/lua/src/lobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lobject.c"; path = "src/lobject.c"; sourceTree = SOURCE_ROOT; };
+C1A0E1C522CA421BB26841B1 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lopcodes.c"; path = "src/lopcodes.c"; sourceTree = SOURCE_ROOT; };
+C4304D7C94D640A7ABDE4843 /* /Users/security/osxminecraft/src/lua/src/loslib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "loslib.c"; path = "src/loslib.c"; sourceTree = SOURCE_ROOT; };
+0584BBEE9AD6427B8A744947 /* /Users/security/osxminecraft/src/lua/src/lparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lparser.c"; path = "src/lparser.c"; sourceTree = SOURCE_ROOT; };
+43777A72DB96495E838AB8AD /* /Users/security/osxminecraft/src/lua/src/lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstate.c"; path = "src/lstate.c"; sourceTree = SOURCE_ROOT; };
+CF249E0DCF454C1283F5879D /* /Users/security/osxminecraft/src/lua/src/lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstring.c"; path = "src/lstring.c"; sourceTree = SOURCE_ROOT; };
+DCE97B0A732E48AFA5A98990 /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lstrlib.c"; path = "src/lstrlib.c"; sourceTree = SOURCE_ROOT; };
+ADB83B33639D4EC7B4731288 /* /Users/security/osxminecraft/src/lua/src/ltable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltable.c"; path = "src/ltable.c"; sourceTree = SOURCE_ROOT; };
+DC617A415B13428788582003 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltablib.c"; path = "src/ltablib.c"; sourceTree = SOURCE_ROOT; };
+D1E1E5478BA046738333BDEF /* /Users/security/osxminecraft/src/lua/src/ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "ltm.c"; path = "src/ltm.c"; sourceTree = SOURCE_ROOT; };
+D9ADE55C62CA45E08101127C /* /Users/security/osxminecraft/src/lua/src/lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lundump.c"; path = "src/lundump.c"; sourceTree = SOURCE_ROOT; };
+BE4C7F4650AA4E8894986415 /* /Users/security/osxminecraft/src/lua/src/lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lvm.c"; path = "src/lvm.c"; sourceTree = SOURCE_ROOT; };
+08D4CCA84DCA48AF881D476D /* /Users/security/osxminecraft/src/lua/src/lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.c"; name = "lzio.c"; path = "src/lzio.c"; sourceTree = SOURCE_ROOT; };
+D89BA4F5A8894C7BA1289167 /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+2EA76A9838B84003AB7F87EB /* lua */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblua.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-              3D8A670B0B81431FAFE2B460  = {
+              A3160EC920B74FFAB847E9AD  = {
                      isa = PBXGroup;
                      children = (
-                            8B8CAB2DF6F74273BA487A87 /* Sources */,
-                            807F7DFB408D48FDAE0A63BC /* Resources */,
-                            7A02B739149B4C84BB3631CB /* Products */,
+                            8B186550E3F14E1685CD9E52 /* Sources */,
+                            AE40DAC8AECC4F5BB4B3B029 /* Resources */,
+                            721DB4BADBDA4556880C1BE1 /* Products */,
                      );
                      sourceTree = "<group>";
               };
-              8B8CAB2DF6F74273BA487A87 /* Sources */ = {
+              8B186550E3F14E1685CD9E52 /* Sources */ = {
                      isa = PBXGroup;
                      children = (
-                            8245509B1E5842C08B89A880 /* ALL_BUILD */,
-                            D8155F796E5B45028E5D73C1 /* ZERO_CHECK */,
-                            88AE5B9F3CAB4CF789777623 /* lua */,
+                            45B870E55C8B41748523A6ED /* ALL_BUILD */,
+                            0389384A1B6748119AC07397 /* ZERO_CHECK */,
+                            73A3CD59B61F4F37B3051A37 /* lua */,
                      );
                      name = Sources;
                      sourceTree = "<group>";
               };
-              807F7DFB408D48FDAE0A63BC /* Resources */ = {
+              AE40DAC8AECC4F5BB4B3B029 /* Resources */ = {
                      isa = PBXGroup;
                      children = (
                      );
                      name = Resources;
                      sourceTree = "<group>";
               };
-              8245509B1E5842C08B89A880 /* ALL_BUILD */ = {
+              45B870E55C8B41748523A6ED /* ALL_BUILD */ = {
                      isa = PBXGroup;
                      children = (
-                            51400E2142B94E9587C3D827 /* CMake Rules */,
-                            A4F8408F4A9A49099B1DA530 /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */,
+                            AE2BB5B9BC534EDA81FC7413 /* CMake Rules */,
+                            065A20456AA04FA9884E628C /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */,
                      );
                      name = ALL_BUILD;
                      sourceTree = "<group>";
               };
-              51400E2142B94E9587C3D827 /* CMake Rules */ = {
+              AE2BB5B9BC534EDA81FC7413 /* CMake Rules */ = {
                      isa = PBXGroup;
                      children = (
                      );
                      name = "CMake Rules";
                      sourceTree = "<group>";
               };
-              D8155F796E5B45028E5D73C1 /* ZERO_CHECK */ = {
+              0389384A1B6748119AC07397 /* ZERO_CHECK */ = {
                      isa = PBXGroup;
                      children = (
-                            6DAADD90CB764C229C01CC34 /* CMake Rules */,
-                            A4F8408F4A9A49099B1DA530 /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */,
+                            F4AB8791440746EC82071881 /* CMake Rules */,
+                            065A20456AA04FA9884E628C /* /Users/security/osxminecraft/src/lua/CMakeLists.txt */,
                      );
                      name = ZERO_CHECK;
                      sourceTree = "<group>";
               };
-              6DAADD90CB764C229C01CC34 /* CMake Rules */ = {
+              F4AB8791440746EC82071881 /* CMake Rules */ = {
                      isa = PBXGroup;
                      children = (
                      );
                      name = "CMake Rules";
                      sourceTree = "<group>";
               };
-              88AE5B9F3CAB4CF789777623 /* lua */ = {
+              73A3CD59B61F4F37B3051A37 /* lua */ = {
                      isa = PBXGroup;
                      children = (
-                            9475FEFC25894C898BDBC133 /* Source Files */,
-                            5CFD09C7AEFF45A1B802E92D /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */,
+                            3DD0F3AB2A074F45A0DF5FC7 /* Source Files */,
+                            D89BA4F5A8894C7BA1289167 /* /Users/security/osxminecraft/src/lua/src/CMakeLists.txt */,
                      );
                      name = lua;
                      sourceTree = "<group>";
               };
-              9475FEFC25894C898BDBC133 /* Source Files */ = {
+              3DD0F3AB2A074F45A0DF5FC7 /* Source Files */ = {
                      isa = PBXGroup;
                      children = (
-                            B604591C6CBB424E8B2607B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */,
-                            69EBF54B00614D27953EE419 /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */,
-                            C99B0EC2BD0D4B268BF1F796 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */,
-                            8D60B6B98FAA493C9D4C977F /* /Users/security/osxminecraft/src/lua/src/lcode.c */,
-                            4E35BACEA3224AF482ACB3D8 /* /Users/security/osxminecraft/src/lua/src/ldblib.c */,
-                            B9EB84CD7861402EBAA34802 /* /Users/security/osxminecraft/src/lua/src/ldebug.c */,
-                            03947E9D3B544809AA80DF5D /* /Users/security/osxminecraft/src/lua/src/ldo.c */,
-                            C25CBA486CF247E3B3C4B466 /* /Users/security/osxminecraft/src/lua/src/ldump.c */,
-                            E30BE1068A4948C18F811D67 /* /Users/security/osxminecraft/src/lua/src/lfunc.c */,
-                            13035AABE687428981C19841 /* /Users/security/osxminecraft/src/lua/src/lgc.c */,
-                            2822C9F523E1457FAB7F4F01 /* /Users/security/osxminecraft/src/lua/src/linit.c */,
-                            0F8772DEADA34060AEE5F55B /* /Users/security/osxminecraft/src/lua/src/liolib.c */,
-                            1228B6E890294D249715F3A7 /* /Users/security/osxminecraft/src/lua/src/llex.c */,
-                            75A70F999C674A3FBDF1B31F /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */,
-                            51BA7340E9944CA2BA59EF80 /* /Users/security/osxminecraft/src/lua/src/lmem.c */,
-                            15554A958DCA4C3F87354152 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */,
-                            76858F2AAED942FEADB417CE /* /Users/security/osxminecraft/src/lua/src/lobject.c */,
-                            BFD53934E2314C3496C2ECB5 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */,
-                            6938B157F1B84FFCBB764393 /* /Users/security/osxminecraft/src/lua/src/loslib.c */,
-                            7B4DE6E21FEC4704B791FCE4 /* /Users/security/osxminecraft/src/lua/src/lparser.c */,
-                            8A3043738FFF4689805DEF7E /* /Users/security/osxminecraft/src/lua/src/lstate.c */,
-                            2A16ECF9FEAF4EF88097372B /* /Users/security/osxminecraft/src/lua/src/lstring.c */,
-                            B9DC8950E503462BBB2C75BB /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */,
-                            1F963260D6FC4EDBA553A2DA /* /Users/security/osxminecraft/src/lua/src/ltable.c */,
-                            C53FF685D29D4E3BA7634E79 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */,
-                            DBB2D286BC9A4054817FF0D7 /* /Users/security/osxminecraft/src/lua/src/ltm.c */,
-                            1BEDB6EBDE4846338256E650 /* /Users/security/osxminecraft/src/lua/src/lundump.c */,
-                            E115CADDE4014E6891DA9CE6 /* /Users/security/osxminecraft/src/lua/src/lvm.c */,
-                            B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */,
+                            3BBC7556B97F4E7FB11558B4 /* /Users/security/osxminecraft/src/lua/src/lapi.c */,
+                            8E90DF9F0C7B4E2ABC498A1C /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */,
+                            3A2872FE5F2543EE96B5E773 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */,
+                            11F6C44370F343DDA1BC4540 /* /Users/security/osxminecraft/src/lua/src/lcode.c */,
+                            31A8164516804413862A1C8A /* /Users/security/osxminecraft/src/lua/src/ldblib.c */,
+                            58A888EB4BB74229834E105E /* /Users/security/osxminecraft/src/lua/src/ldebug.c */,
+                            A51D4649B6BA45AE896FB664 /* /Users/security/osxminecraft/src/lua/src/ldo.c */,
+                            D9D5B11C03B049AB997596A4 /* /Users/security/osxminecraft/src/lua/src/ldump.c */,
+                            A3567F2957A8472586CF489F /* /Users/security/osxminecraft/src/lua/src/lfunc.c */,
+                            953D89A9338B437B9C8C553A /* /Users/security/osxminecraft/src/lua/src/lgc.c */,
+                            D58A9A3242B646EF9A6F5351 /* /Users/security/osxminecraft/src/lua/src/linit.c */,
+                            03A827B67D724DAC9252D2C0 /* /Users/security/osxminecraft/src/lua/src/liolib.c */,
+                            6FB142133D414AFD99F38CB9 /* /Users/security/osxminecraft/src/lua/src/llex.c */,
+                            7D95A3612B43440AB94376D2 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */,
+                            93CF9492991A4814BA7F52C2 /* /Users/security/osxminecraft/src/lua/src/lmem.c */,
+                            7F5EC97FA3A74FE7BFD3910D /* /Users/security/osxminecraft/src/lua/src/loadlib.c */,
+                            525A8214CF1643609B3B1FA2 /* /Users/security/osxminecraft/src/lua/src/lobject.c */,
+                            C1A0E1C522CA421BB26841B1 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */,
+                            C4304D7C94D640A7ABDE4843 /* /Users/security/osxminecraft/src/lua/src/loslib.c */,
+                            0584BBEE9AD6427B8A744947 /* /Users/security/osxminecraft/src/lua/src/lparser.c */,
+                            43777A72DB96495E838AB8AD /* /Users/security/osxminecraft/src/lua/src/lstate.c */,
+                            CF249E0DCF454C1283F5879D /* /Users/security/osxminecraft/src/lua/src/lstring.c */,
+                            DCE97B0A732E48AFA5A98990 /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */,
+                            ADB83B33639D4EC7B4731288 /* /Users/security/osxminecraft/src/lua/src/ltable.c */,
+                            DC617A415B13428788582003 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */,
+                            D1E1E5478BA046738333BDEF /* /Users/security/osxminecraft/src/lua/src/ltm.c */,
+                            D9ADE55C62CA45E08101127C /* /Users/security/osxminecraft/src/lua/src/lundump.c */,
+                            BE4C7F4650AA4E8894986415 /* /Users/security/osxminecraft/src/lua/src/lvm.c */,
+                            08D4CCA84DCA48AF881D476D /* /Users/security/osxminecraft/src/lua/src/lzio.c */,
                      );
                      name = "Source Files";
                      sourceTree = "<group>";
               };
-              7A02B739149B4C84BB3631CB /* Products */ = {
+              721DB4BADBDA4556880C1BE1 /* Products */ = {
                      isa = PBXGroup;
                      children = (
-                            644657B8A43A46EC8B882412 /* lua */,
+                            2EA76A9838B84003AB7F87EB /* lua */,
                      );
                      name = Products;
                      sourceTree = "<group>";
@@ -300,10 +300,10 @@ B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
 /* Begin PBXNativeTarget section */
               AA5884B2337C4E76B53EEA7D /* lua */ = {
                      isa = PBXNativeTarget;
-                     buildConfigurationList = 2E9E376DE11A45C288451E9D /* Build configuration list for PBXNativeTarget "lua" */;
+                     buildConfigurationList = D4448A5FD55E408DA731F2E7 /* Build configuration list for PBXNativeTarget "lua" */;
                      buildPhases = (
-                            F50E1EE61ECC4606A152F0C7 /* Sources */,
-                            906AD4D131274C1381B438B2 /* CMake PostBuild Rules */,
+                            41C9FACA26B44195984CAC35 /* Sources */,
+                            2A83F0CA40394A3997AA5CBE /* CMake PostBuild Rules */,
                      );
                      buildRules = (
                      );
@@ -311,7 +311,7 @@ B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
                      );
                      name = lua;
                      productName = lua;
-                     productReference = 644657B8A43A46EC8B882412 /* lua */;
+                     productReference = 2EA76A9838B84003AB7F87EB /* lua */;
                      productType = "com.apple.product-type.library.static";
               };
 /* End PBXNativeTarget section */
@@ -322,18 +322,18 @@ B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
                      attributes = {
                             BuildIndependentTargetsInParallel = YES;
                      };
-                     buildConfigurationList = B309EC4CBA204454B9F183EE /* Build configuration list for PBXProject  "lua" */;
+                     buildConfigurationList = AD6155E3AAE04D2FB12ECF2B /* Build configuration list for PBXProject  "lua" */;
                      buildSettings = {
                      };
                      buildStyles = (
-                            6002C1D031FE4363A8536E54 /* Debug */,
-                            BEB8F5BE64D1448496CB3459 /* Release */,
-                            F6FE29CE376D4989A7178286 /* MinSizeRel */,
-                            B90A2DF088034905A2DC849A /* RelWithDebInfo */,
+                            F2A4CD28A00640D3BC9C54CC /* Debug */,
+                            2B3A7E59B7484190909978CF /* Release */,
+                            8E4831E5F3CF40139A6E4644 /* MinSizeRel */,
+                            F08D8DABED964DFC8F019A2B /* RelWithDebInfo */,
                      );
                      compatibilityVersion = "Xcode 3.2";
                      hasScannedForEncodings = 0;
-                     mainGroup = 3D8A670B0B81431FAFE2B460;
+                     mainGroup = A3160EC920B74FFAB847E9AD;
                      projectDirPath = ".";
                      projectRoot = "";
                      targets = (
@@ -347,7 +347,7 @@ B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-              646C64E04B4D400FAEB27C02 /*  */ = {
+              F3D19AEB68BC4926AE522514 /*  */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -362,7 +362,7 @@ B4B4E08939FD4E2F9ECEA872 /* /Users/security/osxminecraft/src/lua/src/lzio.c */ =
 exit 0";
                      showEnvVarsInLog = 0;
               };
-              CBD7C13294A6486C965A3132 /* CMake Rules */ = {
+              36A19AE4102C43D2A8B54937 /* CMake Rules */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -373,7 +373,7 @@ exit 0";
                      shellScript = "make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
                      showEnvVarsInLog = 0;
               };
-              BE45DDAB6B8D4BF8A051E6BF /*  */ = {
+              B9DA2EF9929A4419B22E99D4 /*  */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -388,7 +388,7 @@ exit 0";
 exit 0";
                      showEnvVarsInLog = 0;
               };
-              75CFAC0BCE6A4E588A285E42 /* CMake Rules */ = {
+              D8B8C0607986434AA122CF64 /* CMake Rules */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -399,7 +399,7 @@ exit 0";
                      shellScript = "make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
                      showEnvVarsInLog = 0;
               };
-              03CB4212699F46ABBF53DDFF /*  */ = {
+              4926FCE5DC964491B8CEB9E2 /*  */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -414,7 +414,7 @@ exit 0";
 exit 0";
                      showEnvVarsInLog = 0;
               };
-              380CE7F7C0254B89901F62EA /* CMake PostBuild Rules */ = {
+              4A04E76C76A64EC9B82F27FF /* CMake PostBuild Rules */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -425,7 +425,7 @@ exit 0";
                      shellScript = "make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
                      showEnvVarsInLog = 0;
               };
-              10FF3061AAEE46A6BFF7D09C /*  */ = {
+              E33EED4A35624FFDB1A9C31F /*  */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -440,7 +440,7 @@ exit 0";
 exit 0";
                      showEnvVarsInLog = 0;
               };
-              B896BF576D0C4720B0F75BFE /* CMake PostBuild Rules */ = {
+              FF34810E49214A058355513B /* CMake PostBuild Rules */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -451,7 +451,7 @@ exit 0";
                      shellScript = "make -C /Users/security/osxminecraft/src/lua -f /Users/security/osxminecraft/src/lua/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
                      showEnvVarsInLog = 0;
               };
-              906AD4D131274C1381B438B2 /* CMake PostBuild Rules */ = {
+              2A83F0CA40394A3997AA5CBE /* CMake PostBuild Rules */ = {
                      isa = PBXShellScriptBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
@@ -465,64 +465,64 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-              F50E1EE61ECC4606A152F0C7 /* Sources */ = {
+              41C9FACA26B44195984CAC35 /* Sources */ = {
                      isa = PBXSourcesBuildPhase;
                      buildActionMask = 2147483647;
                      files = (
-                            5A6EAAC2D93640689AA7B00D /* /Users/security/osxminecraft/src/lua/src/lapi.c */,
-                            E65701CB8E074F62A107886A /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */,
-                            74D766EE5BE9481982A4AB68 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */,
-                            E1C4FCDF7F574CB9A8781107 /* /Users/security/osxminecraft/src/lua/src/lcode.c */,
-                            832B1AB9946A45069EE49BC9 /* /Users/security/osxminecraft/src/lua/src/ldblib.c */,
-                            61C6B50E60624DA18AAB48E8 /* /Users/security/osxminecraft/src/lua/src/ldebug.c */,
-                            53EDC09AB5CF43EFA276BB7F /* /Users/security/osxminecraft/src/lua/src/ldo.c */,
-                            A38603BE26794DA98EEDC195 /* /Users/security/osxminecraft/src/lua/src/ldump.c */,
-                            9C627A4A39494EF98A5038BA /* /Users/security/osxminecraft/src/lua/src/lfunc.c */,
-                            B3F4C28646DD470282F7C85C /* /Users/security/osxminecraft/src/lua/src/lgc.c */,
-                            D3D25A8056844ACFB29E2F37 /* /Users/security/osxminecraft/src/lua/src/linit.c */,
-                            0DF664BB8C0045FCB897CE58 /* /Users/security/osxminecraft/src/lua/src/liolib.c */,
-                            6F571D0560AF4BBB8ECCBAC7 /* /Users/security/osxminecraft/src/lua/src/llex.c */,
-                            30B75F278A544987A45EDD07 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */,
-                            C9525AB4F8F44AA4B1BD5760 /* /Users/security/osxminecraft/src/lua/src/lmem.c */,
-                            A956258862CE4367923D8A85 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */,
-                            52CDBB2851BE476292ADABFC /* /Users/security/osxminecraft/src/lua/src/lobject.c */,
-                            ACBF2CBD4C0B41D685D14D99 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */,
-                            C8B2E90145034A7C872B7F20 /* /Users/security/osxminecraft/src/lua/src/loslib.c */,
-                            68EAB64006234E6EA47BB32F /* /Users/security/osxminecraft/src/lua/src/lparser.c */,
-                            9F219D54C4844DFF8C053828 /* /Users/security/osxminecraft/src/lua/src/lstate.c */,
-                            6D168DD68062453281E858C7 /* /Users/security/osxminecraft/src/lua/src/lstring.c */,
-                            9E74E8965B674C08907F9A6F /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */,
-                            5393BFF3A80E496EB21FFF2C /* /Users/security/osxminecraft/src/lua/src/ltable.c */,
-                            6FB32B34EB5246D58ADA9F72 /* /Users/security/osxminecraft/src/lua/src/ltablib.c */,
-                            41759474944C4FDABBD12029 /* /Users/security/osxminecraft/src/lua/src/ltm.c */,
-                            465D8A14D4B54D67824788D7 /* /Users/security/osxminecraft/src/lua/src/lundump.c */,
-                            C4D13E0D138847978B8A8135 /* /Users/security/osxminecraft/src/lua/src/lvm.c */,
-                            F35431F3E5944038A4BD3E8B /* /Users/security/osxminecraft/src/lua/src/lzio.c */,
+                            CDC01489F1DC45C89ECFF4BC /* /Users/security/osxminecraft/src/lua/src/lapi.c */,
+                            339E1E2A41614F1B8BD1305E /* /Users/security/osxminecraft/src/lua/src/lauxlib.c */,
+                            EFE47DC16C454A5F991C9CC1 /* /Users/security/osxminecraft/src/lua/src/lbaselib.c */,
+                            A8E99C0EA12549C59CF1FA82 /* /Users/security/osxminecraft/src/lua/src/lcode.c */,
+                            D75B1D8E5FF445CD94CE03EF /* /Users/security/osxminecraft/src/lua/src/ldblib.c */,
+                            EB4CAF3D853C4EA4BB688FFC /* /Users/security/osxminecraft/src/lua/src/ldebug.c */,
+                            43D6EFEEBD4D4C74B43B570E /* /Users/security/osxminecraft/src/lua/src/ldo.c */,
+                            0830D76A880C49008E1EDDE6 /* /Users/security/osxminecraft/src/lua/src/ldump.c */,
+                            039CF44DE91842889B7EDD3A /* /Users/security/osxminecraft/src/lua/src/lfunc.c */,
+                            2ED9CA9C1CE3457584C4D7C5 /* /Users/security/osxminecraft/src/lua/src/lgc.c */,
+                            FEBD9EFB83D54FE1A50ED941 /* /Users/security/osxminecraft/src/lua/src/linit.c */,
+                            B8325DEF93FD47B59B6EE76F /* /Users/security/osxminecraft/src/lua/src/liolib.c */,
+                            DA40ADB301F544E09336CC60 /* /Users/security/osxminecraft/src/lua/src/llex.c */,
+                            CCACADF7A451429899E94457 /* /Users/security/osxminecraft/src/lua/src/lmathlib.c */,
+                            2479F71590A1457FA8F688DB /* /Users/security/osxminecraft/src/lua/src/lmem.c */,
+                            35D8042632CE4C87B32FF571 /* /Users/security/osxminecraft/src/lua/src/loadlib.c */,
+                            1C561ED9FAA841CF92AC8285 /* /Users/security/osxminecraft/src/lua/src/lobject.c */,
+                            C31C50870C044B5D88AC08A8 /* /Users/security/osxminecraft/src/lua/src/lopcodes.c */,
+                            AF76721CB1C54C7FAA30A684 /* /Users/security/osxminecraft/src/lua/src/loslib.c */,
+                            5794950C52024FA3BBD4CEF3 /* /Users/security/osxminecraft/src/lua/src/lparser.c */,
+                            1608D21A9AC14E1E83516827 /* /Users/security/osxminecraft/src/lua/src/lstate.c */,
+                            915BF77C3A06400FA0335224 /* /Users/security/osxminecraft/src/lua/src/lstring.c */,
+                            77203D0CC1404520BAB2AA9D /* /Users/security/osxminecraft/src/lua/src/lstrlib.c */,
+                            BFAA23FD1EFF4D8D9F5C1D99 /* /Users/security/osxminecraft/src/lua/src/ltable.c */,
+                            E33C40C2BEE04E2EB001F7ED /* /Users/security/osxminecraft/src/lua/src/ltablib.c */,
+                            0F0180FAB4234CC5A300D00A /* /Users/security/osxminecraft/src/lua/src/ltm.c */,
+                            22BA02FA187B4FBDBAA35BE8 /* /Users/security/osxminecraft/src/lua/src/lundump.c */,
+                            29155F5C0ECA448CB4126822 /* /Users/security/osxminecraft/src/lua/src/lvm.c */,
+                            4A80F90A72554D68A6ABA1D7 /* /Users/security/osxminecraft/src/lua/src/lzio.c */,
                      );
                      runOnlyForDeploymentPostprocessing = 0;
               };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-              65A5B878B73145DBA869E198 /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = B52D9D7FEDDC4282ACC55010 /* ZERO_CHECK */;
-                     targetProxy = 113EF01063C746EA91F4BF9F /* PBXContainerItemProxy */;
-              };
-              359024E7E4194C7EAEB72DC3 /* PBXTargetDependency */ = {
+              5535354AA1D94308A94187F8 /* PBXTargetDependency */ = {
                      isa = PBXTargetDependency;
                      target = AA5884B2337C4E76B53EEA7D /* lua */;
-                     targetProxy = 6F91382679C14D1BA10095F2 /* PBXContainerItemProxy */;
+                     targetProxy = 525EA10FAF3B48A0B4DFFDD9 /* PBXContainerItemProxy */;
               };
-              F8EC964870924350B4450572 /* PBXTargetDependency */ = {
+              29C3C9BA178E49E88236F58F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = B52D9D7FEDDC4282ACC55010 /* ZERO_CHECK */;
+                     targetProxy = F76D3EE16B0246D0B9252AEE /* PBXContainerItemProxy */;
+              };
+              5083A8D10BA849D8867D4C06 /* PBXTargetDependency */ = {
                      isa = PBXTargetDependency;
                      target = 892F0C4515654671AD2102C3 /* ALL_BUILD */;
-                     targetProxy = 2AF30D470D2B45208816B352 /* PBXContainerItemProxy */;
+                     targetProxy = 6D53855CB6C043CF8776DCA0 /* PBXContainerItemProxy */;
               };
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-              725A18DF53E940E28E1CBC4C /* Debug */ = {
+              A10AD071D0AC46B4A879C175 /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -531,7 +531,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              C9C0AD6C492843A39461511C /* Release */ = {
+              B49719D7F7D7431CBFB17C13 /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -540,7 +540,7 @@ exit 0";
                      };
                      name = Release;
               };
-              BBDADC6F26134B5FB52A1B5B /* MinSizeRel */ = {
+              3DC91F03830D442685D3B8C1 /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -549,7 +549,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              3F93FDC770134772A994B372 /* RelWithDebInfo */ = {
+              8F65F0213FC74C8CBE914719 /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -558,7 +558,7 @@ exit 0";
                      };
                      name = RelWithDebInfo;
               };
-              FFD6B27C75D94548807C7A1A /* Debug */ = {
+              58A6F8191A974400A952F025 /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -581,7 +581,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              F7D76F848F0947258AF05A40 /* Release */ = {
+              5E299F13913946C4B7F5A2AE /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -604,7 +604,7 @@ exit 0";
                      };
                      name = Release;
               };
-              C91BC0707C6443E5A27826E8 /* MinSizeRel */ = {
+              1D2DCA87C9004A3B82527B2F /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -627,7 +627,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              7D6E8042B2924FADA1E5A4F0 /* RelWithDebInfo */ = {
+              EDFBD7AD49034E59A56E30BA /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -650,7 +650,7 @@ exit 0";
                      };
                      name = RelWithDebInfo;
               };
-              63CE2FE5E7AA434589395726 /* Debug */ = {
+              05D47D1FAF1546EBAE20CB9A /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -673,7 +673,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              9E73E15167D84C3F869661E3 /* Release */ = {
+              6FE991480ED446A598260CD2 /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -696,7 +696,7 @@ exit 0";
                      };
                      name = Release;
               };
-              50FCC2579E9347BA82052E0C /* MinSizeRel */ = {
+              9533D16CA3B241C8B4FD5420 /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -719,7 +719,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              35BC2AEA47F7489EA1CC1C49 /* RelWithDebInfo */ = {
+              8EEA93FA0498478786EE3F41 /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -742,7 +742,7 @@ exit 0";
                      };
                      name = RelWithDebInfo;
               };
-              6499C7F3DEAF42FFA4540AD8 /* Debug */ = {
+              82855F8501AC41399E67964F /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -765,7 +765,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              D719DA1531EB441BA7831D14 /* Release */ = {
+              306752D559924DCFAC3686C8 /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -788,7 +788,7 @@ exit 0";
                      };
                      name = Release;
               };
-              970FD482F3A545199DDDDD6F /* MinSizeRel */ = {
+              77089C03A74F4065B89140FE /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -811,7 +811,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              9365C607EB4446A2AEC7BABA /* RelWithDebInfo */ = {
+              10B0F5A27D834753A5215CB6 /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -834,7 +834,7 @@ exit 0";
                      };
                      name = RelWithDebInfo;
               };
-              03AA56EFC4F14CD1BE3C22DB /* Debug */ = {
+              352E761462C54481944F9F2E /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -857,7 +857,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              EC3B9D616C0F4480B9C1F71D /* Release */ = {
+              F511524D47D9416F99D0D9AC /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -880,7 +880,7 @@ exit 0";
                      };
                      name = Release;
               };
-              02488C203FE2493AA1E87392 /* MinSizeRel */ = {
+              088F6D8CA2E84A909A200141 /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -903,7 +903,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              DA85173065FF417D92DBC83B /* RelWithDebInfo */ = {
+              382A3DEBDA7E413EA324633B /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -926,7 +926,7 @@ exit 0";
                      };
                      name = RelWithDebInfo;
               };
-              CA20CD5B697E4B7FB88EC5DD /* Debug */ = {
+              A1C25F92EF2B43E3B7B49E23 /* Debug */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -953,7 +953,7 @@ exit 0";
                      };
                      name = Debug;
               };
-              5036AD52595B4E0B8906DC0E /* Release */ = {
+              395DE7E0496D4892835BF08D /* Release */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -980,7 +980,7 @@ exit 0";
                      };
                      name = Release;
               };
-              710CA0A559FF4B42B278979E /* MinSizeRel */ = {
+              3A21FDD534E340EF81963B9B /* MinSizeRel */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -1007,7 +1007,7 @@ exit 0";
                      };
                      name = MinSizeRel;
               };
-              BE2ECF54863B490DB9180BD1 /* RelWithDebInfo */ = {
+              11750BD2755743CFBEBFCF3A /* RelWithDebInfo */ = {
                      isa = XCBuildConfiguration;
                      buildSettings = {
                             ARCHS = i386;
@@ -1037,68 +1037,68 @@ exit 0";
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-              B309EC4CBA204454B9F183EE /* Build configuration list for PBXProject  "lua" */ = {
+              AD6155E3AAE04D2FB12ECF2B /* Build configuration list for PBXProject  "lua" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            725A18DF53E940E28E1CBC4C /* Debug */,
-                            C9C0AD6C492843A39461511C /* Release */,
-                            BBDADC6F26134B5FB52A1B5B /* MinSizeRel */,
-                            3F93FDC770134772A994B372 /* RelWithDebInfo */,
+                            A10AD071D0AC46B4A879C175 /* Debug */,
+                            B49719D7F7D7431CBFB17C13 /* Release */,
+                            3DC91F03830D442685D3B8C1 /* MinSizeRel */,
+                            8F65F0213FC74C8CBE914719 /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;
               };
-              3E97873BE6C74B15BB28F3AD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+              11BFEB49A1FE47D883332D82 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            FFD6B27C75D94548807C7A1A /* Debug */,
-                            F7D76F848F0947258AF05A40 /* Release */,
-                            C91BC0707C6443E5A27826E8 /* MinSizeRel */,
-                            7D6E8042B2924FADA1E5A4F0 /* RelWithDebInfo */,
+                            58A6F8191A974400A952F025 /* Debug */,
+                            5E299F13913946C4B7F5A2AE /* Release */,
+                            1D2DCA87C9004A3B82527B2F /* MinSizeRel */,
+                            EDFBD7AD49034E59A56E30BA /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;
               };
-              BF2501B77AD845D4B7924C74 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+              D32D96C69D774C7D8CC6682A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            63CE2FE5E7AA434589395726 /* Debug */,
-                            9E73E15167D84C3F869661E3 /* Release */,
-                            50FCC2579E9347BA82052E0C /* MinSizeRel */,
-                            35BC2AEA47F7489EA1CC1C49 /* RelWithDebInfo */,
+                            05D47D1FAF1546EBAE20CB9A /* Debug */,
+                            6FE991480ED446A598260CD2 /* Release */,
+                            9533D16CA3B241C8B4FD5420 /* MinSizeRel */,
+                            8EEA93FA0498478786EE3F41 /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;
               };
-              62E10CE53B6E42EBB09761B8 /* Build configuration list for PBXAggregateTarget "install" */ = {
+              9B298F7171D441ED960F4100 /* Build configuration list for PBXAggregateTarget "install" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            6499C7F3DEAF42FFA4540AD8 /* Debug */,
-                            D719DA1531EB441BA7831D14 /* Release */,
-                            970FD482F3A545199DDDDD6F /* MinSizeRel */,
-                            9365C607EB4446A2AEC7BABA /* RelWithDebInfo */,
+                            82855F8501AC41399E67964F /* Debug */,
+                            306752D559924DCFAC3686C8 /* Release */,
+                            77089C03A74F4065B89140FE /* MinSizeRel */,
+                            10B0F5A27D834753A5215CB6 /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;
               };
-              3CBC115D196847FC8BF03026 /* Build configuration list for PBXAggregateTarget "package" */ = {
+              F95B9FDFFE13412BBA9D920A /* Build configuration list for PBXAggregateTarget "package" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            03AA56EFC4F14CD1BE3C22DB /* Debug */,
-                            EC3B9D616C0F4480B9C1F71D /* Release */,
-                            02488C203FE2493AA1E87392 /* MinSizeRel */,
-                            DA85173065FF417D92DBC83B /* RelWithDebInfo */,
+                            352E761462C54481944F9F2E /* Debug */,
+                            F511524D47D9416F99D0D9AC /* Release */,
+                            088F6D8CA2E84A909A200141 /* MinSizeRel */,
+                            382A3DEBDA7E413EA324633B /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;
               };
-              2E9E376DE11A45C288451E9D /* Build configuration list for PBXNativeTarget "lua" */ = {
+              D4448A5FD55E408DA731F2E7 /* Build configuration list for PBXNativeTarget "lua" */ = {
                      isa = XCConfigurationList;
                      buildConfigurations = (
-                            CA20CD5B697E4B7FB88EC5DD /* Debug */,
-                            5036AD52595B4E0B8906DC0E /* Release */,
-                            710CA0A559FF4B42B278979E /* MinSizeRel */,
-                            BE2ECF54863B490DB9180BD1 /* RelWithDebInfo */,
+                            A1C25F92EF2B43E3B7B49E23 /* Debug */,
+                            395DE7E0496D4892835BF08D /* Release */,
+                            3A21FDD534E340EF81963B9B /* MinSizeRel */,
+                            11750BD2755743CFBEBFCF3A /* RelWithDebInfo */,
                      );
                      defaultConfigurationIsVisible = 0;
                      defaultConfigurationName = Debug;

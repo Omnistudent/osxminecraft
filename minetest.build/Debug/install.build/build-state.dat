@@ -2,6 +2,11 @@ Tinstall
 v7
 r1
 
+N/Users/security/osxminecraft/minetest.build/Debug/install.build/Script-1961F3CB8C3144E1880A779F.sh
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/security/osxminecraft/minetest.build/Debug/install.build/Script-3D64FDF631454C31BA83EFFD.sh
 c00000000000000000000000000000000
 t2
@@ -11,6 +16,9 @@ N/Users/security/osxminecraft/minetest.build/Debug/install.build/Script-7D6DCA9B
 c00000000000000000000000000000000
 t2
 s0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/install.build/Script-1961F3CB8C3144E1880A779F.sh
+r0
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/minetest.build/Debug/install.build/Script-3D64FDF631454C31BA83EFFD.sh
 r0

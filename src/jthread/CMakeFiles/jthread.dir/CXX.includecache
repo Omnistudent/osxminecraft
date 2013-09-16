@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/security/osxminecraft/src/jthread/pthread/jmutex.cpp
+jmutex.h
+/Users/security/osxminecraft/src/jthread/pthread/jmutex.h
+
+/Users/security/osxminecraft/src/jthread/pthread/jthread.cpp
+jthread.h
+/Users/security/osxminecraft/src/jthread/pthread/jthread.h
+sys/time.h
+-
+time.h
+-
+stdlib.h
+-
+
+src/jthread/jmutex.h
+process.h
+-
+winsock2.h
+-
+windows.h
+-
+pthread.h
+-
+semaphore.h
+-
+
+src/jthread/jthread.h
+jmutex.h
+src/jthread/jmutex.h
+

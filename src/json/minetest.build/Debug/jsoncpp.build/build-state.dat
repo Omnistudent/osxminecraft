@@ -1,6 +1,11 @@
 Tjsoncpp
 v7
-r1
+r0
+t400927594.236183
+cCheck dependencies
+cCompileC src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o /Users/security/osxminecraft/src/json/jsoncpp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLibtool /Users/security/osxminecraft/src/json/Debug/libjsoncpp.a normal i386
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-D93A8ACBC67B4D8F9D0DA918.sh
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -33,8 +38,8 @@ t1247548583
 s5937
 
 N/Users/security/osxminecraft/src/cmake_config.h
-c0000000052320AFB000000000000024C
-t1379011323
+c000000005235548D000000000000024C
+t1379226765
 s588
 
 N/Users/security/osxminecraft/src/config.h
@@ -44,8 +49,8 @@ s1060
 i"cmake_config.h"
 
 N/Users/security/osxminecraft/src/json/Debug/libjsoncpp.a
-t2
-s0
+t1379234794
+s861768
 
 N/Users/security/osxminecraft/src/json/json.h
 c0000000052318642000000000000F9EB
@@ -112,32 +117,72 @@ i<sstream>
 i<iomanip>
 
 N/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.LinkFileList
-c00000000000000000000000000000000
-t2
-s0
+c00000000523573E60000000000000067
+t1379234790
+s103
 
 N/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o
-t2
-s0
+t1379234794
+s841268
 
 N/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-459C95A2E50741049D98206F.sh
 c00000000000000000000000000000000
 t2
 s0
 
+N/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-D93A8ACBC67B4D8F9D0DA918.sh
+c00000000523573E5000000000000009C
+t1379234789
+s156
+
 N/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-F827291A5258421D9C35F007.sh
 c00000000000000000000000000000000
 t2
 s0
 
-CCompileC src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o /Users/security/osxminecraft/src/json/jsoncpp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+CCheck dependencies
 r0
+lSLF07#2@18"Check dependencies400927589#400927590#0(0"0(0#1#0"8622364416#0"0#
+
+CCompileC src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o /Users/security/osxminecraft/src/json/jsoncpp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s400927590.020913
+e400927594.156911
+r1
+xCompileC
+xsrc/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o
+x/Users/security/osxminecraft/src/json/jsoncpp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/security/osxminecraft/src/json/jsoncpp.cpp400927590#400927594#0(0"0(0#0#49"/Users/security/osxminecraft/src/json/jsoncpp.cpp8618071840#1398"    cd /Users/security/osxminecraft    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O1 -DCMAKE_INTDIR="Debug" -DUSE_CMAKE_CONFIG_H -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/security/osxminecraft/src/json/Debug -I/Users/security/osxminecraft/src/json/Debug/include -I/Users/security/osxminecraft/src -I/usr/local/include/irrlicht -I/Users/security/osxminecraft/src/Release -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/UnixImageIO.framework/Headers -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/OpenAL.framework/Headers -I/opt/local/include -I/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks/Ogg.framework/Headers/ogg -I/Users/security/osxminecraft/src/jthread -I/Users/security/osxminecraft/src/lua/src -I/Users/security/osxminecraft/src/json -I/Users/security/osxminecraft/src/script -I/Developer/SDKs/MacOSX10.6.sdk/usr/include/curl -I/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/DerivedSources/i386 -I/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/DerivedSources -Wall -c /Users/security/osxminecraft/src/json/jsoncpp.cpp -o /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.o0#
 
 CLibtool /Users/security/osxminecraft/src/json/Debug/libjsoncpp.a normal i386
-r0
+s400927594.157085
+e400927594.198013
+r1
+xLibtool
+x/Users/security/osxminecraft/src/json/Debug/libjsoncpp.a
+xnormal
+xi386
+lSLF07#2@47"Libtool src/json/Debug/libjsoncpp.a normal i386400927594#400927594#0(0"0(0#0#0"8630788480#405"    cd /Users/security/osxminecraft    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/security/osxminecraft/src/json/Debug -filelist /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Objects-normal/i386/jsoncpp.LinkFileList -o /Users/security/osxminecraft/src/json/Debug/libjsoncpp.a0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-459C95A2E50741049D98206F.sh
 r0
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-D93A8ACBC67B4D8F9D0DA918.sh
+s400927594.198244
+e400927594.236140
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-D93A8ACBC67B4D8F9D0DA918.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jsoncpp.Debug
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest
+o/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver
+lSLF07#2@47"Run custom shell script 'CMake PostBuild Rules'400927594#400927594#0(343"echo "Depend check for xcode"Depend check for xcodecd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jsoncpp.Debug/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver5(13@30"echo "Depend check for xcode"400927594#0#30#0(1@0"0(13@23"Depend check for xcode400927594#30#23#0(1@0"0(13@166"cd /Users/security/osxminecraft && make -C /Users/security/osxminecraft -f /Users/security/osxminecraft/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.jsoncpp.Debug400927594#53#166#0(1@0"0(13@59"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetest400927594#219#59#0(1@0"0(13@65"/bin/rm -f /Users/security/osxminecraft/bin/Debug/minetestserver400927594#278#65#0(1@0"0(0#0#0"8627830688#159"    cd /Users/security/osxminecraft    /bin/sh -c /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-D93A8ACBC67B4D8F9D0DA918.sh0#
 
 CPhaseScriptExecution "CMake PostBuild Rules" /Users/security/osxminecraft/src/json/minetest.build/Debug/jsoncpp.build/Script-F827291A5258421D9C35F007.sh
 r0

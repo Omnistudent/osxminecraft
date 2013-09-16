@@ -47,7 +47,7 @@ SET(CMAKE_C_HAS_ISYSROOT "1")
 SET(CMAKE_C_OSX_DEPLOYMENT_TARGET_FLAG "-mmacosx-version-min=")
 
 SET(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-SET(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+SET(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64;/usr/lib/i686-apple-darwin10/4.2.1;/usr/lib/gcc/i686-apple-darwin10/4.2.1;/usr/lib")
 
 
 

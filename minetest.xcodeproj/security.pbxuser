@@ -90,7 +90,7 @@
 		activeExec = 0;
 	};
 	B987BF846CD2448A9304CDD2 /* Project object */ = {
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 959F008A17E351D400E9C085 /* minetest */;
 		activeTarget = 892F0C4515654671AD2102C3 /* ALL_BUILD */;
 		codeSenseManager = 959F009517E351FF00E9C085 /* Code sense */;
@@ -121,8 +121,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 400775501;
-			PBXWorkspaceStateSaveDate = 400775501;
+			PBXPerProjectTemplateStateSaveDate = 400927573;
+			PBXWorkspaceStateSaveDate = 400927573;
 		};
 		sourceControlManager = 959F009417E351FF00E9C085 /* Source Control */;
 		userBuildSettings = {
